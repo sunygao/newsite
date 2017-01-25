@@ -1,0 +1,12 @@
+git.count
+git.revision
+.DS_Store
+
+# Node Modules
+app/node_modules/
+npm-debug.log
+
+
+
+
+
