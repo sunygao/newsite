@@ -8,6 +8,7 @@
 
 var gulp  = require('gulp'),
 	sass = require('gulp-sass'),
+  autoprefixer = require('gulp-autoprefixer'),
   webpack = require("webpack"),
   WebpackDevServer = require("webpack-dev-server"),
   webpackConfig = require("../../webpack.config.js"),
@@ -43,9 +44,10 @@ gulp.task('set-env-dev', function() {
 
   
 /*
- * Compile compass
+ * Compile sass
  *
  */
+
 gulp.task('sass', function() {
   var options = {},
   cssPath;
@@ -65,6 +67,9 @@ gulp.task('sass', function() {
   gulp.src(config.src.sass.files)
     .pipe( plumber())
       .pipe(sass(options).on('error', sass.logError))
+      .pipe(autoprefixer({
+        browsers: ['last 4 versions'],
+      }))
       .pipe(gulp.dest(cssPath));
 });
 

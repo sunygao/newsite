@@ -3,12 +3,19 @@ $breakpoint_lrg: 1400px;
 $breakpoint_med: 960px;
 $breakpoint_small: 767px;
 $breakpoint_x_small: 415px;
-$max-width: 1400px;
+$max_width: 1400px;
 
 //---Grid
-$max_columns: 12; 
+$max_columns: 24; 
 $gutter_px: 1px;
 $gutter_pc: 0;
 $max_content_width: 1440px;
 
 
+//---Grid
+$nav_width: 70px;
+
+
+//---Colors
+$black: #191919;
+$grey_border: #e3e3e3

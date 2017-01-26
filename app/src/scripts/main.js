@@ -7,7 +7,13 @@ import CV from 'config/CV';
 
 class Main {
   onReady() {
-   
+   	console.log('show us the peen');
+
+   	$(document.body).on('keydown', function(e) {
+   		if(e.keyCode == 71) {
+   			$('#grid').toggle();
+   		}
+   	});
   }
    
 }
