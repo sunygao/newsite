@@ -39,17 +39,17 @@ main {
     z-index: $z-hero;
     background: #fff;
 
-    &:after {
-        content: '';
-        position: absolute;
-        width: 4px;
-        height: 20%;
-        background: $black;
-        left: 50%;
-        transform: translateX(-50%);
-        position: absolute;
-        bottom: -7%;
-    }
+    // &:after {
+    //     content: '';
+    //     position: absolute;
+    //     width: 4px;
+    //     height: 20%;
+    //     background: $black;
+    //     left: 50%;
+    //     transform: translateX(-50%);
+    //     position: absolute;
+    //     bottom: -7%;
+    // }
 }
 
 .main-content {
