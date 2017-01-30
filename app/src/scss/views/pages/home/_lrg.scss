@@ -66,7 +66,7 @@ $dist-y:65px;
 
 			li {
 				@include span(8);
-				padding-right: 4.16667%;
+				padding-right: 2.083335%;
 				display: inline-block;
 				height: 100%;
 
@@ -125,12 +125,12 @@ $dist-y:65px;
 				height: 100%;
 				width: 100%;
 				display: block;
-				//overflow: hidden;
+				overflow: hidden;
 				position: relative;
 
 				.rule {
 					position: absolute;
-					width: 4px;
+					width: 2px;
 					height: 100%;
 					background: $black;
 					left: 92%;
@@ -229,6 +229,7 @@ $dist-y:65px;
 				width: 100%;
 				top: 50%;
 				transform: translateY(-50%);
+				padding-right: 7%;
 			}
 
 			.rule,
@@ -244,11 +245,10 @@ $dist-y:65px;
 			}
 
 			h2 {
-				font-size: 2.5rem;
-				//@include openSans;
-				font-weight: 800;
-				letter-spacing: 1px;
-				text-transform: uppercase;
+				font-size: 3.5rem;
+				letter-spacing: 2px;
+				text-transform: lowercase;
+				@include brushcaps;
 			}
 
 			h3 {

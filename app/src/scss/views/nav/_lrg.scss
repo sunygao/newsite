@@ -125,3 +125,16 @@ nav {
     }
   }
 }
+
+#scrollbar {
+  position: absolute;
+  height: 100%;
+  width: 3px;
+  right: 0;
+
+  .scroller {
+    background: $black;
+    width: 100%;
+    height: 50%;
+  }
+}
