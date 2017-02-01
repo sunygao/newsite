@@ -13,11 +13,11 @@ html {
 
 
 body {
-    background: #fff;
+    background: #f3f3f3;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-    @include garamond();
+    @include roboto;
 
     &.no-scroll {
         height: 100%;
@@ -33,35 +33,15 @@ main {
   height: 100%;
 }
 
-.hero {
-    height: 100%;
-    position: relative;
-    z-index: $z-hero;
-    background: #fff;
-
-    // &:after {
-    //     content: '';
-    //     position: absolute;
-    //     width: 4px;
-    //     height: 20%;
-    //     background: $black;
-    //     left: 50%;
-    //     transform: translateX(-50%);
-    //     position: absolute;
-    //     bottom: -7%;
-    // }
-}
-
 .main-content {
-    // transform: translateX($nav_width);
     position: relative;
     height: 100%;
 }
 
-.main-content,
-#grid {
-    width: calc(100%  - #{$nav_width});
-    margin-left: $nav_width;
+main {
+    padding-top: 45px;
 }
+
+
 
 

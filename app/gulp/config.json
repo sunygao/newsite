@@ -16,6 +16,9 @@
     },
     "svg" : {
       "files" : "public/svg/**/*.svg"
+    },
+    "templates" : {
+      "files" : "views/**/*.pug"
     }
   },
   "staticSrc" : [
@@ -41,8 +44,15 @@
   "development" : {
     "css" : {
       "path" : "public/stylesheets"
+    },
+    "templates": {
+      "path" : {
+        "main" : "src/scripts/templates"
+      }
     }
   },
+  
+
   "iconfont": {
     "base" : "app/src",
     "srcSVG": "src/fonts/svg-sprites/*.svg",

@@ -1,6 +1,7 @@
 
 a {
     text-decoration: none;
+    color: $black;
 }
 
 button {
@@ -12,6 +13,7 @@ button {
 #grid {
     display: none;
     pointer-events: none;
+    width: 100%;
     position: fixed;
     height: 100%;
     z-index: $z-grid;
@@ -32,7 +34,7 @@ button {
         height: 100%;
       //  background: blue;
         display: inline-block;
-        border-left:$gutter_px solid $grey_border;
+        border-left:$gutter_px solid $grey-border;
         box-sizing: border-box;
         @include span(1);
     }

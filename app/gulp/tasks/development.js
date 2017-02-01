@@ -9,6 +9,7 @@
 var gulp  = require('gulp'),
 	sass = require('gulp-sass'),
   autoprefixer = require('gulp-autoprefixer'),
+  pug = require('gulp-pug'),
   webpack = require("webpack"),
   WebpackDevServer = require("webpack-dev-server"),
   webpackConfig = require("../../webpack.config.js"),
@@ -24,7 +25,9 @@ var gulp  = require('gulp'),
   // imageminOptipng = require('imagemin-optipng'),
   del = require('del'),
   svgmin = require('gulp-svgmin'),
-  runSequence = require('run-sequence');
+  runSequence = require('run-sequence'),
+  wrap = require('gulp-wrap-amd');
+
 
 /*
  * Set environment to prod
@@ -79,10 +82,8 @@ gulp.task('sass', function() {
  */
 gulp.task('watch', function() {
   gulp.watch(config.src.sass.files, ['sass']);
-
-//  gulp.watch(config.src.js.files, ['webpack']);
-
-  //gulp.watch(config.iconfont.srcSVG, ['iconfonts']);
+  gulp.watch(config.src.templates.files, ['templates']);
+  gulp.watch(config.iconfont.srcSVG, ['iconfonts']);
 });
 
 
@@ -202,5 +203,31 @@ gulp.task('svgmin', function () {
     return gulp.src(config.src.svg.files)
         .pipe(svgmin())
         .pipe(gulp.dest(config.deploy.svg.path));
+});
+
+gulp.task('templates', function() {
+
+  var templatesSrc = config.src.templates.files,
+      templatesPath = config.development.templates.path.main;
+      
+
+  console.log('\n----- templates ---- ');
+  console.log(' templatesSrc' , templatesSrc);
+  console.log(' templatesPath' , templatesPath);
+
+  return gulp.src(templatesSrc)
+    .pipe( plumber() )
+    .pipe(pug())
+    .pipe(wrap({
+      deps: ['pug'],
+      params: ['pug']
+    }))
+    .pipe(gulp.dest(templatesPath));
+
+    // return gulp.src('views/*.pug')
+    // .pipe(pug({
+    //   // Your options in here.
+    // }))
+
 });
 

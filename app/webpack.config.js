@@ -8,9 +8,8 @@ module.exports = {
       path.resolve('src/scripts/vendor'),
     ],
     alias: {
-      'jquery' : 'zepto',
-      'TweenMax' : 'TweenMax',
-      '_' : 'lodash-min'
+      'jquery' : 'jquery.min',
+      'TweenMax' : 'TweenMax'
     }
   },
   entry: [

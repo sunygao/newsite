@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Cormorant+Garamond:400,500,600,700|Libre+Baskerville:400,400i,700|Open+Sans:300,400,600,700,800|Playfair+Display:400,400i,700,700i,900,900i');
 
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,400i,500,500i,700,700i');
+
 @font-face {
     font-family:'brushcaps';
     src: url('../fonts/text/brushcaps.woff2') format('woff2'),
@@ -39,4 +41,42 @@
 
 @mixin openSans() {
 	font-family: 'Open Sans', sans-serif;
+}
+
+@mixin robotoLight() {
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 300;
+}
+
+@mixin roboto() {
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 400;
+}
+
+@mixin robotoItalic() {
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 400;
+	font-style: italic;
+}
+
+@mixin robotoMed() {
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 500;
+}
+
+@mixin robotoMedItalic() {
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 500;
+	font-style: italic;
+}
+
+@mixin robotoBold() {
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 700;
+}
+
+@mixin robotoBoldItalic() {
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 700;
+	font-style: italic;
 }
