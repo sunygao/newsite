@@ -82,7 +82,7 @@ gulp.task('sass', function() {
  */
 gulp.task('watch', function() {
   gulp.watch(config.src.sass.files, ['sass']);
-  gulp.watch(config.src.templates.files, ['templates']);
+  // gulp.watch(config.src.templates.files, ['templates']);
   gulp.watch(config.iconfont.srcSVG, ['iconfonts']);
 });
 
@@ -205,29 +205,28 @@ gulp.task('svgmin', function () {
         .pipe(gulp.dest(config.deploy.svg.path));
 });
 
-gulp.task('templates', function() {
+// gulp.task('templates', function() {
 
-  var templatesSrc = config.src.templates.files,
-      templatesPath = config.development.templates.path.main;
+//   var templatesSrc = config.src.templates.files,
+//       templatesPath = config.development.templates.path.main;
       
 
-  console.log('\n----- templates ---- ');
-  console.log(' templatesSrc' , templatesSrc);
-  console.log(' templatesPath' , templatesPath);
+//   console.log('\n----- templates ---- ');
+//   console.log(' templatesSrc' , templatesSrc);
+//   console.log(' templatesPath' , templatesPath);
 
-  return gulp.src(templatesSrc)
-    .pipe( plumber() )
-    .pipe(pug())
-    .pipe(wrap({
-      deps: ['pug'],
-      params: ['pug']
-    }))
-    .pipe(gulp.dest(templatesPath));
+//   return gulp.src(templatesSrc)
+//     .pipe( plumber() )
+//     .pipe(pug({
+//       client: true
+//     }))
+    
+//     .pipe(gulp.dest(templatesPath));
 
-    // return gulp.src('views/*.pug')
-    // .pipe(pug({
-    //   // Your options in here.
-    // }))
+//     // return gulp.src('views/*.pug')
+//     // .pipe(pug({
+//     //   // Your options in here.
+//     // }))
 
-});
+// });
 

@@ -6,6 +6,8 @@ module.exports = {
     root: [
       path.resolve('src/scripts'),
       path.resolve('src/scripts/vendor'),
+      path.resolve('views'),
+      path.resolve('data')
     ],
     alias: {
       'jquery' : 'jquery.min',
@@ -13,7 +15,6 @@ module.exports = {
     }
   },
   entry: [
-    'babel-polyfill',
     'main.js',
   ],
   output: {
@@ -25,6 +26,14 @@ module.exports = {
   devtool: 'source-map',
   module: {
     loaders: [
+      {
+        test: /\.json$/,
+        loader: 'json-loader'
+      },
+      {
+        test: /\.pug$/,
+        loader: 'pug-loader'
+      },
       { 
         test: /\.js$/,
         include: path.join(__dirname, 'src/scripts'),

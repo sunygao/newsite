@@ -1,16 +1,21 @@
 import Page from 'abstract/page';
+import data from 'work.json';
+import Template from 'index.pug';
 
 export default class Home extends Page{
 
 	initialize() {
 		super.initialize();
 
+		this.template = Template;
+		this.render();
+
 		this.workContainer = this.$el.find('section.work');
 		this.imageContainer = this.$el.find('section.images');
 		this.workLinks = [];
 		this.images = [];
 		this.currentWorkIndex = -1;
-
+		
 		let _this = this;
 
 		_.each(this.workContainer.find('li'), function(el) {
@@ -22,19 +27,25 @@ export default class Home extends Page{
 		});
 
 		this.bindEvents();
+		
 	}	
 
 	events() {
 		return {
-			
+
 		}
+	}
+
+	render() {
+		this.$el = $(this.template({data: data}));
+		this.el = this.$el[0];
+		$('#main-content').html(this.el);
 	}
 
 	bindEvents() {
 		let _this = this;
 
 		_.each(this.workLinks, function($el, i) {
-			
 			$el.on('mouseover', function() {
 				_this.onMouseOver($el, i);
 			});
