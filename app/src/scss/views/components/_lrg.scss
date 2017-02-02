@@ -39,3 +39,62 @@ button {
         @include span(1);
     }
 }
+
+
+h2 {
+    font-size: 10vmin;
+    letter-spacing: .2vmin;
+    @include playfairBold;
+}
+
+h3 {
+    @include robotoItalic;
+    font-size: 2.5vmin;
+    margin-top: 10px;
+    color: $grey_light;
+}
+
+h4 {
+    font-size: 2.4vmin;
+    text-transform: lowercase;
+    @include robotoMed;
+}
+
+p {
+    font-size: 2vmin;
+    line-height: 1.5;
+    @include robotoLight;
+}
+
+.button {
+    font-size: 2vmin;
+    text-transform: lowercase;
+    font-style: italic;
+    border-bottom: 3px solid $black;
+    @include robotoMed;
+}
+
+.work-list {
+        padding: 0 4.1667%;
+        @include span(15);
+
+        li {
+            margin-bottom: 60px;
+
+            a {
+                display: inline-block;
+                transition: all .2s ease-out;
+            }
+
+            h2 {
+                white-space: nowrap;
+            }
+
+            &.inactive {
+                a {
+                    opacity: .2;
+                }
+            }
+
+        }
+    }

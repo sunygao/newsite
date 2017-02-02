@@ -1,0 +1,126 @@
+#work-detail {
+	.next-project {
+		position: fixed;
+		width: 100%;
+		@include at-col(23);
+		
+		h3 {
+			//opacity: 0;
+		}
+
+		h2 {
+			//font-size: 6vmin;	
+		}
+
+	}
+	.work-detail {
+		@include span(21);
+		@include at-col(1);
+		
+		img {
+			display: block;
+			width: 100%;
+		}
+
+		h4 {
+			margin-bottom: 5px;
+		}
+		h4,
+		p,
+		a {
+			font-size: 1.6vmin;
+		}
+
+		a {
+			color: inherit;
+		}
+
+		article {
+			
+		}
+
+		.headline {
+			margin-bottom: 60px;
+		}
+
+		.project-details {
+			margin: 60px 0;
+
+			p {
+				color: $grey_dark;
+			}
+			article {
+				margin-bottom: 30px;
+			}
+		}
+
+		.credits {
+			float: left;
+			@include span(10);
+
+			li {
+				margin-bottom: 20px;
+			}
+		}
+
+		.press {
+			float: right;
+			text-align: right;
+			@include span(10);
+		}
+
+		.links {
+			text-align: right;
+			clear: both;
+
+			li {
+				display: inline-block;
+				margin-left: 40px;
+			}
+		}
+		
+	}
+
+	//content types
+	.project-images {
+		article {
+			overflow: hidden;
+			margin-bottom: 60px;
+		}
+
+		.description {
+			margin-top: 15px;
+			float: right;
+			text-align: right;
+			@include span(20);
+		}
+		
+		//two column
+		.col-2 {
+			overflow: hidden;
+
+			.image-wrapper {
+				float: left;
+				width: calc(50% - 15px);
+
+				&:nth-child(1) {
+					margin-right: 30px;
+				}
+			}
+		}
+
+		.video {
+			.video-player {
+				position: relative;
+			}
+			.preview-image {
+				position: absolute;
+			}
+
+			video {
+				width: 100%;
+			}
+		}
+	}
+	
+}

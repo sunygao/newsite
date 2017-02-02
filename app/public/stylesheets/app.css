@@ -133,13 +133,9 @@ main {
   height: 100%;
 }
 
-.main-content {
+#main-content {
   position: relative;
-  height: 100%;
-}
-
-main {
-  padding-top: 45px;
+  padding: 95px 0 0;
 }
 
 a {
@@ -181,6 +177,69 @@ button {
   margin-left: 0;
 }
 
+h2 {
+  font-size: 10vmin;
+  letter-spacing: .2vmin;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+}
+
+h3 {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 2.5vmin;
+  margin-top: 10px;
+  color: #a5a5a5;
+}
+
+h4 {
+  font-size: 2.4vmin;
+  text-transform: lowercase;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
+}
+
+p {
+  font-size: 2vmin;
+  line-height: 1.5;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+}
+
+.button {
+  font-size: 2vmin;
+  text-transform: lowercase;
+  font-style: italic;
+  border-bottom: 3px solid #191919;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
+}
+
+.work-list {
+  padding: 0 4.1667%;
+  width: 62.5%;
+  box-sizing: border-box;
+  margin-left: 0;
+}
+
+.work-list li {
+  margin-bottom: 60px;
+}
+
+.work-list li a {
+  display: inline-block;
+  transition: all .2s ease-out;
+}
+
+.work-list li h2 {
+  white-space: nowrap;
+}
+
+.work-list li.inactive a {
+  opacity: .2;
+}
+
 .main-nav {
   position: fixed;
   top: 0;
@@ -193,54 +252,17 @@ button {
   position: absolute;
   right: 4.1667%;
   top: 0px;
+  font-size: 2.5rem;
+  margin-top: 30px;
+  color: #a5a5a5;
   font-family: 'Roboto Mono', monospace;
   font-weight: 400;
   font-style: italic;
-  font-size: 2.5rem;
-  margin-top: 30px;
-  opacity: .5;
 }
 
 .main-nav h1 a {
   margin-top: 0px;
-  opacity: 1;
-}
-
-#home .work {
-  padding: 0 4.1667%;
-  width: 62.5%;
-  box-sizing: border-box;
-  margin-left: 0;
-}
-
-#home .work li {
-  margin-bottom: 60px;
-}
-
-#home .work li a {
-  display: inline-block;
-  transition: all .2s ease-out;
-}
-
-#home .work li h2 {
-  font-size: 10vmin;
-  white-space: nowrap;
-  font-family: 'Playfair Display', serif;
-  font-weight: 900;
-  letter-spacing: .2vmin;
-}
-
-#home .work li h3 {
-  font-family: 'Roboto Mono', monospace;
-  font-weight: 400;
-  font-style: italic;
-  font-size: 2.5vmin;
-  margin-top: 10px;
-  opacity: .5;
-}
-
-#home .work li.inactive a {
-  opacity: .2;
+  color: #191919;
 }
 
 #home .images {
@@ -339,4 +361,120 @@ button {
   margin-left: 0%;
   z-index: -1;
   width: 50%;
+}
+
+#work-detail .next-project {
+  position: fixed;
+  width: 100%;
+  margin-left: 95.83333%;
+}
+
+#work-detail .work-detail {
+  width: 87.5%;
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-left: 4.16667%;
+}
+
+#work-detail .work-detail img {
+  display: block;
+  width: 100%;
+}
+
+#work-detail .work-detail h4 {
+  margin-bottom: 5px;
+}
+
+#work-detail .work-detail h4,
+#work-detail .work-detail p,
+#work-detail .work-detail a {
+  font-size: 1.6vmin;
+}
+
+#work-detail .work-detail a {
+  color: inherit;
+}
+
+#work-detail .work-detail .headline {
+  margin-bottom: 60px;
+}
+
+#work-detail .work-detail .project-details {
+  margin: 60px 0;
+}
+
+#work-detail .work-detail .project-details p {
+  color: #616161;
+}
+
+#work-detail .work-detail .project-details article {
+  margin-bottom: 30px;
+}
+
+#work-detail .work-detail .credits {
+  float: left;
+  width: 41.66667%;
+  box-sizing: border-box;
+  margin-left: 0;
+}
+
+#work-detail .work-detail .credits li {
+  margin-bottom: 20px;
+}
+
+#work-detail .work-detail .press {
+  float: right;
+  text-align: right;
+  width: 41.66667%;
+  box-sizing: border-box;
+  margin-left: 0;
+}
+
+#work-detail .work-detail .links {
+  text-align: right;
+  clear: both;
+}
+
+#work-detail .work-detail .links li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+#work-detail .project-images article {
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+
+#work-detail .project-images .description {
+  margin-top: 15px;
+  float: right;
+  text-align: right;
+  width: 83.33333%;
+  box-sizing: border-box;
+  margin-left: 0;
+}
+
+#work-detail .project-images .col-2 {
+  overflow: hidden;
+}
+
+#work-detail .project-images .col-2 .image-wrapper {
+  float: left;
+  width: calc(50% - 15px);
+}
+
+#work-detail .project-images .col-2 .image-wrapper:nth-child(1) {
+  margin-right: 30px;
+}
+
+#work-detail .project-images .video .video-player {
+  position: relative;
+}
+
+#work-detail .project-images .video .preview-image {
+  position: absolute;
+}
+
+#work-detail .project-images .video video {
+  width: 100%;
 }

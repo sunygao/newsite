@@ -8,9 +8,9 @@ export default class Home extends Page{
 		super.initialize();
 
 		this.template = Template;
-		this.render();
+		//this.render();
 
-		this.workContainer = this.$el.find('section.work');
+		this.workContainer = this.$el.find('section.work-list');
 		this.imageContainer = this.$el.find('section.images');
 		this.workLinks = [];
 		this.images = [];
@@ -44,6 +44,7 @@ export default class Home extends Page{
 
 	bindEvents() {
 		let _this = this;
+
 
 		_.each(this.workLinks, function($el, i) {
 			$el.on('mouseover', function() {
