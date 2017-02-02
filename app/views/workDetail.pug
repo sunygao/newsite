@@ -14,51 +14,42 @@
 
 	section.work-detail
 		article.headline
-			h2 Year in Music
-			h3 Spotify
+			h2=data.title
+			h3=data.client
 		
 		article.hero
-			img(src="../images/fpo-yim.jpg")
+			img(src="../images/projects/" + slug + "/" + data.heroImage)
 			
 
 		.project-details
 			article.description
-					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium nunc velit, id cursus libero porta quis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus laoreet nisi ut nisl ultricies, vitae tincidunt purus rhoncus. Vestibulum libero metus, mollis a laoreet nec, euismod sed erat. Aenean tortor elit, blandit et felis nec, placerat dapibus neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam facilisis metus sed ex vehicula tincidunt. Pellentesque vel suscipit quam. Cras pharetra venenatis neque, a feugiat ex scelerisque ut. Fusce mattis non dolor at dictum.
+					p=data.description
 
 			article.credits
 				ul 
-					li 
-						h4 Agency
-						p 
-							a(href="http://www.stinkstudios.com") Stink Studios
+					each credit in data.credits
+						li
+							h4= credit.type
+							if credit.url
+								p
+									a(href= credit.url)= credit.text
+							else
+								p= credit.text
+			if data.press
+				article.press
+					h4 Press
+					ul
+						each article in data.press
+							li 
+								p
+									a(href= article.url, target="_blank")= article.title
 
-					li
-						h4 Role
-						p Front end Developer
-
-					li 
-						h4 Date
-						p December 2015
-
-			article.press
-				h4 Press
-				ul
-					li 
-						p
-							a(href="#") press link 1
-					li 
-						p
-							a(href="#") press link 2
-
-			article.links
-				ul
-					li
-						a(class="button", href="#", target="_blank") Launch site
-					li
-						a(class="button", href="#",  target="_blank") Case study
-
-
-						
+			if data.links
+				article.links
+					ul
+						each link in data.links
+							li
+								a(class="button", href= link.url, target="_blank")= link.title
 		
 		.project-images
 			//- One column

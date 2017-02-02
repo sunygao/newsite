@@ -13,15 +13,21 @@ router.get('/', function(req, res, next) {
 // });
 
 router.get('/:id', function(req, res, next) {
+	var pageData = data[req.params.id];
  	var workDetailPage = pug.compileFile('views/workDetail.pug');
 	var layout = pug.compileFile('views/layout.pug', {
 		filters: {
 			'content': function () {
-			    return workDetailPage({ data: data });
+			    return workDetailPage({ 
+			    	slug: req.params.id, 
+			    	data: pageData });
 			  }
 		}
 	});
-	var html = layout();
+	var html = layout({
+		title: pageData.meta.title,
+		description: pageData.meta.description
+	});
 	res.send(html);
 });
 

@@ -1,47 +1,54 @@
 {
-	"projects" : [
-		{
-			"title" : "ismokeweed.com",
-			"client" : "vice weediquette",
-			"slug" : "i-smoke-weed",
-			"previewImages" : [
-				"weed-1.jpg",
-				"weed-2.jpg",
-				"weed-3.jpg"
-			]
+	"i-smoke-weed" : {
+		"meta" : {
+			"title" : "Suny Gao - ismokeweed.com",
+			"description" : "ismokeweed.com - Vice Weediquette"
 		},
-		{
-			"title" : "Year in Music",
-			"client" : "spotify",
-			"slug" : "year-in-music",
-			"previewImages" : [
-				"yim-1.jpg",
-				"yim-2.jpg"
-			]
-		},
-		{
-			"title" : "Camp Google",
-			"client" : "google",
-			"slug" : "camp-google",
-			"previewImages" : [
-				"camp-google-1.jpg",
-				"camp-google-2.jpg"
-			]
-		},
-		{
-			"title" : "Google Calendar",
-			"client" : "google",
-			"slug" : "google-calendar"
-		},
-		{
-			"title" : "Internet.org",
-			"client" : "facebook",
-			"slug" : "internet-org"
-		},
-		{
-			"title" : "Hello Chime",
-			"client" : "chime",
-			"slug" : "hello-chime"
-		}
-	]
+		"title" : "ismokeweed.com",
+		"client" : "Vice Weediquette",
+		"heroImage" : "weed-1.jpg",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium nunc velit, id cursus libero porta quis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus laoreet nisi ut nisl ultricies, vitae tincidunt purus rhoncus. Vestibulum libero metus, mollis a laoreet nec, euismod sed erat. Aenean tortor elit, blandit et felis nec, placerat dapibus neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam facilisis metus sed ex vehicula tincidunt. Pellentesque vel suscipit quam. Cras pharetra venenatis neque, a feugiat ex scelerisque ut. Fusce mattis non dolor at dictum.",
+		"credits" : [
+			{
+				"type" : "Agency",
+				"text" : "Stink Studios",
+				"url" : "http://www.stinkstudios.com"
+			},
+			{
+				"type": "role",
+				"text" : "Front End Developer"
+			},
+			{
+				"type": "date",
+				"text" : "July 2016"
+			}
+		],	
+		"press" : [
+			{
+				"title" : "press link 1",
+				"url" : "http://www.nytimes.com"
+			},
+
+			{
+				"title" : "press link 2",
+				"url" : "http://www.nytimes.com"
+			},
+
+			{
+				"title" : "press link 3",
+				"url" : "http://www.nytimes.com"
+			}
+		],
+		"links" : [
+			{
+				"title" : "launch site",
+				"url" : "http://www.ismokeweed.com"
+			},
+			{
+				"title" : "case study",
+				"url" : "http://www.stinkstudios.com"
+			}
+		]
+			
+	}
 }
