@@ -24,11 +24,7 @@ export default class Home extends Page{
 
 		_.each(this.imageContainer.find('ul'), function(el) {
 			_this.images.push($(el));
-		});
-
-		this.bindEvents();
-
-		
+		});		
 		
 	}	
 
@@ -45,6 +41,8 @@ export default class Home extends Page{
 	}
 
 	bindEvents() {
+		super.bindEvents();
+
 		let _this = this;
 
 

@@ -77,7 +77,18 @@ export default class Page extends Backbone.View.extend({
 
     $(document.body).on('scroll', $.proxy(function(e) {
       this.onTouchEnd(e);
-    }, this));   
+    }, this));  
+
+
+    $('#open-about').on('click', $.proxy(function(e) {
+      e.preventDefault();
+      this.openAbout();
+    }, this));
+
+    $('#close-about').on('click', $.proxy(function(e) {
+      e.preventDefault();
+      this.closeAbout();
+    }, this));
   }    
 
   onResize() {
@@ -161,6 +172,18 @@ export default class Page extends Backbone.View.extend({
         el.onRAF();
       }
     });
+  }
+
+  openAbout() {       
+    $('#about').addClass('show');
+    $('#main-nav').addClass('about-open');
+    $('body').addClass('no-scroll');
+  }
+
+  closeAbout() {
+    $('#about').removeClass('show');
+    $('#main-nav').removeClass('about-open');
+    $('body').removeClass('no-scroll');
   }
 }
 

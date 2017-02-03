@@ -5,8 +5,7 @@ export default class Router extends Backbone.Router.extend({
     routes: {
     	"(/)" : "home",
     	"work(/)": "home",
-    	"work/:case(/)": "workDetail",
-    	"about(/)": "about"
+    	"work/:case(/)": "workDetail"
     }
 }) {
     initialize() {
@@ -39,9 +38,5 @@ export default class Router extends Backbone.Router.extend({
             el: '#work-detail',
             slug: route
         });
-    }
-
-    about () {
-    	console.log('about page');
     }
 };

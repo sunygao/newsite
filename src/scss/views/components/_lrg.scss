@@ -57,13 +57,16 @@ h3 {
 
 h4 {
     text-transform: lowercase;
+    font-size: 1.6vw;
     @include robotoMed;
 }
 
 p {
-    line-height: 1.5;
+    line-height: 1.6;
+    font-size: 1.6vw;
     @include robotoLight;
 }
+
 
 .button {
     font-size: 2vmin;

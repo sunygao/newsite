@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 2;
+    z-index: $z-nav;
     margin-top: 20px;
 
     a {
@@ -19,4 +19,20 @@
       margin-top: 0px;
       color: $black;
     }
+
+    #close-about {
+      display: none;
+    }
+
+  &.about-open {
+    h1 a {
+      color: #fff;
+    }
+    #open-about {
+      display: none;
+    }
+    #close-about {
+      display: block;
+    }
   }
+}

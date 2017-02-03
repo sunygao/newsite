@@ -13,8 +13,6 @@ export default class Home extends Page{
 
 		this.template = Template;
 		this.render();
-
-		this.bindEvents();
 		
 	}	
 
@@ -35,7 +33,7 @@ export default class Home extends Page{
 	}
 
 	bindEvents() {
-		
+		super.bindEvents();
 	}
 }
 
