@@ -1,8 +1,4 @@
 #work-detail
-	include partials/_grid
-
-	include partials/_main_nav
-
 	section.next-project
 		ul
 			
@@ -35,15 +31,24 @@
 									a(href= credit.url)= credit.text
 							else
 								p= credit.text
-			if data.press
-				article.press
-					h4 Press
-					ul
-						each article in data.press
-							li 
-								p
-									a(href= article.url, target="_blank")= article.title
+			article.recognition
+				if data.press
+					.press
+						h4 Press
+						ul
+							each article in data.press
+								li 
+									p
+										a(href= article.url, target="_blank")= article.title
 
+				if data.awards
+					.awards
+						h4 Recognition
+						ul
+							each article in data.awards
+								li 
+									p
+										a(href= article.url, target="_blank")= article.title
 			if data.links
 				article.links
 					ul

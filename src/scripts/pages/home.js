@@ -8,7 +8,7 @@ export default class Home extends Page{
 		super.initialize();
 
 		this.template = Template;
-		this.render();
+		//this.render();
 
 		this.workContainer = this.$el.find('section.work-list');
 		this.imageContainer = this.$el.find('section.images');

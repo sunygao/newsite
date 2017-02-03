@@ -40,6 +40,17 @@
 				"url" : "http://www.nytimes.com"
 			}
 		],
+		"awards" : [
+			{
+				"title" : "award link 1",
+				"url" : "http://www.nytimes.com"
+			},
+
+			{
+				"title" : "award link 2",
+				"url" : "http://www.nytimes.com"
+			}
+		],
 		"links" : [
 			{
 				"title" : "launch site",

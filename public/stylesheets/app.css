@@ -126,13 +126,6 @@ body.no-scroll {
   overflow: hidden;
 }
 
-html,
-body,
-main {
-  width: 100%;
-  height: 100%;
-}
-
 #main-content {
   position: relative;
   padding: 95px 0 0;
@@ -262,6 +255,46 @@ p {
 .main-nav h1 a {
   margin-top: 0px;
   color: #191919;
+}
+
+footer {
+  width: 91.66667%;
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-left: 4.16667%;
+  padding: 60px 0 0px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  text-transform: lowercase;
+  position: relative;
+}
+
+footer .copyright {
+  position: absolute;
+  font-size: 1.2rem;
+  color: #616161;
+  bottom: 0px;
+}
+
+footer .copyright span {
+  font-size: 1.2em;
+}
+
+footer ul {
+  float: right;
+  text-align: right;
+}
+
+footer ul li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #616161;
+}
+
+footer ul li a {
+  color: #191919;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
 }
 
 #home .images {
@@ -410,28 +443,28 @@ p {
   margin-bottom: 30px;
 }
 
-#work-detail .work-detail .credits {
-  float: left;
-  width: 41.66667%;
-  box-sizing: border-box;
-  margin-left: 0;
+#work-detail .work-detail .credits ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-#work-detail .work-detail .credits li {
-  margin-bottom: 20px;
+#work-detail .work-detail .recognition {
+  width: 50%;
+  display: inline-block;
 }
 
 #work-detail .work-detail .press {
-  float: right;
-  text-align: right;
-  width: 41.66667%;
-  box-sizing: border-box;
-  margin-left: 0;
+  margin-bottom: 30px;
 }
 
 #work-detail .work-detail .links {
   text-align: right;
-  clear: both;
+  width: 50%;
+  float: right;
 }
 
 #work-detail .work-detail .links li {

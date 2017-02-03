@@ -12,7 +12,7 @@ export default class Home extends Page{
 		this.nextData = data[this.pageData.next];
 
 		this.template = Template;
-		this.render();
+		//this.render();
 
 		this.bindEvents();
 		

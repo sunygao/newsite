@@ -11,8 +11,14 @@ html
 		link(rel='stylesheet', href='/stylesheets/app.css')
 	
 	body
+		include partials/_grid
+
+		include partials/_main_nav
+
 		main#main-content
 			:content()
+
+		include partials/_footer
 
 		script(src='/javascripts/main.js')
 

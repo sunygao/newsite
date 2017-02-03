@@ -55,23 +55,26 @@
 		}
 
 		.credits {
-			float: left;
-			@include span(10);
 
-			li {
-				margin-bottom: 20px;
+			ul {
+				display: flex;
+				justify-content: space-between;
 			}
 		}
 
+		.recognition {
+			width: 50%;
+			display: inline-block;
+		}
+
 		.press {
-			float: right;
-			text-align: right;
-			@include span(10);
+			margin-bottom: 30px;
 		}
 
 		.links {
 			text-align: right;
-			clear: both;
+			width: 50%;
+			float: right;
 
 			li {
 				display: inline-block;
