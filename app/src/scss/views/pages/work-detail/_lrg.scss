@@ -28,7 +28,7 @@
 		h4,
 		p,
 		a {
-			font-size: 1.6vmin;
+			font-size: 1.6vw;
 		}
 
 		a {
@@ -85,11 +85,15 @@
 	.project-images {
 		article {
 			overflow: hidden;
-			margin-bottom: 60px;
+			margin-bottom: 80px;
+		}
+
+		.image-wrapper,
+		.video-player {
+			margin-bottom: 15px;
 		}
 
 		.description {
-			margin-top: 15px;
 			float: right;
 			text-align: right;
 			@include span(20);
@@ -103,7 +107,7 @@
 				float: left;
 				width: calc(50% - 15px);
 
-				&:nth-child(1) {
+				&:nth-child(odd) {
 					margin-right: 30px;
 				}
 			}

@@ -48,7 +48,39 @@
 				"title" : "case study",
 				"url" : "http://www.stinkstudios.com"
 			}
+		],
+		"mainContent": [
+			{ 
+				"type": "image",
+				"images" : [
+					"weed-2.jpg"
+				],
+				"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium nunc velit, id cursus libero porta quis. Interdum et malesuada fames ac ante ipsum primis in faucibus."
+			},
+			{ 
+				"type": "image",
+				"images" : [
+					"weed-2.jpg",
+					"weed-3.jpg",
+					"weed-2.jpg",
+					"weed-3.jpg"
+				],
+				"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium nunc velit, id cursus libero porta quis. Interdum et malesuada fames ac ante ipsum primis in faucibus."
+			},
+			{
+				"type" : "video",
+				"previewImage" : "weed-2.jpg",
+				"videoSrc" : [
+					{
+						"type": "mp4",
+						"src" : "test.mp4"
+					},
+					{
+						"type": "webm",
+						"src" : "test.webm"
+					}
+				]
+			}
 		]
-			
 	}
 }

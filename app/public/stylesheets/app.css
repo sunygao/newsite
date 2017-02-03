@@ -178,7 +178,7 @@ button {
 }
 
 h2 {
-  font-size: 10vmin;
+  font-size: 8vw;
   letter-spacing: .2vmin;
   font-family: 'Playfair Display', serif;
   font-weight: 900;
@@ -188,20 +188,19 @@ h3 {
   font-family: 'Roboto Mono', monospace;
   font-weight: 400;
   font-style: italic;
-  font-size: 2.5vmin;
+  font-size: 1.9vw;
   margin-top: 10px;
   color: #a5a5a5;
+  text-transform: lowercase;
 }
 
 h4 {
-  font-size: 2.4vmin;
   text-transform: lowercase;
   font-family: 'Roboto Mono', monospace;
   font-weight: 500;
 }
 
 p {
-  font-size: 2vmin;
   line-height: 1.5;
   font-family: 'Roboto Mono', monospace;
   font-weight: 300;
@@ -388,7 +387,7 @@ p {
 #work-detail .work-detail h4,
 #work-detail .work-detail p,
 #work-detail .work-detail a {
-  font-size: 1.6vmin;
+  font-size: 1.6vw;
 }
 
 #work-detail .work-detail a {
@@ -442,11 +441,15 @@ p {
 
 #work-detail .project-images article {
   overflow: hidden;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
+}
+
+#work-detail .project-images .image-wrapper,
+#work-detail .project-images .video-player {
+  margin-bottom: 15px;
 }
 
 #work-detail .project-images .description {
-  margin-top: 15px;
   float: right;
   text-align: right;
   width: 83.33333%;
@@ -463,7 +466,7 @@ p {
   width: calc(50% - 15px);
 }
 
-#work-detail .project-images .col-2 .image-wrapper:nth-child(1) {
+#work-detail .project-images .col-2 .image-wrapper:nth-child(odd) {
   margin-right: 30px;
 }
 

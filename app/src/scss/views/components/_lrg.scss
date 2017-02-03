@@ -42,26 +42,25 @@ button {
 
 
 h2 {
-    font-size: 10vmin;
+    font-size: 8vw;
     letter-spacing: .2vmin;
     @include playfairBold;
 }
 
 h3 {
     @include robotoItalic;
-    font-size: 2.5vmin;
+    font-size: 1.9vw;
     margin-top: 10px;
     color: $grey_light;
+    text-transform: lowercase;
 }
 
 h4 {
-    font-size: 2.4vmin;
     text-transform: lowercase;
     @include robotoMed;
 }
 
 p {
-    font-size: 2vmin;
     line-height: 1.5;
     @include robotoLight;
 }
