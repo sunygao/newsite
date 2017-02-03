@@ -1,4 +1,5 @@
 import Home from 'pages/home';
+import WorkDetail from 'pages/workDetail'
 
 export default class Router extends Backbone.Router.extend({
     routes: {
@@ -13,14 +14,14 @@ export default class Router extends Backbone.Router.extend({
 
         var _this = this;
 
-        // $(document).on("click", "a[href^='/']", function(e) {
+        $(document).on("click", "a[href^='/']", function(e) {
 
-        //     e.preventDefault();
+            e.preventDefault();
 
-        //     var url = $(this).attr('href');
+            var url = $(this).attr('href');
 
-        //     _this.navigate(url, { trigger: true });
-        // });
+            _this.navigate(url, { trigger: true });
+        });
     }
 
     home() {
@@ -31,8 +32,13 @@ export default class Router extends Backbone.Router.extend({
 	    });
     }
 
-    workDetail() {
+    workDetail(route) {
     	console.log('work detail page');
+
+         var workDetail = new WorkDetail({
+            el: '#work-detail',
+            slug: route
+        });
     }
 
     about () {

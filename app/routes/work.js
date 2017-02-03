@@ -14,13 +14,17 @@ router.get('/', function(req, res, next) {
 
 router.get('/:id', function(req, res, next) {
 	var pageData = data[req.params.id];
+	var nextData = data[pageData.next];
+	//var index = data.indexOf(req.params.id);
  	var workDetailPage = pug.compileFile('views/workDetail.pug');
 	var layout = pug.compileFile('views/layout.pug', {
 		filters: {
 			'content': function () {
 			    return workDetailPage({ 
 			    	slug: req.params.id, 
-			    	data: pageData });
+			    	data: pageData,
+			    	nextData: nextData
+			    });
 			  }
 		}
 	});
@@ -30,5 +34,7 @@ router.get('/:id', function(req, res, next) {
 	});
 	res.send(html);
 });
+
+
 
 module.exports = router;

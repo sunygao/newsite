@@ -1,5 +1,5 @@
 import Page from 'abstract/page';
-import data from 'work.json';
+import data from 'home.json';
 import Template from 'index.pug';
 
 export default class Home extends Page{
@@ -8,7 +8,7 @@ export default class Home extends Page{
 		super.initialize();
 
 		this.template = Template;
-		//this.render();
+		this.render();
 
 		this.workContainer = this.$el.find('section.work-list');
 		this.imageContainer = this.$el.find('section.images');
@@ -27,6 +27,8 @@ export default class Home extends Page{
 		});
 
 		this.bindEvents();
+
+		
 		
 	}	
 
