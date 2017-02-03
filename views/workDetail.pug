@@ -1,0 +1,88 @@
+#work-detail
+	include partials/_grid
+
+	include partials/_main_nav
+
+	section.next-project
+		ul
+			
+			li
+				a(href="/work/" + data.next)
+					h2=nextData.title
+					h3=nextData.client
+
+
+	section.work-detail
+		article.headline
+			h2=data.title
+			h3=data.client
+		
+		article.hero
+			img(src="../images/projects/" + slug + "/" + data.heroImage)
+			
+
+		.project-details
+			article.description
+					p=data.description
+
+			article.credits
+				ul 
+					each credit in data.credits
+						li
+							h4= credit.type
+							if credit.url
+								p
+									a(href= credit.url)= credit.text
+							else
+								p= credit.text
+			if data.press
+				article.press
+					h4 Press
+					ul
+						each article in data.press
+							li 
+								p
+									a(href= article.url, target="_blank")= article.title
+
+			if data.links
+				article.links
+					ul
+						each link in data.links
+							li
+								a(class="button", href= link.url, target="_blank")= link.title
+		
+		.project-images
+			//-video
+			each content in data.mainContent
+				if(content.type == "video")
+					article.video
+						.video-player
+							img(class="preview-image", src="../images/projects/" + slug + "/" +content.previewImage)
+							video
+								each src in content.videoSrc
+									source(src=src.src, type="../images/projects/" + slug + "/" + src.type)
+						if(content.description)
+							.description
+								p= content.description
+				else
+					//-2 column
+					if(content.type == "col-2")
+						article.col-2
+							.image-container
+								each image in content.images
+									.image-wrapper
+										img(class="preview-image", src="../images/projects/" + slug + "/" +image)
+							if(content.description)
+								.description
+									p= content.description
+					//-1 column
+					else
+						article
+							each image in content.images
+								.image-wrapper
+									img(class="preview-image", src="../images/projects/" + slug + "/" +image)
+							if(content.description)
+								.description
+									p= content.description
+
+

@@ -1,0 +1,51 @@
+{
+	"meta" : {
+		"title" : "Suny Gao - Home",
+		"description" : "Suny Gao - Interactive developer in Brooklyn, NY"
+	},
+	"projects" : [
+		{
+			"title" : "ismokeweed.com",
+			"client" : "vice weediquette",
+			"slug" : "i-smoke-weed",
+			"previewImages" : [
+				"weed-1.jpg",
+				"weed-2.jpg",
+				"weed-3.jpg"
+			]
+		},
+		{
+			"title" : "Year in Music",
+			"client" : "spotify",
+			"slug" : "year-in-music",
+			"previewImages" : [
+				"yim-1.jpg",
+				"yim-2.jpg"
+			]
+		},
+		{
+			"title" : "Camp Google",
+			"client" : "google",
+			"slug" : "camp-google",
+			"previewImages" : [
+				"camp-google-1.jpg",
+				"camp-google-2.jpg"
+			]
+		},
+		{
+			"title" : "Google Calendar",
+			"client" : "google",
+			"slug" : "google-calendar"
+		},
+		{
+			"title" : "Internet.org",
+			"client" : "facebook",
+			"slug" : "internet-org"
+		},
+		{
+			"title" : "Hello Chime",
+			"client" : "chime",
+			"slug" : "hello-chime"
+		}
+	]
+}
