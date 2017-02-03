@@ -2,20 +2,17 @@ var express = require('express');
 var router = express.Router();
 var data = require('../data/work.json');
 var pug = require('pug');
+var index = require('../routes/index');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
- 	res.render('index');
+ 	index.renderIndex(req, res);
 });
 
-// router.get('/:id', function(req, res, next) {
-//  	res.render('workDetail');
-// });
 
 router.get('/:id', function(req, res, next) {
 	var pageData = data[req.params.id];
 	var nextData = data[pageData.next];
-	//var index = data.indexOf(req.params.id);
  	var workDetailPage = pug.compileFile('views/workDetail.pug');
 	var layout = pug.compileFile('views/layout.pug', {
 		filters: {
@@ -34,7 +31,5 @@ router.get('/:id', function(req, res, next) {
 	});
 	res.send(html);
 });
-
-
 
 module.exports = router;

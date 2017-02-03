@@ -14,14 +14,14 @@ export default class Router extends Backbone.Router.extend({
 
         var _this = this;
 
-        // $(document).on("click", "a[href^='/']", function(e) {
+        $(document).on("click", "a[href^='/']", function(e) {
 
-        //     e.preventDefault();
+            e.preventDefault();
 
-        //     var url = $(this).attr('href');
+            var url = $(this).attr('href');
 
-        //     _this.navigate(url, { trigger: true });
-        // });
+            _this.navigate(url, { trigger: true });
+        });
     }
 
     home() {
