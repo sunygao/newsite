@@ -68,9 +68,10 @@
 					//-2 column
 					if(content.images.length > 1)
 						article.col-2
-							each image in content.images
-								.image-wrapper
-									img(class="preview-image", src="../images/projects/" + slug + "/" +image)
+							.image-container
+								each image in content.images
+									.image-wrapper
+										img(class="preview-image", src="../images/projects/" + slug + "/" +image)
 							if(content.description)
 								.description
 									p= content.description
