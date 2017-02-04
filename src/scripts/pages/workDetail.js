@@ -11,7 +11,7 @@ export default class WorkDetail extends Page{
 		this.nextData = this.data.next;
 
 		this.template = Template;
-		this.render();
+		// this.render();
 
 		this.bindEvents();
 	}	

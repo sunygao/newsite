@@ -487,17 +487,18 @@ footer ul li a {
 
 #work-detail .project-images article {
   overflow: hidden;
-  margin-bottom: 80px;
 }
 
 #work-detail .project-images .image-wrapper,
 #work-detail .project-images .video-player {
-  margin-bottom: 15px;
+  margin-bottom: 80px;
 }
 
 #work-detail .project-images .description {
   float: right;
   text-align: right;
+  margin-top: -60px;
+  margin-bottom: 80px;
   width: 83.33333%;
   box-sizing: border-box;
   margin-left: 0;

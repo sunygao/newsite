@@ -5,10 +5,6 @@ var pug = require('pug');
 
 // /* GET home page. */
 router.get('/', function(req, res, next) {
-	renderIndex(req, res);
-});
-
-function renderIndex(req, res) {
 	var indexPage = pug.compileFile('views/index.pug');
 	var layout = pug.compileFile('views/layout.pug', {
 		filters: {
@@ -22,7 +18,7 @@ function renderIndex(req, res) {
 		description: data.meta.description
 	});
 	res.send(html);
-}
+});
+
 
 module.exports = router;
-module.exports = renderIndex;

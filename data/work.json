@@ -1,14 +1,14 @@
 {
 	"i-smoke-weed" : {
 		"meta" : {
-			"title" : "Suny Gao - ismokeweed.com",
-			"description" : "ismokeweed.com - Vice Weediquette"
+			"title" : "Suny Gao - I Smoke Weed",
+			"description" : "I Smoke Weed - Viceland"
 		},
 		"next" : "year-in-music",
-		"title" : "ismokeweed.com",
-		"client" : "Vice Weediquette",
-		"heroImage" : "weed-1.jpg",
-		"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium nunc velit, id cursus libero porta quis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus laoreet nisi ut nisl ultricies, vitae tincidunt purus rhoncus. Vestibulum libero metus, mollis a laoreet nec, euismod sed erat. Aenean tortor elit, blandit et felis nec, placerat dapibus neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam facilisis metus sed ex vehicula tincidunt. Pellentesque vel suscipit quam. Cras pharetra venenatis neque, a feugiat ex scelerisque ut. Fusce mattis non dolor at dictum.",
+		"title" : "I Smoke Weed",
+		"client" : "Viceland",
+		"heroImage" : "weed-form-hero.jpg",
+		"description" : "Thought marijuana has been decriminalized in many states, weed usage is still stigmatized in the America, and admitting to smoking weed is likely to invoke cartoonish stoner stereotypes. In conjunction with Viceland's TV campaign, Stink Studios created a platform for users to publicly and proudly declare &quote;I smoke weed.&quote",
 		"credits" : [
 			{
 				"type" : "Agency",
@@ -21,36 +21,9 @@
 			},
 			{
 				"type": "date",
-				"text" : "July 2016"
+				"text" : "October 2016"
 			}
 		],	
-		"press" : [
-			{
-				"title" : "press link 1",
-				"url" : "http://www.nytimes.com"
-			},
-
-			{
-				"title" : "press link 2",
-				"url" : "http://www.nytimes.com"
-			},
-
-			{
-				"title" : "press link 3",
-				"url" : "http://www.nytimes.com"
-			}
-		],
-		"awards" : [
-			{
-				"title" : "award link 1",
-				"url" : "http://www.nytimes.com"
-			},
-
-			{
-				"title" : "award link 2",
-				"url" : "http://www.nytimes.com"
-			}
-		],
 		"links" : [
 			{
 				"title" : "launch site",
@@ -58,40 +31,46 @@
 			},
 			{
 				"title" : "case study",
-				"url" : "http://www.stinkstudios.com"
+				"url" : "http://www.stinkstudios.com/work/viceland-i-smoke-weed"
 			}
 		],
 		"mainContent": [
 			{ 
 				"type": "image",
 				"images" : [
-					"weed-2.jpg"
-				],
-				"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium nunc velit, id cursus libero porta quis. Interdum et malesuada fames ac ante ipsum primis in faucibus."
+					"weed-hero.jpg"
+				]
 			},
 			{ 
-				"type": "col-2",
+				"type": "image",
 				"images" : [
-					"weed-2.jpg",
-					"weed-3.jpg",
-					"weed-2.jpg",
-					"weed-3.jpg"
-				],
-				"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium nunc velit, id cursus libero porta quis. Interdum et malesuada fames ac ante ipsum primis in faucibus."
-			},
-			{
-				"type" : "video",
-				"previewImage" : "weed-2.jpg",
-				"videoSrc" : [
-					{
-						"type": "mp4",
-						"src" : "test.mp4"
-					},
-					{
-						"type": "webm",
-						"src" : "test.webm"
-					}
+					"weed-mobile-desktop.jpg"
 				]
+			},
+			{ 
+				"type": "image",
+				"images" : [
+					"weed-form.jpg",
+					"weed-form-filled.jpg",
+					"weed-submission-preview.jpg"
+				],
+				"description" : "Visitors can tell their story, upload a photo, and share their declaration on Facebook and Twitter."
+			},
+			{ 
+				"type": "image",
+				"images" : [
+					"weed-featured-gallery.jpg",
+					"weed-featured-story.jpg"
+				],
+				"description" : "The site also featured stories from Viceland's TV campaign."
+			},
+
+			{ 
+				"type": "image",
+				"images" : [
+					"weed-gallery.jpg"
+				],
+				"description" : "Submissions gallery"
 			}
 		]
 	},

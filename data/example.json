@@ -1,0 +1,14 @@
+{
+	"type" : "video",
+	"previewImage" : "weed-2.jpg",
+	"videoSrc" : [
+		{
+			"type": "mp4",
+			"src" : "test.mp4"
+		},
+		{
+			"type": "webm",
+			"src" : "test.webm"
+		}
+	]
+}
