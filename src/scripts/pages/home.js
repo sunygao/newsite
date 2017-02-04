@@ -1,12 +1,11 @@
 import Page from 'abstract/page';
-import data from 'home.json';
 import Template from 'index.pug';
 
 export default class Home extends Page{
 
-	initialize() {
-		super.initialize();
-
+	initialize(data, params) {
+		super.initialize(data, params);
+		
 		this.template = Template;
 		this.render();
 
@@ -18,6 +17,7 @@ export default class Home extends Page{
 		
 		let _this = this;
 
+
 		_.each(this.workContainer.find('li'), function(el) {
 			_this.workLinks.push($(el));
 		});
@@ -25,6 +25,8 @@ export default class Home extends Page{
 		_.each(this.imageContainer.find('ul'), function(el) {
 			_this.images.push($(el));
 		});		
+
+		this.bindEvents();
 		
 	}	
 
@@ -35,16 +37,15 @@ export default class Home extends Page{
 	}
 
 	render() {
-		this.$el = $(this.template({data: data}));
-		this.el = this.$el[0];
-		$('#main-content').html(this.el);
+		this.$el = $(this.template({data: this.data}));
+		
+		super.render();
 	}
 
 	bindEvents() {
 		super.bindEvents();
 
 		let _this = this;
-
 
 		_.each(this.workLinks, function($el, i) {
 			$el.on('mouseover', function() {

@@ -1,5 +1,12 @@
+import PageManager from 'controller/pageManager';
+
+//page views
 import Home from 'pages/home';
-import WorkDetail from 'pages/workDetail'
+import WorkDetail from 'pages/workDetail';
+
+//page json
+import homeData from 'home.json';
+import workData from 'work.json';
 
 export default class Router extends Backbone.Router.extend({
     routes: {
@@ -21,22 +28,24 @@ export default class Router extends Backbone.Router.extend({
 
             _this.navigate(url, { trigger: true });
         });
+
+        this.pageManager = new PageManager();
     }
 
     home() {
-    	console.log('homepage');
-    	
-	    var home = new Home({
-	    	el: '#home'
-	    });
+        this.pageManager.loadPage({
+            view: Home,
+            data: homeData
+        });
     }
 
     workDetail(route) {
-    	console.log('work detail page');
-
-         var workDetail = new WorkDetail({
-            el: '#work-detail',
-            slug: route
+        this.pageManager.loadPage({
+            view: WorkDetail,
+            data: workData[route],
+            params: {
+                slug: route
+            }
         });
     }
 };

@@ -2,18 +2,18 @@ import Page from 'abstract/page';
 import data from 'work.json';
 import Template from 'workDetail.pug';
 
-export default class Home extends Page{
+export default class WorkDetail extends Page{
 
-	initialize(options) {
-		super.initialize();
+	initialize(data, params) {
+		super.initialize(data, params);
 
-		this.slug = options.slug;
-		this.pageData = data[this.slug];
-		this.nextData = data[this.pageData.next];
+		this.slug = params.slug;
+		this.nextData = this.data.next;
 
 		this.template = Template;
 		this.render();
-		
+
+		this.bindEvents();
 	}	
 
 	events() {
@@ -24,12 +24,12 @@ export default class Home extends Page{
 
 	render() {
 		this.$el = $(this.template({
-			data: data[this.slug],
+			data: this.data,
 			slug: this.slug,
 			nextData: this.nextData
 		}));
-		this.el = this.$el[0];
-		$('#main-content').html(this.el);
+
+		super.render();
 	}
 
 	bindEvents() {
