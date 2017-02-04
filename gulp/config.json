@@ -29,10 +29,10 @@
   ],
   "deploy" : {
     "css" : {
-      "path" : "dist/assets/stylesheets"
+      "path" : "public/stylesheets"
     },
     "js" : {
-      "path" : "dist/assets/javascripts"
+      "path" : "public/javascripts"
     },
     "imgmin" : {
       "path" : "dist/assets/images"
