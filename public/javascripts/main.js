@@ -44,40 +44,38 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(3);
+	module.exports = __webpack_require__(1);
 
 
 /***/ },
-/* 1 */,
-/* 2 */,
-/* 3 */
+/* 1 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var _expose$Jquery = __webpack_require__(4);
+	var _expose$Jquery = __webpack_require__(2);
 	
 	var _expose$Jquery2 = _interopRequireDefault(_expose$Jquery);
 	
-	var _TweenMax = __webpack_require__(8);
+	var _TweenMax = __webpack_require__(6);
 	
-	var _expose_Underscore = __webpack_require__(9);
+	var _expose_Underscore = __webpack_require__(7);
 	
 	var _expose_Underscore2 = _interopRequireDefault(_expose_Underscore);
 	
-	var _backbone = __webpack_require__(11);
+	var _backbone = __webpack_require__(9);
 	
 	var _backbone2 = _interopRequireDefault(_backbone);
 	
-	var _config = __webpack_require__(12);
+	var _config = __webpack_require__(10);
 	
 	var _config2 = _interopRequireDefault(_config);
 	
-	var _CV = __webpack_require__(13);
+	var _CV = __webpack_require__(11);
 	
 	var _CV2 = _interopRequireDefault(_CV);
 	
-	var _router = __webpack_require__(15);
+	var _router = __webpack_require__(13);
 	
 	var _router2 = _interopRequireDefault(_router);
 	
@@ -116,14 +114,14 @@
 	(0, _expose$Jquery2.default)(document).ready(main.onReady.bind(main));
 
 /***/ },
-/* 4 */
+/* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["$"] = __webpack_require__(5);
+	/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["$"] = __webpack_require__(3);
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 5 */
+/* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(module) {"use strict";
@@ -2401,17 +2399,17 @@
 	      return this.on(b, a, c, d);
 	    }, undelegate: function undelegate(a, b, c) {
 	      return 1 === arguments.length ? this.off(a, "**") : this.off(b, a || "**", c);
-	    } }), r.parseJSON = JSON.parse, "function" == "function" && __webpack_require__(7) && !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
+	    } }), r.parseJSON = JSON.parse, "function" == "function" && __webpack_require__(5) && !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
 	    return r;
 	  }.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));var Tb = a.jQuery,
 	      Ub = a.$;return r.noConflict = function (b) {
 	    return a.$ === r && (a.$ = Ub), b && a.jQuery === r && (a.jQuery = Tb), r;
 	  }, b || (a.jQuery = a.$ = r), r;
 	});
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)(module)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)(module)))
 
 /***/ },
-/* 6 */
+/* 4 */
 /***/ function(module, exports) {
 
 	module.exports = function(module) {
@@ -2427,7 +2425,7 @@
 
 
 /***/ },
-/* 7 */
+/* 5 */
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(__webpack_amd_options__) {module.exports = __webpack_amd_options__;
@@ -2435,7 +2433,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, {}))
 
 /***/ },
-/* 8 */
+/* 6 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(global) {"use strict";
@@ -8660,7 +8658,7 @@
 					if (global) {
 						_globals[n] = cl; //provides a way to avoid global namespace pollution. By default, the main classes like TweenLite, Power1, Strong, etc. are added to window unless a GreenSockGlobals is defined. So if you want to have things added to a custom object instead, just do something like window.GreenSockGlobals = {} before loading any GreenSock files. You can even set up an alias like window.GreenSockGlobals = windows.gs = {} so that you can access everything like gs.TweenLite. Also remember that ALL classes are added to the window.com.greensock object (in their respective packages, like com.greensock.easing.Power1, com.greensock.TweenLite, etc.)
 						hasModule = typeof module !== "undefined" && module.exports;
-						if (!hasModule && "function" === "function" && __webpack_require__(7)) {
+						if (!hasModule && "function" === "function" && __webpack_require__(5)) {
 							//AMD
 							!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
 								return cl;
@@ -10539,14 +10537,14 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 9 */
+/* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["_"] = __webpack_require__(10);
+	/* WEBPACK VAR INJECTION */(function(global) {module.exports = global["_"] = __webpack_require__(8);
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 10 */
+/* 8 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;'use strict';
@@ -12123,7 +12121,7 @@
 	}).call(undefined);
 
 /***/ },
-/* 11 */
+/* 9 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(global) {'use strict';
@@ -12145,7 +12143,7 @@
 	
 	  // Set up Backbone appropriately for the environment. Start with AMD.
 	  if (true) {
-	    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(10), __webpack_require__(5), exports], __WEBPACK_AMD_DEFINE_RESULT__ = function (_, $, exports) {
+	    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(8), __webpack_require__(3), exports], __WEBPACK_AMD_DEFINE_RESULT__ = function (_, $, exports) {
 	      // Export global even in AMD case in case this script is loaded with
 	      // others that may still expect a global Backbone.
 	      root.Backbone = factory(root, exports, _, $);
@@ -14081,7 +14079,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 12 */
+/* 10 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14103,7 +14101,7 @@
 	exports.default = Config;
 
 /***/ },
-/* 13 */
+/* 11 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -14112,7 +14110,7 @@
 	  value: true
 	});
 	
-	var _utils = __webpack_require__(14);
+	var _utils = __webpack_require__(12);
 	
 	var _utils2 = _interopRequireDefault(_utils);
 	
@@ -14138,7 +14136,7 @@
 	exports.default = CV;
 
 /***/ },
-/* 14 */
+/* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -14147,7 +14145,7 @@
 	  value: true
 	});
 	
-	var _config = __webpack_require__(12);
+	var _config = __webpack_require__(10);
 	
 	var _config2 = _interopRequireDefault(_config);
 	
@@ -14353,7 +14351,7 @@
 	};
 
 /***/ },
-/* 15 */
+/* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -14362,13 +14360,25 @@
 	    value: true
 	});
 	
+	var _pageManager = __webpack_require__(14);
+	
+	var _pageManager2 = _interopRequireDefault(_pageManager);
+	
 	var _home = __webpack_require__(16);
 	
 	var _home2 = _interopRequireDefault(_home);
 	
-	var _workDetail = __webpack_require__(25);
+	var _workDetail = __webpack_require__(21);
 	
 	var _workDetail2 = _interopRequireDefault(_workDetail);
+	
+	var _home3 = __webpack_require__(24);
+	
+	var _home4 = _interopRequireDefault(_home3);
+	
+	var _work = __webpack_require__(22);
+	
+	var _work2 = _interopRequireDefault(_work);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -14377,6 +14387,12 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	//page views
+	
+	
+	//page json
+	
 	
 	var Router = function (_Backbone$Router$exte) {
 	    _inherits(Router, _Backbone$Router$exte);
@@ -14400,27 +14416,26 @@
 	
 	            _this.navigate(url, { trigger: true });
 	        });
+	
+	        this.pageManager = new _pageManager2.default();
 	    };
 	
 	    Router.prototype.home = function home() {
-	        console.log('homepage');
-	
-	        var home = new _home2.default({
-	            el: '#home'
+	        this.pageManager.loadPage({
+	            view: _home2.default,
+	            data: _home4.default
 	        });
 	    };
 	
 	    Router.prototype.workDetail = function workDetail(route) {
-	        console.log('work detail page');
-	
-	        var workDetail = new _workDetail2.default({
-	            el: '#work-detail',
-	            slug: route
+	        this.pageManager.loadPage({
+	            view: _workDetail2.default,
+	            data: _work2.default[route],
+	            params: {
+	                slug: route,
+	                nextData: _work2.default[_work2.default[route].next]
+	            }
 	        });
-	    };
-	
-	    Router.prototype.about = function about() {
-	        console.log('about page');
 	    };
 	
 	    return Router;
@@ -14428,13 +14443,296 @@
 	    routes: {
 	        "(/)": "home",
 	        "work(/)": "home",
-	        "work/:case(/)": "workDetail",
-	        "about(/)": "about"
+	        "work/:case(/)": "workDetail"
 	    }
 	}));
 	
 	exports.default = Router;
 	;
+
+/***/ },
+/* 14 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _CV = __webpack_require__(11);
+	
+	var _CV2 = _interopRequireDefault(_CV);
+	
+	var _config = __webpack_require__(10);
+	
+	var _config2 = _interopRequireDefault(_config);
+	
+	var _about = __webpack_require__(15);
+	
+	var _about2 = _interopRequireDefault(_about);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	var PageManager = function () {
+		function PageManager() {
+			_classCallCheck(this, PageManager);
+	
+			//backbone view els
+			this.previousPageView = null;
+			this.currentPageView = null;
+	
+			this.currentPageName = "", this.previousPageAnimateComplete = false;
+	
+			this.init();
+	
+			this.bindEvents();
+	
+			this.onResize();
+	
+			this.onScroll();
+	
+			//this.loader = new Loader();
+			this.aboutPage = new _about2.default();
+		}
+	
+		PageManager.prototype.init = function init() {
+			console.log('init page manager');
+	
+			if (_CV2.default.isTouchDevice) {
+				//touch devices
+				_CV2.default.animate = false;
+				$('html').addClass('is-touch');
+				$('body').scrollTop(0);
+			} else {
+				//desktop
+				_CV2.default.animate = true;
+			}
+	
+			if (_CV2.default.isIE !== -1) {
+				$('html').addClass('is-ie-' + _CV2.default.isIE);
+			}
+		};
+	
+		PageManager.prototype.bindEvents = function bindEvents() {
+			window.requestAnimationFrame(_onRAF.bind(this));
+	
+			window.addEventListener('resize', _.debounce($.proxy(function () {
+				this.onResize();
+			}, this), _config2.default.throttle.resize));
+	
+			window.addEventListener('scroll', _.debounce($.proxy(function () {
+				this.onScroll();
+			}, this), _config2.default.throttle.scroll));
+	
+			$(document.body).on('touchstart', $.proxy(function (e) {
+				this.onTouchStart(e);
+			}, this));
+	
+			$(document.body).on('touchmove', $.proxy(function (e) {
+				this.onTouchMove(e);
+			}, this));
+	
+			$(document.body).on('touchend', $.proxy(function (e) {
+				this.onTouchEnd(e);
+			}, this));
+	
+			$(document.body).on('scroll', $.proxy(function (e) {
+				this.onTouchEnd(e);
+			}, this));
+		};
+	
+		PageManager.prototype.onScroll = function onScroll() {
+			_CV2.default.scroll.y = window.pageYOffset;
+		};
+	
+		PageManager.prototype.onResize = function onResize() {
+			_CV2.default.viewport.width = window.innerWidth;
+			_CV2.default.viewport.height = window.innerHeight;
+	
+			if (_CV2.default.viewport.width > _config2.default.bkptMed) {
+				_CV2.default.bkpt = 'lrg';
+			} else if (_CV2.default.viewport.width > _config2.default.bkptSml) {
+				_CV2.default.bkpt = 'med';
+			} else {
+				_CV2.default.bkpt = 'sml';
+			}
+	
+			if (this.currentPageView && this.currentPageView.onResize) {
+				this.currentPageView.onResize();
+			}
+		};
+	
+		PageManager.prototype.onTouchStart = function onTouchStart(e) {
+			_CV2.default.touch.direction = null;
+	
+			_CV2.default.touch.x = _CV2.default.touch.startX = e.touches[0].clientX;
+			_CV2.default.touch.y = _CV2.default.touch.startY = e.touches[0].clientY;
+			_CV2.default.touch.deltaX = 0;
+			_CV2.default.touch.deltaY = 0;
+		};
+	
+		PageManager.prototype.onTouchMove = function onTouchMove(e) {
+			_CV2.default.touch.x = e.touches[0].clientX;
+			_CV2.default.touch.y = e.touches[0].clientY;
+	
+			_CV2.default.touch.deltaX = _CV2.default.touch.x - _CV2.default.touch.startX;
+			_CV2.default.touch.deltaY = _CV2.default.touch.y - _CV2.default.touch.startY;
+	
+			_CV2.default.touch.startX = _CV2.default.touch.x;
+			_CV2.default.touch.startY = _CV2.default.touch.y;
+	
+			if (Math.abs(_CV2.default.touch.deltaX) < this.touchThreshold) {
+				return;
+			}
+	
+			if (Math.abs(_CV2.default.touch.deltaX) > Math.abs(_CV2.default.touch.deltaY)) {
+				_CV2.default.touch.direction = 'horizontal';
+			} else {
+				_CV2.default.touch.direction = 'vertical';
+			}
+		};
+	
+		PageManager.prototype.onTouchEnd = function onTouchEnd(e) {
+			_CV2.default.touch.direction == null;
+		};
+	
+		PageManager.prototype.onRAF = function onRAF() {
+			//call raf on current page view
+			if (this.currentPageView && this.currentPageView.onRAF) {
+				this.currentPageView.onRAF();
+			}
+		};
+	
+		PageManager.prototype.loadPage = function loadPage(options) {
+			var View = options.view,
+			    data = options.data,
+			    params = options.params;
+	
+			if (this.aboutPage.isOpen) {
+				this.aboutPage.close();
+			}
+	
+			if (this.currentPageView == null) {
+				//first time loading
+				this.loadView(View, data, params);
+			} else {
+				//a previous page exists
+				this.previousPageAnimateComplete = false;
+				this.previousPageView = this.currentPageView;
+	
+				this.previousPageView.on('animatedOut', $.proxy(function () {
+					this.loadView(View, data, params);
+				}, this));
+	
+				this.previousPageView.animateOut();
+			}
+		};
+	
+		PageManager.prototype.loadView = function loadView(View, data, params) {
+			this.currentPageView = new View(data, params);
+			this.currentPageView.animateIn();
+			document.title = data.meta.title;
+		};
+	
+		return PageManager;
+	}();
+	
+	exports.default = PageManager;
+	
+	
+	var _isIE = function _isIE() {
+		return navigator.appName == 'Microsoft Internet Explorer' || navigator.appName == 'Netscape' && new RegExp("Trident/.*rv:([0-9]{1,}[\.0-9]{0,})").exec(navigator.userAgent) != null;
+	};
+	
+	var _onRAF = function _onRAF() {
+		this.onRAF();
+		window.requestAnimationFrame(_onRAF.bind(this));
+	};
+
+/***/ },
+/* 15 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _config = __webpack_require__(10);
+	
+	var _config2 = _interopRequireDefault(_config);
+	
+	var _CV = __webpack_require__(11);
+	
+	var _CV2 = _interopRequireDefault(_CV);
+	
+	var _utils = __webpack_require__(12);
+	
+	var _utils2 = _interopRequireDefault(_utils);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var About = function (_Backbone$View$extend) {
+	  _inherits(About, _Backbone$View$extend);
+	
+	  function About() {
+	    _classCallCheck(this, About);
+	
+	    return _possibleConstructorReturn(this, _Backbone$View$extend.apply(this, arguments));
+	  }
+	
+	  About.prototype.initialize = function initialize() {
+	    this.isOpen = false;
+	
+	    this.bindEvents();
+	  };
+	
+	  About.prototype.bindEvents = function bindEvents() {
+	    $('#open-about').on('click', $.proxy(function (e) {
+	      e.preventDefault();
+	      this.open();
+	    }, this));
+	
+	    $('#close-about').on('click', $.proxy(function (e) {
+	      e.preventDefault();
+	      this.close();
+	    }, this));
+	
+	    $('#main-nav h1 a').on('click', $.proxy(function (e) {
+	      this.close();
+	    }, this));
+	  };
+	
+	  About.prototype.open = function open() {
+	    this.$el.addClass('show');
+	    $('#main-nav').addClass('about-open');
+	    $('body').addClass('no-scroll');
+	    this.isOpen = true;
+	  };
+	
+	  About.prototype.close = function close() {
+	    this.$el.removeClass('show');
+	    $('#main-nav').removeClass('about-open');
+	    $('body').removeClass('no-scroll');
+	    this.isOpen = true;
+	  };
+	
+	  return About;
+	}(Backbone.View.extend({
+	  el: '#about'
+	}));
+	
+	exports.default = About;
 
 /***/ },
 /* 16 */
@@ -14450,11 +14748,7 @@
 	
 	var _page2 = _interopRequireDefault(_page);
 	
-	var _home = __webpack_require__(19);
-	
-	var _home2 = _interopRequireDefault(_home);
-	
-	var _index = __webpack_require__(20);
+	var _index = __webpack_require__(18);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
@@ -14475,8 +14769,8 @@
 			return _possibleConstructorReturn(this, _Page.apply(this, arguments));
 		}
 	
-		Home.prototype.initialize = function initialize() {
-			_Page.prototype.initialize.call(this);
+		Home.prototype.initialize = function initialize(data, params) {
+			_Page.prototype.initialize.call(this, data, params);
 	
 			this.template = _index2.default;
 			this.render();
@@ -14505,12 +14799,14 @@
 		};
 	
 		Home.prototype.render = function render() {
-			this.$el = $(this.template({ data: _home2.default }));
-			this.el = this.$el[0];
-			$('#main-content').html(this.el);
+			this.$el = $(this.template({ data: this.data }));
+	
+			_Page.prototype.render.call(this);
 		};
 	
 		Home.prototype.bindEvents = function bindEvents() {
+			_Page.prototype.bindEvents.call(this);
+	
 			var _this = this;
 	
 			_.each(this.workLinks, function ($el, i) {
@@ -14567,21 +14863,17 @@
 	  value: true
 	});
 	
-	var _config = __webpack_require__(12);
+	var _config = __webpack_require__(10);
 	
 	var _config2 = _interopRequireDefault(_config);
 	
-	var _CV = __webpack_require__(13);
+	var _CV = __webpack_require__(11);
 	
 	var _CV2 = _interopRequireDefault(_CV);
 	
-	var _utils = __webpack_require__(14);
+	var _utils = __webpack_require__(12);
 	
 	var _utils2 = _interopRequireDefault(_utils);
-	
-	var _eventEmitter = __webpack_require__(18);
-	
-	var _eventEmitter2 = _interopRequireDefault(_eventEmitter);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -14600,27 +14892,12 @@
 	    return _possibleConstructorReturn(this, _Backbone$View$extend.apply(this, arguments));
 	  }
 	
-	  Page.prototype.initialize = function initialize() {
-	    if (_CV2.default.isTouchDevice) {
-	      //touch devices
-	      _CV2.default.animate = false;
-	      $('html').addClass('is-touch');
-	      $('body').scrollTop(0);
-	    } else {
-	      //desktop
-	      _CV2.default.animate = true;
-	    }
-	
-	    if (_CV2.default.isIE !== -1) {
-	      $('html').addClass('is-ie-' + _CV2.default.isIE);
-	    }
-	
-	    this.touchThreshold = 5;
-	
-	    //elements used for tracking scroll position
-	    this.$window = $(window);
-	
+	  Page.prototype.initialize = function initialize(data, params) {
 	    //shared components
+	    this.data = data;
+	
+	    this.params = params;
+	
 	    this.components = [];
 	
 	    this.subviews = [];
@@ -14629,57 +14906,31 @@
 	
 	    this.initComponents();
 	
-	    this.bindEvents();
-	
-	    this.onResize();
-	
-	    this.onScroll();
+	    this.createTimelines;
 	  };
+	
+	  Page.prototype.createTimelines = function createTimelines() {};
+	
+	  Page.prototype.animateIn = function animateIn() {
+	    //play the intro timeline
+	    this.onShown();
+	  };
+	
+	  Page.prototype.animateOut = function animateOut() {
+	    //play the outro timeline
+	    this.dispose();
+	    this.trigger('animatedOut');
+	  };
+	
+	  Page.prototype.onShown = function onShown() {};
 	
 	  Page.prototype.initComponents = function initComponents() {};
 	
 	  Page.prototype.initSubviews = function initSubviews() {};
 	
-	  Page.prototype.bindEvents = function bindEvents() {
-	    window.requestAnimationFrame(_onRAF.bind(this));
-	
-	    window.addEventListener('resize', _.debounce($.proxy(function () {
-	      this.onResize();
-	    }, this), _config2.default.throttle.resize));
-	
-	    window.addEventListener('scroll', _.debounce($.proxy(function () {
-	      this.onScroll();
-	    }, this), _config2.default.throttle.scroll));
-	
-	    $(document.body).on('touchstart', $.proxy(function (e) {
-	      this.onTouchStart(e);
-	    }, this));
-	
-	    $(document.body).on('touchmove', $.proxy(function (e) {
-	      this.onTouchMove(e);
-	    }, this));
-	
-	    $(document.body).on('touchend', $.proxy(function (e) {
-	      this.onTouchEnd(e);
-	    }, this));
-	
-	    $(document.body).on('scroll', $.proxy(function (e) {
-	      this.onTouchEnd(e);
-	    }, this));
-	  };
+	  Page.prototype.onScroll = function onScroll() {};
 	
 	  Page.prototype.onResize = function onResize() {
-	    _CV2.default.viewport.width = window.innerWidth;
-	    _CV2.default.viewport.height = window.innerHeight;
-	
-	    if (_CV2.default.viewport.width > _config2.default.bkptMed) {
-	      _CV2.default.bkpt = 'lrg';
-	    } else if (_CV2.default.viewport.width > _config2.default.bkptSml) {
-	      _CV2.default.bkpt = 'med';
-	    } else {
-	      _CV2.default.bkpt = 'sml';
-	    }
-	
 	    _.forEach(this.components, function (el) {
 	      if (el && el.onResize) {
 	        el.onResize();
@@ -14691,48 +14942,6 @@
 	        el.onResize();
 	      }
 	    });
-	  };
-	
-	  Page.prototype.onScroll = function onScroll() {
-	    if (_CV2.default.isTouchDevice) {
-	      _CV2.default.scroll.y = -this.$main.offset().top;
-	    } else {
-	      _CV2.default.scroll.y = window.pageYOffset;
-	    }
-	  };
-	
-	  Page.prototype.onTouchStart = function onTouchStart(e) {
-	    _CV2.default.touch.direction = null;
-	
-	    _CV2.default.touch.x = _CV2.default.touch.startX = e.touches[0].clientX;
-	    _CV2.default.touch.y = _CV2.default.touch.startY = e.touches[0].clientY;
-	    _CV2.default.touch.deltaX = 0;
-	    _CV2.default.touch.deltaY = 0;
-	  };
-	
-	  Page.prototype.onTouchMove = function onTouchMove(e) {
-	    _CV2.default.touch.x = e.touches[0].clientX;
-	    _CV2.default.touch.y = e.touches[0].clientY;
-	
-	    _CV2.default.touch.deltaX = _CV2.default.touch.x - _CV2.default.touch.startX;
-	    _CV2.default.touch.deltaY = _CV2.default.touch.y - _CV2.default.touch.startY;
-	
-	    _CV2.default.touch.startX = _CV2.default.touch.x;
-	    _CV2.default.touch.startY = _CV2.default.touch.y;
-	
-	    if (Math.abs(_CV2.default.touch.deltaX) < this.touchThreshold) {
-	      return;
-	    }
-	
-	    if (Math.abs(_CV2.default.touch.deltaX) > Math.abs(_CV2.default.touch.deltaY)) {
-	      _CV2.default.touch.direction = 'horizontal';
-	    } else {
-	      _CV2.default.touch.direction = 'vertical';
-	    }
-	  };
-	
-	  Page.prototype.onTouchEnd = function onTouchEnd(e) {
-	    _CV2.default.touch.direction == null;
 	  };
 	
 	  Page.prototype.onRAF = function onRAF() {
@@ -14749,178 +14958,78 @@
 	    });
 	  };
 	
+	  Page.prototype.bindEvents = function bindEvents() {};
+	
+	  Page.prototype.render = function render() {
+	    this.el = this.$el[0];
+	    $('#main-content').html(this.el);
+	  };
+	
+	  Page.prototype.dispose = function dispose() {
+	    _.forEach(this.components, function (el) {
+	      if (el.dispose) {
+	        el.dispose();
+	      }
+	    });
+	
+	    _.forEach(this.subviews, function (el) {
+	      if (el.dispose) {
+	        el.dispose();
+	      }
+	    });
+	
+	    this.components = [];
+	    this.subviews = [];
+	    this.remove();
+	  };
+	
+	  Page.prototype.openAbout = function openAbout() {
+	    $('#about').addClass('show');
+	    $('#main-nav').addClass('about-open');
+	    $('body').addClass('no-scroll');
+	  };
+	
+	  Page.prototype.closeAbout = function closeAbout() {
+	    $('#about').removeClass('show');
+	    $('#main-nav').removeClass('about-open');
+	    $('body').removeClass('no-scroll');
+	  };
+	
 	  return Page;
 	}(Backbone.View.extend({}));
 	
 	exports.default = Page;
-	
-	
-	var _isIE = function _isIE() {
-	  return navigator.appName == 'Microsoft Internet Explorer' || navigator.appName == 'Netscape' && new RegExp("Trident/.*rv:([0-9]{1,}[\.0-9]{0,})").exec(navigator.userAgent) != null;
-	};
-	var _onRAF = function _onRAF() {
-	  this.onRAF();
-	  window.requestAnimationFrame(_onRAF.bind(this));
-	};
 
 /***/ },
 /* 18 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	var Event = function () {
-	  function Event() {
-	    _classCallCheck(this, Event);
-	
-	    this.listeners = new Map();
-	  }
-	
-	  Event.prototype.on = function on(label, callback) {
-	    this.listeners.has(label) || this.listeners.set(label, []);
-	    this.listeners.get(label).push(callback);
-	  };
-	
-	  Event.prototype.off = function off(label, callback) {
-	    var listeners = this.listeners.get(label),
-	        index = void 0;
-	
-	    if (listeners && listeners.length) {
-	      index = listeners.reduce(function (i, listener, index) {
-	        return isFunction(listener) && listener === callback ? i = index : i;
-	      }, -1);
-	
-	      if (index > -1) {
-	        listeners.splice(index, 1);
-	        this.listeners.set(label, listeners);
-	        return true;
-	      }
-	    }
-	    return false;
-	  };
-	
-	  Event.prototype.trigger = function trigger(label) {
-	    for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-	      args[_key - 1] = arguments[_key];
-	    }
-	
-	    var listeners = this.listeners.get(label);
-	
-	    if (listeners && listeners.length) {
-	      listeners.forEach(function (listener) {
-	        listener.apply(undefined, args);
-	      });
-	      return true;
-	    }
-	    return false;
-	  };
-	
-	  return Event;
-	}();
-	
-	exports.default = Event;
-	
-	
-	var isFunction = function isFunction() {
-	  return typeof obj == 'function' || false;
-	};
-
-/***/ },
-/* 19 */
-/***/ function(module, exports) {
-
-	module.exports = {
-		"meta": {
-			"title": "Suny Gao - Home",
-			"description": "Suny Gao - Interactive developer in Brooklyn, NY"
-		},
-		"projects": [
-			{
-				"title": "ismokeweed.com",
-				"client": "vice weediquette",
-				"slug": "i-smoke-weed",
-				"previewImages": [
-					"weed-1.jpg",
-					"weed-2.jpg",
-					"weed-3.jpg"
-				]
-			},
-			{
-				"title": "Year in Music",
-				"client": "spotify",
-				"slug": "year-in-music",
-				"previewImages": [
-					"yim-1.jpg",
-					"yim-2.jpg"
-				]
-			},
-			{
-				"title": "Camp Google",
-				"client": "google",
-				"slug": "camp-google",
-				"previewImages": [
-					"camp-google-1.jpg",
-					"camp-google-2.jpg"
-				]
-			},
-			{
-				"title": "Google Calendar",
-				"client": "google",
-				"slug": "google-calendar"
-			},
-			{
-				"title": "Internet.org",
-				"client": "facebook",
-				"slug": "internet-org"
-			},
-			{
-				"title": "Hello Chime",
-				"client": "chime",
-				"slug": "hello-chime"
-			}
-		]
-	};
-
-/***/ },
-/* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var pug = __webpack_require__(21);
+	var pug = __webpack_require__(19);
 	
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;var pug_debug_filename, pug_debug_line;try {var pug_debug_sources = {"\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug":"#home\n\tinclude partials\u002F_grid\n\n\tinclude partials\u002F_main_nav\n\n\tsection.images\n\t\teach project in data.projects\n\t\t\tif project.previewImages\n\t\t\t\tul(class=\"image-wrapper\", id=project.slug)\n\t\t\t\t\teach previewImage in project.previewImages\n\t\t\t\t\t\tli(style=\"background-image: url(..\u002Fimages\u002Fprojects\u002F\" + project.slug + \"\u002F\" + previewImage + \")\")\n\t\t\t\t\t\n\n\tsection.work-list\n\t\tul\n\t\t\teach project in data.projects\n\t\t\t\tli\n\t\t\t\t\ta(href=\"\u002Fwork\u002F\" + project.slug)\n\t\t\t\t\t\th2= project.title\n\t\t\t\t\t\th3= project.client","\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Fpartials\u002F_grid.pug":"div#grid\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli","\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Fpartials\u002F_main_nav.pug":"nav.main-nav#main-nav\n\th1\n\t\ta(href=\"\u002F\") suny g\n\ta(href=\"\u002Fabout\") about\n\t\t\t\t"};
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;var pug_debug_filename, pug_debug_line;try {var pug_debug_sources = {"\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug":"#home\n\tsection.images\n\t\teach project in data.projects\n\t\t\tif project.previewImages\n\t\t\t\tul(class=\"image-wrapper\", id=project.slug)\n\t\t\t\t\teach previewImage in project.previewImages\n\t\t\t\t\t\tli(style=\"background-image: url(..\u002Fimages\u002Fprojects\u002F\" + project.slug + \"\u002F\" + previewImage + \")\")\n\t\t\t\t\t\n\n\tsection.work-list\n\t\tul\n\t\t\teach project in data.projects\n\t\t\t\tli\n\t\t\t\t\ta(href=\"\u002Fwork\u002F\" + project.slug)\n\t\t\t\t\t\th2= project.title\n\t\t\t\t\t\th3= project.client"};
 	;var locals_for_with = (locals || {});(function (data) {;pug_debug_line = 1;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
 	pug_html = pug_html + "\u003Cdiv id=\"home\"\u003E";
 	;pug_debug_line = 2;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
-	pug_html = pug_html + (null == (pug_interp = __webpack_require__(23).call(this, locals)) ? "" : pug_interp);
-	;pug_debug_line = 4;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
-	pug_html = pug_html + (null == (pug_interp = __webpack_require__(24).call(this, locals)) ? "" : pug_interp);
-	;pug_debug_line = 6;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
 	pug_html = pug_html + "\u003Csection class=\"images\"\u003E";
-	;pug_debug_line = 7;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
+	;pug_debug_line = 3;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
 	// iterate data.projects
 	;(function(){
 	  var $$obj = data.projects;
 	  if ('number' == typeof $$obj.length) {
 	      for (var pug_index0 = 0, $$l = $$obj.length; pug_index0 < $$l; pug_index0++) {
 	        var project = $$obj[pug_index0];
-	;pug_debug_line = 8;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
+	;pug_debug_line = 4;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
 	if (project.previewImages) {
-	;pug_debug_line = 9;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
+	;pug_debug_line = 5;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
 	pug_html = pug_html + "\u003Cul" + (" class=\"image-wrapper\""+pug.attr("id", project.slug, true, true)) + "\u003E";
-	;pug_debug_line = 10;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
+	;pug_debug_line = 6;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
 	// iterate project.previewImages
 	;(function(){
 	  var $$obj = project.previewImages;
 	  if ('number' == typeof $$obj.length) {
 	      for (var pug_index1 = 0, $$l = $$obj.length; pug_index1 < $$l; pug_index1++) {
 	        var previewImage = $$obj[pug_index1];
-	;pug_debug_line = 11;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
+	;pug_debug_line = 7;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
 	pug_html = pug_html + "\u003Cli" + (pug.attr("style", pug.style("background-image: url(../images/projects/" + project.slug + "/" + previewImage + ")"), true, true)) + "\u003E\u003C\u002Fli\u003E";
 	      }
 	  } else {
@@ -14928,7 +15037,7 @@
 	    for (var pug_index1 in $$obj) {
 	      $$l++;
 	      var previewImage = $$obj[pug_index1];
-	;pug_debug_line = 11;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
+	;pug_debug_line = 7;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
 	pug_html = pug_html + "\u003Cli" + (pug.attr("style", pug.style("background-image: url(../images/projects/" + project.slug + "/" + previewImage + ")"), true, true)) + "\u003E\u003C\u002Fli\u003E";
 	    }
 	  }
@@ -14942,18 +15051,18 @@
 	    for (var pug_index0 in $$obj) {
 	      $$l++;
 	      var project = $$obj[pug_index0];
-	;pug_debug_line = 8;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
+	;pug_debug_line = 4;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
 	if (project.previewImages) {
-	;pug_debug_line = 9;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
+	;pug_debug_line = 5;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
 	pug_html = pug_html + "\u003Cul" + (" class=\"image-wrapper\""+pug.attr("id", project.slug, true, true)) + "\u003E";
-	;pug_debug_line = 10;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
+	;pug_debug_line = 6;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
 	// iterate project.previewImages
 	;(function(){
 	  var $$obj = project.previewImages;
 	  if ('number' == typeof $$obj.length) {
 	      for (var pug_index2 = 0, $$l = $$obj.length; pug_index2 < $$l; pug_index2++) {
 	        var previewImage = $$obj[pug_index2];
-	;pug_debug_line = 11;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
+	;pug_debug_line = 7;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
 	pug_html = pug_html + "\u003Cli" + (pug.attr("style", pug.style("background-image: url(../images/projects/" + project.slug + "/" + previewImage + ")"), true, true)) + "\u003E\u003C\u002Fli\u003E";
 	      }
 	  } else {
@@ -14961,7 +15070,7 @@
 	    for (var pug_index2 in $$obj) {
 	      $$l++;
 	      var previewImage = $$obj[pug_index2];
-	;pug_debug_line = 11;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
+	;pug_debug_line = 7;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
 	pug_html = pug_html + "\u003Cli" + (pug.attr("style", pug.style("background-image: url(../images/projects/" + project.slug + "/" + previewImage + ")"), true, true)) + "\u003E\u003C\u002Fli\u003E";
 	    }
 	  }
@@ -14974,28 +15083,28 @@
 	}).call(this);
 	
 	pug_html = pug_html + "\u003C\u002Fsection\u003E";
-	;pug_debug_line = 14;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
+	;pug_debug_line = 10;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
 	pug_html = pug_html + "\u003Csection class=\"work-list\"\u003E";
-	;pug_debug_line = 15;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
+	;pug_debug_line = 11;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
 	pug_html = pug_html + "\u003Cul\u003E";
-	;pug_debug_line = 16;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
+	;pug_debug_line = 12;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
 	// iterate data.projects
 	;(function(){
 	  var $$obj = data.projects;
 	  if ('number' == typeof $$obj.length) {
 	      for (var pug_index3 = 0, $$l = $$obj.length; pug_index3 < $$l; pug_index3++) {
 	        var project = $$obj[pug_index3];
-	;pug_debug_line = 17;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
+	;pug_debug_line = 13;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
 	pug_html = pug_html + "\u003Cli\u003E";
-	;pug_debug_line = 18;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
+	;pug_debug_line = 14;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
 	pug_html = pug_html + "\u003Ca" + (pug.attr("href", "/work/" + project.slug, true, true)) + "\u003E";
-	;pug_debug_line = 19;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
+	;pug_debug_line = 15;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
 	pug_html = pug_html + "\u003Ch2\u003E";
-	;pug_debug_line = 19;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
+	;pug_debug_line = 15;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
 	pug_html = pug_html + (pug.escape(null == (pug_interp = project.title) ? "" : pug_interp)) + "\u003C\u002Fh2\u003E";
-	;pug_debug_line = 20;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
+	;pug_debug_line = 16;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
 	pug_html = pug_html + "\u003Ch3\u003E";
-	;pug_debug_line = 20;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
+	;pug_debug_line = 16;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
 	pug_html = pug_html + (pug.escape(null == (pug_interp = project.client) ? "" : pug_interp)) + "\u003C\u002Fh3\u003E\u003C\u002Fa\u003E\u003C\u002Fli\u003E";
 	      }
 	  } else {
@@ -15003,17 +15112,17 @@
 	    for (var pug_index3 in $$obj) {
 	      $$l++;
 	      var project = $$obj[pug_index3];
-	;pug_debug_line = 17;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
+	;pug_debug_line = 13;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
 	pug_html = pug_html + "\u003Cli\u003E";
-	;pug_debug_line = 18;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
+	;pug_debug_line = 14;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
 	pug_html = pug_html + "\u003Ca" + (pug.attr("href", "/work/" + project.slug, true, true)) + "\u003E";
-	;pug_debug_line = 19;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
+	;pug_debug_line = 15;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
 	pug_html = pug_html + "\u003Ch2\u003E";
-	;pug_debug_line = 19;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
+	;pug_debug_line = 15;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
 	pug_html = pug_html + (pug.escape(null == (pug_interp = project.title) ? "" : pug_interp)) + "\u003C\u002Fh2\u003E";
-	;pug_debug_line = 20;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
+	;pug_debug_line = 16;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
 	pug_html = pug_html + "\u003Ch3\u003E";
-	;pug_debug_line = 20;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
+	;pug_debug_line = 16;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Findex.pug";
 	pug_html = pug_html + (pug.escape(null == (pug_interp = project.client) ? "" : pug_interp)) + "\u003C\u002Fh3\u003E\u003C\u002Fa\u003E\u003C\u002Fli\u003E";
 	    }
 	  }
@@ -15023,7 +15132,7 @@
 	module.exports = template;
 
 /***/ },
-/* 21 */
+/* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -15256,7 +15365,7 @@
 	    throw err;
 	  }
 	  try {
-	    str = str || __webpack_require__(22).readFileSync(filename, 'utf8')
+	    str = str || __webpack_require__(20).readFileSync(filename, 'utf8')
 	  } catch (ex) {
 	    pug_rethrow(err, null, lineno)
 	  }
@@ -15283,93 +15392,13 @@
 
 
 /***/ },
-/* 22 */
+/* 20 */
 /***/ function(module, exports) {
 
 	/* (ignored) */
 
 /***/ },
-/* 23 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var pug = __webpack_require__(21);
-	
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;var pug_debug_filename, pug_debug_line;try {var pug_debug_sources = {"\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Fpartials\u002F_grid.pug":"div#grid\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli"};
-	;pug_debug_line = 1;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Fpartials\u002F_grid.pug";
-	pug_html = pug_html + "\u003Cdiv id=\"grid\"\u003E";
-	;pug_debug_line = 2;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Fpartials\u002F_grid.pug";
-	pug_html = pug_html + "\u003Cli\u003E\u003C\u002Fli\u003E";
-	;pug_debug_line = 3;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Fpartials\u002F_grid.pug";
-	pug_html = pug_html + "\u003Cli\u003E\u003C\u002Fli\u003E";
-	;pug_debug_line = 4;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Fpartials\u002F_grid.pug";
-	pug_html = pug_html + "\u003Cli\u003E\u003C\u002Fli\u003E";
-	;pug_debug_line = 5;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Fpartials\u002F_grid.pug";
-	pug_html = pug_html + "\u003Cli\u003E\u003C\u002Fli\u003E";
-	;pug_debug_line = 6;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Fpartials\u002F_grid.pug";
-	pug_html = pug_html + "\u003Cli\u003E\u003C\u002Fli\u003E";
-	;pug_debug_line = 7;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Fpartials\u002F_grid.pug";
-	pug_html = pug_html + "\u003Cli\u003E\u003C\u002Fli\u003E";
-	;pug_debug_line = 8;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Fpartials\u002F_grid.pug";
-	pug_html = pug_html + "\u003Cli\u003E\u003C\u002Fli\u003E";
-	;pug_debug_line = 9;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Fpartials\u002F_grid.pug";
-	pug_html = pug_html + "\u003Cli\u003E\u003C\u002Fli\u003E";
-	;pug_debug_line = 10;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Fpartials\u002F_grid.pug";
-	pug_html = pug_html + "\u003Cli\u003E\u003C\u002Fli\u003E";
-	;pug_debug_line = 11;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Fpartials\u002F_grid.pug";
-	pug_html = pug_html + "\u003Cli\u003E\u003C\u002Fli\u003E";
-	;pug_debug_line = 12;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Fpartials\u002F_grid.pug";
-	pug_html = pug_html + "\u003Cli\u003E\u003C\u002Fli\u003E";
-	;pug_debug_line = 13;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Fpartials\u002F_grid.pug";
-	pug_html = pug_html + "\u003Cli\u003E\u003C\u002Fli\u003E";
-	;pug_debug_line = 14;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Fpartials\u002F_grid.pug";
-	pug_html = pug_html + "\u003Cli\u003E\u003C\u002Fli\u003E";
-	;pug_debug_line = 15;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Fpartials\u002F_grid.pug";
-	pug_html = pug_html + "\u003Cli\u003E\u003C\u002Fli\u003E";
-	;pug_debug_line = 16;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Fpartials\u002F_grid.pug";
-	pug_html = pug_html + "\u003Cli\u003E\u003C\u002Fli\u003E";
-	;pug_debug_line = 17;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Fpartials\u002F_grid.pug";
-	pug_html = pug_html + "\u003Cli\u003E\u003C\u002Fli\u003E";
-	;pug_debug_line = 18;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Fpartials\u002F_grid.pug";
-	pug_html = pug_html + "\u003Cli\u003E\u003C\u002Fli\u003E";
-	;pug_debug_line = 19;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Fpartials\u002F_grid.pug";
-	pug_html = pug_html + "\u003Cli\u003E\u003C\u002Fli\u003E";
-	;pug_debug_line = 20;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Fpartials\u002F_grid.pug";
-	pug_html = pug_html + "\u003Cli\u003E\u003C\u002Fli\u003E";
-	;pug_debug_line = 21;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Fpartials\u002F_grid.pug";
-	pug_html = pug_html + "\u003Cli\u003E\u003C\u002Fli\u003E";
-	;pug_debug_line = 22;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Fpartials\u002F_grid.pug";
-	pug_html = pug_html + "\u003Cli\u003E\u003C\u002Fli\u003E";
-	;pug_debug_line = 23;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Fpartials\u002F_grid.pug";
-	pug_html = pug_html + "\u003Cli\u003E\u003C\u002Fli\u003E";
-	;pug_debug_line = 24;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Fpartials\u002F_grid.pug";
-	pug_html = pug_html + "\u003Cli\u003E\u003C\u002Fli\u003E";
-	;pug_debug_line = 25;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Fpartials\u002F_grid.pug";
-	pug_html = pug_html + "\u003Cli\u003E\u003C\u002Fli\u003E\u003C\u002Fdiv\u003E";} catch (err) {pug.rethrow(err, pug_debug_filename, pug_debug_line, pug_debug_sources[pug_debug_filename]);};return pug_html;};
-	module.exports = template;
-
-/***/ },
-/* 24 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var pug = __webpack_require__(21);
-	
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;var pug_debug_filename, pug_debug_line;try {var pug_debug_sources = {"\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Fpartials\u002F_main_nav.pug":"nav.main-nav#main-nav\n\th1\n\t\ta(href=\"\u002F\") suny g\n\ta(href=\"\u002Fabout\") about\n\t\t\t\t"};
-	;pug_debug_line = 1;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Fpartials\u002F_main_nav.pug";
-	pug_html = pug_html + "\u003Cnav class=\"main-nav\" id=\"main-nav\"\u003E";
-	;pug_debug_line = 2;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Fpartials\u002F_main_nav.pug";
-	pug_html = pug_html + "\u003Ch1\u003E";
-	;pug_debug_line = 3;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Fpartials\u002F_main_nav.pug";
-	pug_html = pug_html + "\u003Ca href=\"\u002F\"\u003E";
-	;pug_debug_line = 3;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Fpartials\u002F_main_nav.pug";
-	pug_html = pug_html + "suny g\u003C\u002Fa\u003E\u003C\u002Fh1\u003E";
-	;pug_debug_line = 4;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Fpartials\u002F_main_nav.pug";
-	pug_html = pug_html + "\u003Ca href=\"\u002Fabout\"\u003E";
-	;pug_debug_line = 4;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Fpartials\u002F_main_nav.pug";
-	pug_html = pug_html + "about\u003C\u002Fa\u003E\u003C\u002Fnav\u003E";} catch (err) {pug.rethrow(err, pug_debug_filename, pug_debug_line, pug_debug_sources[pug_debug_filename]);};return pug_html;};
-	module.exports = template;
-
-/***/ },
-/* 25 */
+/* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -15382,11 +15411,11 @@
 	
 	var _page2 = _interopRequireDefault(_page);
 	
-	var _work = __webpack_require__(26);
+	var _work = __webpack_require__(22);
 	
 	var _work2 = _interopRequireDefault(_work);
 	
-	var _workDetail = __webpack_require__(27);
+	var _workDetail = __webpack_require__(23);
 	
 	var _workDetail2 = _interopRequireDefault(_workDetail);
 	
@@ -15398,21 +15427,20 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var Home = function (_Page) {
-		_inherits(Home, _Page);
+	var WorkDetail = function (_Page) {
+		_inherits(WorkDetail, _Page);
 	
-		function Home() {
-			_classCallCheck(this, Home);
+		function WorkDetail() {
+			_classCallCheck(this, WorkDetail);
 	
 			return _possibleConstructorReturn(this, _Page.apply(this, arguments));
 		}
 	
-		Home.prototype.initialize = function initialize(options) {
-			_Page.prototype.initialize.call(this);
+		WorkDetail.prototype.initialize = function initialize(data, params) {
+			_Page.prototype.initialize.call(this, data, params);
 	
-			this.slug = options.slug;
-			this.pageData = _work2.default[this.slug];
-			this.nextData = _work2.default[this.pageData.next];
+			this.slug = params.slug;
+			this.nextData = params.nextData;
 	
 			this.template = _workDetail2.default;
 			this.render();
@@ -15420,42 +15448,44 @@
 			this.bindEvents();
 		};
 	
-		Home.prototype.events = function events() {
+		WorkDetail.prototype.events = function events() {
 			return {};
 		};
 	
-		Home.prototype.render = function render() {
+		WorkDetail.prototype.render = function render() {
 			this.$el = $(this.template({
-				data: _work2.default[this.slug],
+				data: this.data,
 				slug: this.slug,
 				nextData: this.nextData
 			}));
-			this.el = this.$el[0];
-			$('#main-content').html(this.el);
+	
+			_Page.prototype.render.call(this);
 		};
 	
-		Home.prototype.bindEvents = function bindEvents() {};
+		WorkDetail.prototype.bindEvents = function bindEvents() {
+			_Page.prototype.bindEvents.call(this);
+		};
 	
-		return Home;
+		return WorkDetail;
 	}(_page2.default);
 	
-	exports.default = Home;
+	exports.default = WorkDetail;
 
 /***/ },
-/* 26 */
+/* 22 */
 /***/ function(module, exports) {
 
 	module.exports = {
 		"i-smoke-weed": {
 			"meta": {
-				"title": "Suny Gao - ismokeweed.com",
-				"description": "ismokeweed.com - Vice Weediquette"
+				"title": "Suny Gao - I Smoke Weed",
+				"description": "I Smoke Weed - Viceland"
 			},
 			"next": "year-in-music",
-			"title": "ismokeweed.com",
-			"client": "Vice Weediquette",
-			"heroImage": "weed-1.jpg",
-			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium nunc velit, id cursus libero porta quis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus laoreet nisi ut nisl ultricies, vitae tincidunt purus rhoncus. Vestibulum libero metus, mollis a laoreet nec, euismod sed erat. Aenean tortor elit, blandit et felis nec, placerat dapibus neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam facilisis metus sed ex vehicula tincidunt. Pellentesque vel suscipit quam. Cras pharetra venenatis neque, a feugiat ex scelerisque ut. Fusce mattis non dolor at dictum.",
+			"title": "I Smoke Weed",
+			"client": "Viceland",
+			"heroImage": "weed-form-hero.jpg",
+			"description": "Thought marijuana has been decriminalized in many states, weed usage is still stigmatized in the America, and admitting to smoking weed is likely to invoke cartoonish stoner stereotypes. In conjunction with Viceland's TV campaign, Stink Studios created a platform for users to publicly and proudly declare &quote;I smoke weed.&quote",
 			"credits": [
 				{
 					"type": "Agency",
@@ -15468,21 +15498,7 @@
 				},
 				{
 					"type": "date",
-					"text": "July 2016"
-				}
-			],
-			"press": [
-				{
-					"title": "press link 1",
-					"url": "http://www.nytimes.com"
-				},
-				{
-					"title": "press link 2",
-					"url": "http://www.nytimes.com"
-				},
-				{
-					"title": "press link 3",
-					"url": "http://www.nytimes.com"
+					"text": "October 2016"
 				}
 			],
 			"links": [
@@ -15492,40 +15508,45 @@
 				},
 				{
 					"title": "case study",
-					"url": "http://www.stinkstudios.com"
+					"url": "http://www.stinkstudios.com/work/viceland-i-smoke-weed"
 				}
 			],
 			"mainContent": [
 				{
 					"type": "image",
 					"images": [
-						"weed-2.jpg"
-					],
-					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium nunc velit, id cursus libero porta quis. Interdum et malesuada fames ac ante ipsum primis in faucibus."
-				},
-				{
-					"type": "col-2",
-					"images": [
-						"weed-2.jpg",
-						"weed-3.jpg",
-						"weed-2.jpg",
-						"weed-3.jpg"
-					],
-					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium nunc velit, id cursus libero porta quis. Interdum et malesuada fames ac ante ipsum primis in faucibus."
-				},
-				{
-					"type": "video",
-					"previewImage": "weed-2.jpg",
-					"videoSrc": [
-						{
-							"type": "mp4",
-							"src": "test.mp4"
-						},
-						{
-							"type": "webm",
-							"src": "test.webm"
-						}
+						"weed-hero.jpg"
 					]
+				},
+				{
+					"type": "image",
+					"images": [
+						"weed-mobile-desktop.jpg"
+					]
+				},
+				{
+					"type": "image",
+					"images": [
+						"weed-form.jpg",
+						"weed-form-filled.jpg",
+						"weed-submission-preview.jpg"
+					],
+					"description": "Visitors can tell their story, upload a photo, and share their declaration on Facebook and Twitter."
+				},
+				{
+					"type": "image",
+					"images": [
+						"weed-featured-gallery.jpg",
+						"weed-featured-story.jpg"
+					],
+					"description": "The site also featured stories from Viceland's TV campaign."
+				},
+				{
+					"type": "image",
+					"images": [
+						"weed-gallery.jpg"
+					],
+					"description": "Submissions gallery"
 				}
 			]
 		},
@@ -15599,90 +15620,86 @@
 	};
 
 /***/ },
-/* 27 */
+/* 23 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var pug = __webpack_require__(21);
+	var pug = __webpack_require__(19);
 	
-	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;var pug_debug_filename, pug_debug_line;try {var pug_debug_sources = {"\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug":"#work-detail\n\tinclude partials\u002F_grid\n\n\tinclude partials\u002F_main_nav\n\n\tsection.next-project\n\t\tul\n\t\t\t\n\t\t\tli\n\t\t\t\ta(href=\"\u002Fwork\u002F\" + data.next)\n\t\t\t\t\th2=nextData.title\n\t\t\t\t\th3=nextData.client\n\n\n\tsection.work-detail\n\t\tarticle.headline\n\t\t\th2=data.title\n\t\t\th3=data.client\n\t\t\n\t\tarticle.hero\n\t\t\timg(src=\"..\u002Fimages\u002Fprojects\u002F\" + slug + \"\u002F\" + data.heroImage)\n\t\t\t\n\n\t\t.project-details\n\t\t\tarticle.description\n\t\t\t\t\tp=data.description\n\n\t\t\tarticle.credits\n\t\t\t\tul \n\t\t\t\t\teach credit in data.credits\n\t\t\t\t\t\tli\n\t\t\t\t\t\t\th4= credit.type\n\t\t\t\t\t\t\tif credit.url\n\t\t\t\t\t\t\t\tp\n\t\t\t\t\t\t\t\t\ta(href= credit.url)= credit.text\n\t\t\t\t\t\t\telse\n\t\t\t\t\t\t\t\tp= credit.text\n\t\t\tif data.press\n\t\t\t\tarticle.press\n\t\t\t\t\th4 Press\n\t\t\t\t\tul\n\t\t\t\t\t\teach article in data.press\n\t\t\t\t\t\t\tli \n\t\t\t\t\t\t\t\tp\n\t\t\t\t\t\t\t\t\ta(href= article.url, target=\"_blank\")= article.title\n\n\t\t\tif data.links\n\t\t\t\tarticle.links\n\t\t\t\t\tul\n\t\t\t\t\t\teach link in data.links\n\t\t\t\t\t\t\tli\n\t\t\t\t\t\t\t\ta(class=\"button\", href= link.url, target=\"_blank\")= link.title\n\t\t\n\t\t.project-images\n\t\t\t\u002F\u002F-video\n\t\t\teach content in data.mainContent\n\t\t\t\tif(content.type == \"video\")\n\t\t\t\t\tarticle.video\n\t\t\t\t\t\t.video-player\n\t\t\t\t\t\t\timg(class=\"preview-image\", src=\"..\u002Fimages\u002Fprojects\u002F\" + slug + \"\u002F\" +content.previewImage)\n\t\t\t\t\t\t\tvideo\n\t\t\t\t\t\t\t\teach src in content.videoSrc\n\t\t\t\t\t\t\t\t\tsource(src=src.src, type=\"..\u002Fimages\u002Fprojects\u002F\" + slug + \"\u002F\" + src.type)\n\t\t\t\t\t\tif(content.description)\n\t\t\t\t\t\t\t.description\n\t\t\t\t\t\t\t\tp= content.description\n\t\t\t\telse\n\t\t\t\t\t\u002F\u002F-2 column\n\t\t\t\t\tif(content.type == \"col-2\")\n\t\t\t\t\t\tarticle.col-2\n\t\t\t\t\t\t\t.image-container\n\t\t\t\t\t\t\t\teach image in content.images\n\t\t\t\t\t\t\t\t\t.image-wrapper\n\t\t\t\t\t\t\t\t\t\timg(class=\"preview-image\", src=\"..\u002Fimages\u002Fprojects\u002F\" + slug + \"\u002F\" +image)\n\t\t\t\t\t\t\tif(content.description)\n\t\t\t\t\t\t\t\t.description\n\t\t\t\t\t\t\t\t\tp= content.description\n\t\t\t\t\t\u002F\u002F-1 column\n\t\t\t\t\telse\n\t\t\t\t\t\tarticle\n\t\t\t\t\t\t\teach image in content.images\n\t\t\t\t\t\t\t\t.image-wrapper\n\t\t\t\t\t\t\t\t\timg(class=\"preview-image\", src=\"..\u002Fimages\u002Fprojects\u002F\" + slug + \"\u002F\" +image)\n\t\t\t\t\t\t\tif(content.description)\n\t\t\t\t\t\t\t\t.description\n\t\t\t\t\t\t\t\t\tp= content.description\n\n\n","\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Fpartials\u002F_grid.pug":"div#grid\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli\n\t\t\tli","\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002Fpartials\u002F_main_nav.pug":"nav.main-nav#main-nav\n\th1\n\t\ta(href=\"\u002F\") suny g\n\ta(href=\"\u002Fabout\") about\n\t\t\t\t"};
+	function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;var pug_debug_filename, pug_debug_line;try {var pug_debug_sources = {"\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug":"#work-detail\n\tsection.next-project\n\t\tul\n\t\t\t\n\t\t\tli\n\t\t\t\ta(href=\"\u002Fwork\u002F\" + data.next)\n\t\t\t\t\th2=nextData.title\n\t\t\t\t\th3=nextData.client\n\n\n\tsection.work-detail\n\t\tarticle.headline\n\t\t\th2=data.title\n\t\t\th3=data.client\n\t\t\n\t\tarticle.hero\n\t\t\timg(src=\"..\u002Fimages\u002Fprojects\u002F\" + slug + \"\u002F\" + data.heroImage)\n\t\t\t\n\n\t\t.project-details\n\t\t\tarticle.description\n\t\t\t\t\tp=data.description\n\n\t\t\tarticle.credits\n\t\t\t\tul \n\t\t\t\t\teach credit in data.credits\n\t\t\t\t\t\tli\n\t\t\t\t\t\t\th4= credit.type\n\t\t\t\t\t\t\tif credit.url\n\t\t\t\t\t\t\t\tp\n\t\t\t\t\t\t\t\t\ta(href= credit.url)= credit.text\n\t\t\t\t\t\t\telse\n\t\t\t\t\t\t\t\tp= credit.text\n\t\t\tarticle.recognition\n\t\t\t\tif data.press\n\t\t\t\t\t.press\n\t\t\t\t\t\th4 Press\n\t\t\t\t\t\tul\n\t\t\t\t\t\t\teach article in data.press\n\t\t\t\t\t\t\t\tli \n\t\t\t\t\t\t\t\t\tp\n\t\t\t\t\t\t\t\t\t\ta(href= article.url, target=\"_blank\")= article.title\n\n\t\t\t\tif data.awards\n\t\t\t\t\t.awards\n\t\t\t\t\t\th4 Recognition\n\t\t\t\t\t\tul\n\t\t\t\t\t\t\teach article in data.awards\n\t\t\t\t\t\t\t\tli \n\t\t\t\t\t\t\t\t\tp\n\t\t\t\t\t\t\t\t\t\ta(href= article.url, target=\"_blank\")= article.title\n\t\t\tif data.links\n\t\t\t\tarticle.links\n\t\t\t\t\tul\n\t\t\t\t\t\teach link in data.links\n\t\t\t\t\t\t\tli\n\t\t\t\t\t\t\t\ta(class=\"button\", href= link.url, target=\"_blank\")= link.title\n\t\t\n\t\t.project-images\n\t\t\t\u002F\u002F-video\n\t\t\teach content in data.mainContent\n\t\t\t\tif(content.type == \"video\")\n\t\t\t\t\tarticle.video\n\t\t\t\t\t\t.video-player\n\t\t\t\t\t\t\timg(class=\"preview-image\", src=\"..\u002Fimages\u002Fprojects\u002F\" + slug + \"\u002F\" +content.previewImage)\n\t\t\t\t\t\t\tvideo\n\t\t\t\t\t\t\t\teach src in content.videoSrc\n\t\t\t\t\t\t\t\t\tsource(src=src.src, type=\"..\u002Fimages\u002Fprojects\u002F\" + slug + \"\u002F\" + src.type)\n\t\t\t\t\t\tif(content.description)\n\t\t\t\t\t\t\t.description\n\t\t\t\t\t\t\t\tp= content.description\n\t\t\t\telse\n\t\t\t\t\t\u002F\u002F-2 column\n\t\t\t\t\tif(content.type == \"col-2\")\n\t\t\t\t\t\tarticle.col-2\n\t\t\t\t\t\t\t.image-container\n\t\t\t\t\t\t\t\teach image in content.images\n\t\t\t\t\t\t\t\t\t.image-wrapper\n\t\t\t\t\t\t\t\t\t\timg(class=\"preview-image\", src=\"..\u002Fimages\u002Fprojects\u002F\" + slug + \"\u002F\" +image)\n\t\t\t\t\t\t\tif(content.description)\n\t\t\t\t\t\t\t\t.description\n\t\t\t\t\t\t\t\t\tp= content.description\n\t\t\t\t\t\u002F\u002F-1 column\n\t\t\t\t\telse\n\t\t\t\t\t\tarticle\n\t\t\t\t\t\t\teach image in content.images\n\t\t\t\t\t\t\t\t.image-wrapper\n\t\t\t\t\t\t\t\t\timg(class=\"preview-image\", src=\"..\u002Fimages\u002Fprojects\u002F\" + slug + \"\u002F\" +image)\n\t\t\t\t\t\t\tif(content.description)\n\t\t\t\t\t\t\t\t.description\n\t\t\t\t\t\t\t\t\tp= content.description\n\n\n"};
 	;var locals_for_with = (locals || {});(function (data, nextData, slug) {;pug_debug_line = 1;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Cdiv id=\"work-detail\"\u003E";
 	;pug_debug_line = 2;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	pug_html = pug_html + (null == (pug_interp = __webpack_require__(23).call(this, locals)) ? "" : pug_interp);
-	;pug_debug_line = 4;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	pug_html = pug_html + (null == (pug_interp = __webpack_require__(24).call(this, locals)) ? "" : pug_interp);
-	;pug_debug_line = 6;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Csection class=\"next-project\"\u003E";
-	;pug_debug_line = 7;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 3;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Cul\u003E";
-	;pug_debug_line = 9;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 5;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Cli\u003E";
-	;pug_debug_line = 10;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 6;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Ca" + (pug.attr("href", "/work/" + data.next, true, true)) + "\u003E";
-	;pug_debug_line = 11;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 7;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Ch2\u003E";
-	;pug_debug_line = 11;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 7;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + (pug.escape(null == (pug_interp = nextData.title) ? "" : pug_interp)) + "\u003C\u002Fh2\u003E";
-	;pug_debug_line = 12;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 8;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Ch3\u003E";
-	;pug_debug_line = 12;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 8;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + (pug.escape(null == (pug_interp = nextData.client) ? "" : pug_interp)) + "\u003C\u002Fh3\u003E\u003C\u002Fa\u003E\u003C\u002Fli\u003E\u003C\u002Ful\u003E\u003C\u002Fsection\u003E";
-	;pug_debug_line = 15;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 11;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Csection class=\"work-detail\"\u003E";
-	;pug_debug_line = 16;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 12;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Carticle class=\"headline\"\u003E";
-	;pug_debug_line = 17;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 13;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Ch2\u003E";
-	;pug_debug_line = 17;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 13;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + (pug.escape(null == (pug_interp = data.title) ? "" : pug_interp)) + "\u003C\u002Fh2\u003E";
-	;pug_debug_line = 18;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 14;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Ch3\u003E";
-	;pug_debug_line = 18;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 14;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + (pug.escape(null == (pug_interp = data.client) ? "" : pug_interp)) + "\u003C\u002Fh3\u003E\u003C\u002Farticle\u003E";
-	;pug_debug_line = 20;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 16;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Carticle class=\"hero\"\u003E";
-	;pug_debug_line = 21;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 17;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Cimg" + (pug.attr("src", "../images/projects/" + slug + "/" + data.heroImage, true, true)) + "\u003E\u003C\u002Farticle\u003E";
-	;pug_debug_line = 24;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 20;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Cdiv class=\"project-details\"\u003E";
-	;pug_debug_line = 25;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 21;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Carticle class=\"description\"\u003E";
-	;pug_debug_line = 26;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 22;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Cp\u003E";
-	;pug_debug_line = 26;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 22;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + (pug.escape(null == (pug_interp = data.description) ? "" : pug_interp)) + "\u003C\u002Fp\u003E\u003C\u002Farticle\u003E";
-	;pug_debug_line = 28;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 24;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Carticle class=\"credits\"\u003E";
-	;pug_debug_line = 29;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 25;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Cul\u003E";
-	;pug_debug_line = 29;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 25;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + " ";
-	;pug_debug_line = 30;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 26;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	// iterate data.credits
 	;(function(){
 	  var $$obj = data.credits;
 	  if ('number' == typeof $$obj.length) {
 	      for (var pug_index0 = 0, $$l = $$obj.length; pug_index0 < $$l; pug_index0++) {
 	        var credit = $$obj[pug_index0];
-	;pug_debug_line = 31;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 27;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Cli\u003E";
-	;pug_debug_line = 32;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 28;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Ch4\u003E";
-	;pug_debug_line = 32;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 28;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + (pug.escape(null == (pug_interp = credit.type) ? "" : pug_interp)) + "\u003C\u002Fh4\u003E";
-	;pug_debug_line = 33;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 29;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	if (credit.url) {
-	;pug_debug_line = 34;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 30;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Cp\u003E";
-	;pug_debug_line = 35;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 31;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Ca" + (pug.attr("href", credit.url, true, true)) + "\u003E";
-	;pug_debug_line = 35;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 31;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + (pug.escape(null == (pug_interp = credit.text) ? "" : pug_interp)) + "\u003C\u002Fa\u003E\u003C\u002Fp\u003E";
 	}
 	else {
-	;pug_debug_line = 37;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 33;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Cp\u003E";
-	;pug_debug_line = 37;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 33;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + (pug.escape(null == (pug_interp = credit.text) ? "" : pug_interp)) + "\u003C\u002Fp\u003E";
 	}
 	pug_html = pug_html + "\u003C\u002Fli\u003E";
@@ -15692,25 +15709,25 @@
 	    for (var pug_index0 in $$obj) {
 	      $$l++;
 	      var credit = $$obj[pug_index0];
-	;pug_debug_line = 31;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 27;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Cli\u003E";
-	;pug_debug_line = 32;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 28;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Ch4\u003E";
-	;pug_debug_line = 32;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 28;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + (pug.escape(null == (pug_interp = credit.type) ? "" : pug_interp)) + "\u003C\u002Fh4\u003E";
-	;pug_debug_line = 33;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 29;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	if (credit.url) {
-	;pug_debug_line = 34;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 30;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Cp\u003E";
-	;pug_debug_line = 35;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 31;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Ca" + (pug.attr("href", credit.url, true, true)) + "\u003E";
-	;pug_debug_line = 35;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 31;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + (pug.escape(null == (pug_interp = credit.text) ? "" : pug_interp)) + "\u003C\u002Fa\u003E\u003C\u002Fp\u003E";
 	}
 	else {
-	;pug_debug_line = 37;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 33;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Cp\u003E";
-	;pug_debug_line = 37;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 33;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + (pug.escape(null == (pug_interp = credit.text) ? "" : pug_interp)) + "\u003C\u002Fp\u003E";
 	}
 	pug_html = pug_html + "\u003C\u002Fli\u003E";
@@ -15719,32 +15736,34 @@
 	}).call(this);
 	
 	pug_html = pug_html + "\u003C\u002Ful\u003E\u003C\u002Farticle\u003E";
-	;pug_debug_line = 38;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 34;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Carticle class=\"recognition\"\u003E";
+	;pug_debug_line = 35;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	if (data.press) {
-	;pug_debug_line = 39;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	pug_html = pug_html + "\u003Carticle class=\"press\"\u003E";
-	;pug_debug_line = 40;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 36;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Cdiv class=\"press\"\u003E";
+	;pug_debug_line = 37;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Ch4\u003E";
-	;pug_debug_line = 40;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 37;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "Press\u003C\u002Fh4\u003E";
-	;pug_debug_line = 41;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 38;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Cul\u003E";
-	;pug_debug_line = 42;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 39;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	// iterate data.press
 	;(function(){
 	  var $$obj = data.press;
 	  if ('number' == typeof $$obj.length) {
 	      for (var pug_index1 = 0, $$l = $$obj.length; pug_index1 < $$l; pug_index1++) {
 	        var article = $$obj[pug_index1];
-	;pug_debug_line = 43;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 40;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Cli\u003E";
-	;pug_debug_line = 43;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 40;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + " ";
-	;pug_debug_line = 44;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 41;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Cp\u003E";
-	;pug_debug_line = 45;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 42;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Ca" + (pug.attr("href", article.url, true, true)+" target=\"_blank\"") + "\u003E";
-	;pug_debug_line = 45;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 42;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + (pug.escape(null == (pug_interp = article.title) ? "" : pug_interp)) + "\u003C\u002Fa\u003E\u003C\u002Fp\u003E\u003C\u002Fli\u003E";
 	      }
 	  } else {
@@ -15752,52 +15771,102 @@
 	    for (var pug_index1 in $$obj) {
 	      $$l++;
 	      var article = $$obj[pug_index1];
-	;pug_debug_line = 43;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 40;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Cli\u003E";
-	;pug_debug_line = 43;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 40;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + " ";
-	;pug_debug_line = 44;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 41;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Cp\u003E";
-	;pug_debug_line = 45;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 42;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Ca" + (pug.attr("href", article.url, true, true)+" target=\"_blank\"") + "\u003E";
-	;pug_debug_line = 45;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 42;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + (pug.escape(null == (pug_interp = article.title) ? "" : pug_interp)) + "\u003C\u002Fa\u003E\u003C\u002Fp\u003E\u003C\u002Fli\u003E";
 	    }
 	  }
 	}).call(this);
 	
-	pug_html = pug_html + "\u003C\u002Ful\u003E\u003C\u002Farticle\u003E";
+	pug_html = pug_html + "\u003C\u002Ful\u003E\u003C\u002Fdiv\u003E";
 	}
+	;pug_debug_line = 44;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	if (data.awards) {
+	;pug_debug_line = 45;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Cdiv class=\"awards\"\u003E";
+	;pug_debug_line = 46;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Ch4\u003E";
+	;pug_debug_line = 46;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "Recognition\u003C\u002Fh4\u003E";
 	;pug_debug_line = 47;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	if (data.links) {
-	;pug_debug_line = 48;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	pug_html = pug_html + "\u003Carticle class=\"links\"\u003E";
-	;pug_debug_line = 49;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Cul\u003E";
-	;pug_debug_line = 50;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	// iterate data.links
+	;pug_debug_line = 48;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	// iterate data.awards
 	;(function(){
-	  var $$obj = data.links;
+	  var $$obj = data.awards;
 	  if ('number' == typeof $$obj.length) {
 	      for (var pug_index2 = 0, $$l = $$obj.length; pug_index2 < $$l; pug_index2++) {
-	        var link = $$obj[pug_index2];
-	;pug_debug_line = 51;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	        var article = $$obj[pug_index2];
+	;pug_debug_line = 49;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Cli\u003E";
-	;pug_debug_line = 52;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	pug_html = pug_html + "\u003Ca" + (" class=\"button\""+pug.attr("href", link.url, true, true)+" target=\"_blank\"") + "\u003E";
-	;pug_debug_line = 52;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	pug_html = pug_html + (pug.escape(null == (pug_interp = link.title) ? "" : pug_interp)) + "\u003C\u002Fa\u003E\u003C\u002Fli\u003E";
+	;pug_debug_line = 49;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + " ";
+	;pug_debug_line = 50;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Cp\u003E";
+	;pug_debug_line = 51;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Ca" + (pug.attr("href", article.url, true, true)+" target=\"_blank\"") + "\u003E";
+	;pug_debug_line = 51;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + (pug.escape(null == (pug_interp = article.title) ? "" : pug_interp)) + "\u003C\u002Fa\u003E\u003C\u002Fp\u003E\u003C\u002Fli\u003E";
 	      }
 	  } else {
 	    var $$l = 0;
 	    for (var pug_index2 in $$obj) {
 	      $$l++;
-	      var link = $$obj[pug_index2];
-	;pug_debug_line = 51;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	      var article = $$obj[pug_index2];
+	;pug_debug_line = 49;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Cli\u003E";
+	;pug_debug_line = 49;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + " ";
+	;pug_debug_line = 50;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Cp\u003E";
+	;pug_debug_line = 51;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Ca" + (pug.attr("href", article.url, true, true)+" target=\"_blank\"") + "\u003E";
+	;pug_debug_line = 51;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + (pug.escape(null == (pug_interp = article.title) ? "" : pug_interp)) + "\u003C\u002Fa\u003E\u003C\u002Fp\u003E\u003C\u002Fli\u003E";
+	    }
+	  }
+	}).call(this);
+	
+	pug_html = pug_html + "\u003C\u002Ful\u003E\u003C\u002Fdiv\u003E";
+	}
+	pug_html = pug_html + "\u003C\u002Farticle\u003E";
 	;pug_debug_line = 52;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	if (data.links) {
+	;pug_debug_line = 53;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Carticle class=\"links\"\u003E";
+	;pug_debug_line = 54;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Cul\u003E";
+	;pug_debug_line = 55;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	// iterate data.links
+	;(function(){
+	  var $$obj = data.links;
+	  if ('number' == typeof $$obj.length) {
+	      for (var pug_index3 = 0, $$l = $$obj.length; pug_index3 < $$l; pug_index3++) {
+	        var link = $$obj[pug_index3];
+	;pug_debug_line = 56;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Cli\u003E";
+	;pug_debug_line = 57;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Ca" + (" class=\"button\""+pug.attr("href", link.url, true, true)+" target=\"_blank\"") + "\u003E";
-	;pug_debug_line = 52;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 57;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + (pug.escape(null == (pug_interp = link.title) ? "" : pug_interp)) + "\u003C\u002Fa\u003E\u003C\u002Fli\u003E";
+	      }
+	  } else {
+	    var $$l = 0;
+	    for (var pug_index3 in $$obj) {
+	      $$l++;
+	      var link = $$obj[pug_index3];
+	;pug_debug_line = 56;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Cli\u003E";
+	;pug_debug_line = 57;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Ca" + (" class=\"button\""+pug.attr("href", link.url, true, true)+" target=\"_blank\"") + "\u003E";
+	;pug_debug_line = 57;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + (pug.escape(null == (pug_interp = link.title) ? "" : pug_interp)) + "\u003C\u002Fa\u003E\u003C\u002Fli\u003E";
 	    }
 	  }
@@ -15806,115 +15875,75 @@
 	pug_html = pug_html + "\u003C\u002Ful\u003E\u003C\u002Farticle\u003E";
 	}
 	pug_html = pug_html + "\u003C\u002Fdiv\u003E";
-	;pug_debug_line = 54;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 59;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Cdiv class=\"project-images\"\u003E";
-	;pug_debug_line = 56;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 61;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	// iterate data.mainContent
 	;(function(){
 	  var $$obj = data.mainContent;
 	  if ('number' == typeof $$obj.length) {
-	      for (var pug_index3 = 0, $$l = $$obj.length; pug_index3 < $$l; pug_index3++) {
-	        var content = $$obj[pug_index3];
-	;pug_debug_line = 57;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	if ((content.type == "video")) {
-	;pug_debug_line = 58;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	pug_html = pug_html + "\u003Carticle class=\"video\"\u003E";
-	;pug_debug_line = 59;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	pug_html = pug_html + "\u003Cdiv class=\"video-player\"\u003E";
-	;pug_debug_line = 60;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	pug_html = pug_html + "\u003Cimg" + (" class=\"preview-image\""+pug.attr("src", "../images/projects/" + slug + "/" +content.previewImage, true, true)) + "\u003E";
-	;pug_debug_line = 61;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	pug_html = pug_html + "\u003Cvideo\u003E";
+	      for (var pug_index4 = 0, $$l = $$obj.length; pug_index4 < $$l; pug_index4++) {
+	        var content = $$obj[pug_index4];
 	;pug_debug_line = 62;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	if ((content.type == "video")) {
+	;pug_debug_line = 63;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Carticle class=\"video\"\u003E";
+	;pug_debug_line = 64;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Cdiv class=\"video-player\"\u003E";
+	;pug_debug_line = 65;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Cimg" + (" class=\"preview-image\""+pug.attr("src", "../images/projects/" + slug + "/" +content.previewImage, true, true)) + "\u003E";
+	;pug_debug_line = 66;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Cvideo\u003E";
+	;pug_debug_line = 67;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	// iterate content.videoSrc
 	;(function(){
 	  var $$obj = content.videoSrc;
 	  if ('number' == typeof $$obj.length) {
-	      for (var pug_index4 = 0, $$l = $$obj.length; pug_index4 < $$l; pug_index4++) {
-	        var src = $$obj[pug_index4];
-	;pug_debug_line = 63;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	      for (var pug_index5 = 0, $$l = $$obj.length; pug_index5 < $$l; pug_index5++) {
+	        var src = $$obj[pug_index5];
+	;pug_debug_line = 68;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Csource" + (pug.attr("src", src.src, true, true)+pug.attr("type", "../images/projects/" + slug + "/" + src.type, true, true)) + "\u003E";
 	      }
 	  } else {
 	    var $$l = 0;
-	    for (var pug_index4 in $$obj) {
+	    for (var pug_index5 in $$obj) {
 	      $$l++;
-	      var src = $$obj[pug_index4];
-	;pug_debug_line = 63;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	      var src = $$obj[pug_index5];
+	;pug_debug_line = 68;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Csource" + (pug.attr("src", src.src, true, true)+pug.attr("type", "../images/projects/" + slug + "/" + src.type, true, true)) + "\u003E";
 	    }
 	  }
 	}).call(this);
 	
 	pug_html = pug_html + "\u003C\u002Fvideo\u003E\u003C\u002Fdiv\u003E";
-	;pug_debug_line = 64;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	if ((content.description)) {
-	;pug_debug_line = 65;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	pug_html = pug_html + "\u003Cdiv class=\"description\"\u003E";
-	;pug_debug_line = 66;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	pug_html = pug_html + "\u003Cp\u003E";
-	;pug_debug_line = 66;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	pug_html = pug_html + (pug.escape(null == (pug_interp = content.description) ? "" : pug_interp)) + "\u003C\u002Fp\u003E\u003C\u002Fdiv\u003E";
-	}
-	pug_html = pug_html + "\u003C\u002Farticle\u003E";
-	}
-	else {
 	;pug_debug_line = 69;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	if ((content.type == "col-2")) {
-	;pug_debug_line = 70;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	pug_html = pug_html + "\u003Carticle class=\"col-2\"\u003E";
-	;pug_debug_line = 71;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	pug_html = pug_html + "\u003Cdiv class=\"image-container\"\u003E";
-	;pug_debug_line = 72;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	// iterate content.images
-	;(function(){
-	  var $$obj = content.images;
-	  if ('number' == typeof $$obj.length) {
-	      for (var pug_index5 = 0, $$l = $$obj.length; pug_index5 < $$l; pug_index5++) {
-	        var image = $$obj[pug_index5];
-	;pug_debug_line = 73;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	pug_html = pug_html + "\u003Cdiv class=\"image-wrapper\"\u003E";
-	;pug_debug_line = 74;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	pug_html = pug_html + "\u003Cimg" + (" class=\"preview-image\""+pug.attr("src", "../images/projects/" + slug + "/" +image, true, true)) + "\u003E\u003C\u002Fdiv\u003E";
-	      }
-	  } else {
-	    var $$l = 0;
-	    for (var pug_index5 in $$obj) {
-	      $$l++;
-	      var image = $$obj[pug_index5];
-	;pug_debug_line = 73;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	pug_html = pug_html + "\u003Cdiv class=\"image-wrapper\"\u003E";
-	;pug_debug_line = 74;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	pug_html = pug_html + "\u003Cimg" + (" class=\"preview-image\""+pug.attr("src", "../images/projects/" + slug + "/" +image, true, true)) + "\u003E\u003C\u002Fdiv\u003E";
-	    }
-	  }
-	}).call(this);
-	
-	pug_html = pug_html + "\u003C\u002Fdiv\u003E";
-	;pug_debug_line = 75;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	if ((content.description)) {
-	;pug_debug_line = 76;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 70;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Cdiv class=\"description\"\u003E";
-	;pug_debug_line = 77;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 71;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Cp\u003E";
-	;pug_debug_line = 77;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 71;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + (pug.escape(null == (pug_interp = content.description) ? "" : pug_interp)) + "\u003C\u002Fp\u003E\u003C\u002Fdiv\u003E";
 	}
 	pug_html = pug_html + "\u003C\u002Farticle\u003E";
 	}
 	else {
-	;pug_debug_line = 80;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	pug_html = pug_html + "\u003Carticle\u003E";
-	;pug_debug_line = 81;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 74;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	if ((content.type == "col-2")) {
+	;pug_debug_line = 75;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Carticle class=\"col-2\"\u003E";
+	;pug_debug_line = 76;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Cdiv class=\"image-container\"\u003E";
+	;pug_debug_line = 77;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	// iterate content.images
 	;(function(){
 	  var $$obj = content.images;
 	  if ('number' == typeof $$obj.length) {
 	      for (var pug_index6 = 0, $$l = $$obj.length; pug_index6 < $$l; pug_index6++) {
 	        var image = $$obj[pug_index6];
-	;pug_debug_line = 82;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 78;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Cdiv class=\"image-wrapper\"\u003E";
-	;pug_debug_line = 83;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 79;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Cimg" + (" class=\"preview-image\""+pug.attr("src", "../images/projects/" + slug + "/" +image, true, true)) + "\u003E\u003C\u002Fdiv\u003E";
 	      }
 	  } else {
@@ -15922,132 +15951,132 @@
 	    for (var pug_index6 in $$obj) {
 	      $$l++;
 	      var image = $$obj[pug_index6];
-	;pug_debug_line = 82;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 78;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Cdiv class=\"image-wrapper\"\u003E";
-	;pug_debug_line = 83;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	pug_html = pug_html + "\u003Cimg" + (" class=\"preview-image\""+pug.attr("src", "../images/projects/" + slug + "/" +image, true, true)) + "\u003E\u003C\u002Fdiv\u003E";
-	    }
-	  }
-	}).call(this);
-	
-	;pug_debug_line = 84;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	if ((content.description)) {
-	;pug_debug_line = 85;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	pug_html = pug_html + "\u003Cdiv class=\"description\"\u003E";
-	;pug_debug_line = 86;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	pug_html = pug_html + "\u003Cp\u003E";
-	;pug_debug_line = 86;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	pug_html = pug_html + (pug.escape(null == (pug_interp = content.description) ? "" : pug_interp)) + "\u003C\u002Fp\u003E\u003C\u002Fdiv\u003E";
-	}
-	pug_html = pug_html + "\u003C\u002Farticle\u003E";
-	}
-	}
-	      }
-	  } else {
-	    var $$l = 0;
-	    for (var pug_index3 in $$obj) {
-	      $$l++;
-	      var content = $$obj[pug_index3];
-	;pug_debug_line = 57;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	if ((content.type == "video")) {
-	;pug_debug_line = 58;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	pug_html = pug_html + "\u003Carticle class=\"video\"\u003E";
-	;pug_debug_line = 59;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	pug_html = pug_html + "\u003Cdiv class=\"video-player\"\u003E";
-	;pug_debug_line = 60;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	pug_html = pug_html + "\u003Cimg" + (" class=\"preview-image\""+pug.attr("src", "../images/projects/" + slug + "/" +content.previewImage, true, true)) + "\u003E";
-	;pug_debug_line = 61;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	pug_html = pug_html + "\u003Cvideo\u003E";
-	;pug_debug_line = 62;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	// iterate content.videoSrc
-	;(function(){
-	  var $$obj = content.videoSrc;
-	  if ('number' == typeof $$obj.length) {
-	      for (var pug_index7 = 0, $$l = $$obj.length; pug_index7 < $$l; pug_index7++) {
-	        var src = $$obj[pug_index7];
-	;pug_debug_line = 63;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	pug_html = pug_html + "\u003Csource" + (pug.attr("src", src.src, true, true)+pug.attr("type", "../images/projects/" + slug + "/" + src.type, true, true)) + "\u003E";
-	      }
-	  } else {
-	    var $$l = 0;
-	    for (var pug_index7 in $$obj) {
-	      $$l++;
-	      var src = $$obj[pug_index7];
-	;pug_debug_line = 63;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	pug_html = pug_html + "\u003Csource" + (pug.attr("src", src.src, true, true)+pug.attr("type", "../images/projects/" + slug + "/" + src.type, true, true)) + "\u003E";
-	    }
-	  }
-	}).call(this);
-	
-	pug_html = pug_html + "\u003C\u002Fvideo\u003E\u003C\u002Fdiv\u003E";
-	;pug_debug_line = 64;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	if ((content.description)) {
-	;pug_debug_line = 65;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	pug_html = pug_html + "\u003Cdiv class=\"description\"\u003E";
-	;pug_debug_line = 66;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	pug_html = pug_html + "\u003Cp\u003E";
-	;pug_debug_line = 66;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	pug_html = pug_html + (pug.escape(null == (pug_interp = content.description) ? "" : pug_interp)) + "\u003C\u002Fp\u003E\u003C\u002Fdiv\u003E";
-	}
-	pug_html = pug_html + "\u003C\u002Farticle\u003E";
-	}
-	else {
-	;pug_debug_line = 69;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	if ((content.type == "col-2")) {
-	;pug_debug_line = 70;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	pug_html = pug_html + "\u003Carticle class=\"col-2\"\u003E";
-	;pug_debug_line = 71;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	pug_html = pug_html + "\u003Cdiv class=\"image-container\"\u003E";
-	;pug_debug_line = 72;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	// iterate content.images
-	;(function(){
-	  var $$obj = content.images;
-	  if ('number' == typeof $$obj.length) {
-	      for (var pug_index8 = 0, $$l = $$obj.length; pug_index8 < $$l; pug_index8++) {
-	        var image = $$obj[pug_index8];
-	;pug_debug_line = 73;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	pug_html = pug_html + "\u003Cdiv class=\"image-wrapper\"\u003E";
-	;pug_debug_line = 74;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	pug_html = pug_html + "\u003Cimg" + (" class=\"preview-image\""+pug.attr("src", "../images/projects/" + slug + "/" +image, true, true)) + "\u003E\u003C\u002Fdiv\u003E";
-	      }
-	  } else {
-	    var $$l = 0;
-	    for (var pug_index8 in $$obj) {
-	      $$l++;
-	      var image = $$obj[pug_index8];
-	;pug_debug_line = 73;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
-	pug_html = pug_html + "\u003Cdiv class=\"image-wrapper\"\u003E";
-	;pug_debug_line = 74;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 79;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Cimg" + (" class=\"preview-image\""+pug.attr("src", "../images/projects/" + slug + "/" +image, true, true)) + "\u003E\u003C\u002Fdiv\u003E";
 	    }
 	  }
 	}).call(this);
 	
 	pug_html = pug_html + "\u003C\u002Fdiv\u003E";
-	;pug_debug_line = 75;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 80;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	if ((content.description)) {
-	;pug_debug_line = 76;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 81;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Cdiv class=\"description\"\u003E";
-	;pug_debug_line = 77;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 82;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Cp\u003E";
-	;pug_debug_line = 77;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 82;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + (pug.escape(null == (pug_interp = content.description) ? "" : pug_interp)) + "\u003C\u002Fp\u003E\u003C\u002Fdiv\u003E";
 	}
 	pug_html = pug_html + "\u003C\u002Farticle\u003E";
 	}
 	else {
-	;pug_debug_line = 80;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 85;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Carticle\u003E";
-	;pug_debug_line = 81;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 86;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	// iterate content.images
+	;(function(){
+	  var $$obj = content.images;
+	  if ('number' == typeof $$obj.length) {
+	      for (var pug_index7 = 0, $$l = $$obj.length; pug_index7 < $$l; pug_index7++) {
+	        var image = $$obj[pug_index7];
+	;pug_debug_line = 87;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Cdiv class=\"image-wrapper\"\u003E";
+	;pug_debug_line = 88;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Cimg" + (" class=\"preview-image\""+pug.attr("src", "../images/projects/" + slug + "/" +image, true, true)) + "\u003E\u003C\u002Fdiv\u003E";
+	      }
+	  } else {
+	    var $$l = 0;
+	    for (var pug_index7 in $$obj) {
+	      $$l++;
+	      var image = $$obj[pug_index7];
+	;pug_debug_line = 87;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Cdiv class=\"image-wrapper\"\u003E";
+	;pug_debug_line = 88;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Cimg" + (" class=\"preview-image\""+pug.attr("src", "../images/projects/" + slug + "/" +image, true, true)) + "\u003E\u003C\u002Fdiv\u003E";
+	    }
+	  }
+	}).call(this);
+	
+	;pug_debug_line = 89;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	if ((content.description)) {
+	;pug_debug_line = 90;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Cdiv class=\"description\"\u003E";
+	;pug_debug_line = 91;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Cp\u003E";
+	;pug_debug_line = 91;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + (pug.escape(null == (pug_interp = content.description) ? "" : pug_interp)) + "\u003C\u002Fp\u003E\u003C\u002Fdiv\u003E";
+	}
+	pug_html = pug_html + "\u003C\u002Farticle\u003E";
+	}
+	}
+	      }
+	  } else {
+	    var $$l = 0;
+	    for (var pug_index4 in $$obj) {
+	      $$l++;
+	      var content = $$obj[pug_index4];
+	;pug_debug_line = 62;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	if ((content.type == "video")) {
+	;pug_debug_line = 63;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Carticle class=\"video\"\u003E";
+	;pug_debug_line = 64;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Cdiv class=\"video-player\"\u003E";
+	;pug_debug_line = 65;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Cimg" + (" class=\"preview-image\""+pug.attr("src", "../images/projects/" + slug + "/" +content.previewImage, true, true)) + "\u003E";
+	;pug_debug_line = 66;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Cvideo\u003E";
+	;pug_debug_line = 67;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	// iterate content.videoSrc
+	;(function(){
+	  var $$obj = content.videoSrc;
+	  if ('number' == typeof $$obj.length) {
+	      for (var pug_index8 = 0, $$l = $$obj.length; pug_index8 < $$l; pug_index8++) {
+	        var src = $$obj[pug_index8];
+	;pug_debug_line = 68;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Csource" + (pug.attr("src", src.src, true, true)+pug.attr("type", "../images/projects/" + slug + "/" + src.type, true, true)) + "\u003E";
+	      }
+	  } else {
+	    var $$l = 0;
+	    for (var pug_index8 in $$obj) {
+	      $$l++;
+	      var src = $$obj[pug_index8];
+	;pug_debug_line = 68;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Csource" + (pug.attr("src", src.src, true, true)+pug.attr("type", "../images/projects/" + slug + "/" + src.type, true, true)) + "\u003E";
+	    }
+	  }
+	}).call(this);
+	
+	pug_html = pug_html + "\u003C\u002Fvideo\u003E\u003C\u002Fdiv\u003E";
+	;pug_debug_line = 69;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	if ((content.description)) {
+	;pug_debug_line = 70;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Cdiv class=\"description\"\u003E";
+	;pug_debug_line = 71;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Cp\u003E";
+	;pug_debug_line = 71;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + (pug.escape(null == (pug_interp = content.description) ? "" : pug_interp)) + "\u003C\u002Fp\u003E\u003C\u002Fdiv\u003E";
+	}
+	pug_html = pug_html + "\u003C\u002Farticle\u003E";
+	}
+	else {
+	;pug_debug_line = 74;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	if ((content.type == "col-2")) {
+	;pug_debug_line = 75;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Carticle class=\"col-2\"\u003E";
+	;pug_debug_line = 76;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Cdiv class=\"image-container\"\u003E";
+	;pug_debug_line = 77;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	// iterate content.images
 	;(function(){
 	  var $$obj = content.images;
 	  if ('number' == typeof $$obj.length) {
 	      for (var pug_index9 = 0, $$l = $$obj.length; pug_index9 < $$l; pug_index9++) {
 	        var image = $$obj[pug_index9];
-	;pug_debug_line = 82;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 78;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Cdiv class=\"image-wrapper\"\u003E";
-	;pug_debug_line = 83;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 79;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Cimg" + (" class=\"preview-image\""+pug.attr("src", "../images/projects/" + slug + "/" +image, true, true)) + "\u003E\u003C\u002Fdiv\u003E";
 	      }
 	  } else {
@@ -16055,21 +16084,61 @@
 	    for (var pug_index9 in $$obj) {
 	      $$l++;
 	      var image = $$obj[pug_index9];
-	;pug_debug_line = 82;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 78;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Cdiv class=\"image-wrapper\"\u003E";
-	;pug_debug_line = 83;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 79;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Cimg" + (" class=\"preview-image\""+pug.attr("src", "../images/projects/" + slug + "/" +image, true, true)) + "\u003E\u003C\u002Fdiv\u003E";
 	    }
 	  }
 	}).call(this);
 	
-	;pug_debug_line = 84;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003C\u002Fdiv\u003E";
+	;pug_debug_line = 80;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	if ((content.description)) {
-	;pug_debug_line = 85;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 81;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Cdiv class=\"description\"\u003E";
-	;pug_debug_line = 86;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	;pug_debug_line = 82;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + "\u003Cp\u003E";
+	;pug_debug_line = 82;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + (pug.escape(null == (pug_interp = content.description) ? "" : pug_interp)) + "\u003C\u002Fp\u003E\u003C\u002Fdiv\u003E";
+	}
+	pug_html = pug_html + "\u003C\u002Farticle\u003E";
+	}
+	else {
+	;pug_debug_line = 85;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Carticle\u003E";
 	;pug_debug_line = 86;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	// iterate content.images
+	;(function(){
+	  var $$obj = content.images;
+	  if ('number' == typeof $$obj.length) {
+	      for (var pug_index10 = 0, $$l = $$obj.length; pug_index10 < $$l; pug_index10++) {
+	        var image = $$obj[pug_index10];
+	;pug_debug_line = 87;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Cdiv class=\"image-wrapper\"\u003E";
+	;pug_debug_line = 88;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Cimg" + (" class=\"preview-image\""+pug.attr("src", "../images/projects/" + slug + "/" +image, true, true)) + "\u003E\u003C\u002Fdiv\u003E";
+	      }
+	  } else {
+	    var $$l = 0;
+	    for (var pug_index10 in $$obj) {
+	      $$l++;
+	      var image = $$obj[pug_index10];
+	;pug_debug_line = 87;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Cdiv class=\"image-wrapper\"\u003E";
+	;pug_debug_line = 88;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Cimg" + (" class=\"preview-image\""+pug.attr("src", "../images/projects/" + slug + "/" +image, true, true)) + "\u003E\u003C\u002Fdiv\u003E";
+	    }
+	  }
+	}).call(this);
+	
+	;pug_debug_line = 89;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	if ((content.description)) {
+	;pug_debug_line = 90;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Cdiv class=\"description\"\u003E";
+	;pug_debug_line = 91;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
+	pug_html = pug_html + "\u003Cp\u003E";
+	;pug_debug_line = 91;pug_debug_filename = "\u002FUsers\u002Fsunygao\u002FDocuments\u002Fsites\u002Fsunygao.com\u002Fsite_2016\u002Fnewsite\u002Fviews\u002FworkDetail.pug";
 	pug_html = pug_html + (pug.escape(null == (pug_interp = content.description) ? "" : pug_interp)) + "\u003C\u002Fp\u003E\u003C\u002Fdiv\u003E";
 	}
 	pug_html = pug_html + "\u003C\u002Farticle\u003E";
@@ -16081,6 +16150,62 @@
 	
 	pug_html = pug_html + "\u003C\u002Fdiv\u003E\u003C\u002Fsection\u003E\u003C\u002Fdiv\u003E";}.call(this,"data" in locals_for_with?locals_for_with.data:typeof data!=="undefined"?data:undefined,"nextData" in locals_for_with?locals_for_with.nextData:typeof nextData!=="undefined"?nextData:undefined,"slug" in locals_for_with?locals_for_with.slug:typeof slug!=="undefined"?slug:undefined));} catch (err) {pug.rethrow(err, pug_debug_filename, pug_debug_line, pug_debug_sources[pug_debug_filename]);};return pug_html;};
 	module.exports = template;
+
+/***/ },
+/* 24 */
+/***/ function(module, exports) {
+
+	module.exports = {
+		"meta": {
+			"title": "Suny Gao - Home",
+			"description": "Suny Gao - Interactive developer in Brooklyn, NY"
+		},
+		"projects": [
+			{
+				"title": "ismokeweed.com",
+				"client": "vice weediquette",
+				"slug": "i-smoke-weed",
+				"previewImages": [
+					"weed-1.jpg",
+					"weed-2.jpg",
+					"weed-3.jpg"
+				]
+			},
+			{
+				"title": "Year in Music",
+				"client": "spotify",
+				"slug": "year-in-music",
+				"previewImages": [
+					"yim-1.jpg",
+					"yim-2.jpg"
+				]
+			},
+			{
+				"title": "Camp Google",
+				"client": "google",
+				"slug": "camp-google",
+				"previewImages": [
+					"camp-google-1.jpg",
+					"camp-google-2.jpg"
+				]
+			},
+			{
+				"title": "Google Calendar",
+				"client": "google",
+				"slug": "google-calendar"
+			},
+			{
+				"title": "Internet.org",
+				"client": "facebook",
+				"slug": "internet-org"
+			},
+			{
+				"title": "Hello Chime",
+				"client": "chime",
+				"slug": "hello-chime"
+			}
+		]
+	};
 
 /***/ }
 /******/ ]);
