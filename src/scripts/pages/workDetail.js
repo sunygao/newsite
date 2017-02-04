@@ -8,10 +8,10 @@ export default class WorkDetail extends Page{
 		super.initialize(data, params);
 
 		this.slug = params.slug;
-		this.nextData = this.data.next;
+		this.nextData = params.nextData;
 
 		this.template = Template;
-		// this.render();
+		this.render();
 
 		this.bindEvents();
 	}	

@@ -44,7 +44,8 @@ export default class Router extends Backbone.Router.extend({
             view: WorkDetail,
             data: workData[route],
             params: {
-                slug: route
+                slug: route,
+                nextData: workData[workData[route].next]
             }
         });
     }
