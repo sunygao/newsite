@@ -8,7 +8,7 @@
 		"title" : "I Smoke Weed",
 		"client" : "Viceland",
 		"heroImage" : "weed-form-hero.jpg",
-		"description" : "Thought marijuana has been decriminalized in many states, weed usage is still stigmatized in the America, and admitting to smoking weed is likely to invoke cartoonish stoner stereotypes. In conjunction with Viceland's TV campaign, Stink Studios created a platform for users to publicly and proudly declare &quote;I smoke weed.&quote",
+		"description" : "Thought marijuana has been decriminalized in many states, weed usage is still stigmatized in the America, and admitting to smoking weed is likely to invoke cartoonish stoner stereotypes. In conjunction with Viceland's TV campaign, Stink Studios created a platform for users to publicly and proudly declare \"I smoke weed.\" ",
 		"credits" : [
 			{
 				"type" : "Agency",
@@ -76,7 +76,7 @@
 	},
 	"year-in-music" : {
 		"meta" : {
-			"title" : "Suny Gao - Year in Music 2015",
+			"title" : "Suny Gao - Year in Music",
 			"description" : "Spotify's Year in Music, 2015"
 		},
 		"next": "i-smoke-weed",
@@ -101,24 +101,58 @@
 		],	
 		"press" : [
 			{
-				"title" : "press link 1",
-				"url" : "http://www.nytimes.com"
+				"title" : "The Verge",
+				"url" : "http://www.theverge.com/2015/12/7/9860318/spotify-year-in-music-streaming-2015"
 			},
 
 			{
-				"title" : "press link 2",
-				"url" : "http://www.nytimes.com"
+				"title" : "The Next Web",
+				"url" : "https://thenextweb.com/apps/2015/12/07/spotifys-2015-year-in-music-is-here-and-its-a-reminder-of-why-the-service-is-on-top/"
 			},
 
 			{
-				"title" : "press link 3",
-				"url" : "http://www.nytimes.com"
+				"title" : "Adweek",
+				"url" : "http://www.adweek.com/digital/spotify-launches-year-in-music-highlighting-2015-listening-habits/"
+			},
+
+			{
+				"title" : "Gizmodo",
+				"url" : "http://gizmodo.com/spotifys-year-in-music-tool-tells-you-how-you-soundtrac-1746599519"
+			},
+			{
+
+				"title" : "Techcrunch",
+				"url" : "https://techcrunch.com/2015/12/07/spotifys-year-in-music-recaps-the-songs-you-listened-to-most-in-2015/"
 			}
+		],
+		"awards" : [
+			{
+				"title" : "Webby - Winner in Advertising: Best User Interface"
+			},
+			{
+				"title" : "Webby - People's Voice Winner in Advertising: Best User Interface"
+			},
+			{
+				"title" : "Webby - People's Voice Winner in Advertising: Digital Campaigns"
+			},
+			{
+				"title" : "Webby - People's Voice Winner in Web: Music"
+			},
+			{
+				"title" : "Awwwards - Site of the Day"
+			},
+			{
+				"title" : "FWA - Site of the Day"
+			},
+			{
+				"title" : "FWA - Mobile of the Day"
+			}
+			
 		],
 		"links" : [
 			{
 				"title" : "case study",
-				"url" : "http://www.stinkstudios.com"
+				"url" : "http://www.stinkstudios.com/work/spotifyyearinmusic"
 			}
 		],
 		"mainContent": [

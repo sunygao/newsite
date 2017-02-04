@@ -40,6 +40,7 @@
 
 		.project-details {
 			margin: 60px 0;
+			overflow: hidden;
 
 			p {
 				color: $grey_dark;
@@ -57,12 +58,9 @@
 			}
 		}
 
-		.recognition {
+		.press {
 			width: 50%;
 			display: inline-block;
-		}
-
-		.press {
 			margin-bottom: 30px;
 		}
 

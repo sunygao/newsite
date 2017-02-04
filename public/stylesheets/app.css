@@ -446,6 +446,7 @@ footer ul li a {
 
 #work-detail .work-detail .project-details {
   margin: 60px 0;
+  overflow: hidden;
 }
 
 #work-detail .work-detail .project-details p {
@@ -465,12 +466,9 @@ footer ul li a {
           justify-content: space-between;
 }
 
-#work-detail .work-detail .recognition {
+#work-detail .work-detail .press {
   width: 50%;
   display: inline-block;
-}
-
-#work-detail .work-detail .press {
   margin-bottom: 30px;
 }
 
