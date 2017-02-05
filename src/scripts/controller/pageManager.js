@@ -18,10 +18,10 @@ export default class PageManager {
 		
 		this.onResize();
 
-    this.onScroll();
+	this.onScroll();
 
-    //this.loader = new Loader();
-    this.aboutPage = new About();
+	//this.loader = new Loader();
+	this.aboutPage = new About();
 	}
 
 	init() {
@@ -77,18 +77,18 @@ export default class PageManager {
 	}
 
   onResize() {
-    CV.viewport.width  = window.innerWidth; 
-    CV.viewport.height = window.innerHeight;    
+	CV.viewport.width  = window.innerWidth; 
+	CV.viewport.height = window.innerHeight;    
 
-    if(CV.viewport.width > Config.bkptMed) {
-      CV.bkpt = 'lrg';
-    } else if(CV.viewport.width > Config.bkptSml){
-      CV.bkpt = 'med';
-    } else{
-      CV.bkpt = 'sml';
-    }
+	if(CV.viewport.width > Config.bkptMed) {
+	  CV.bkpt = 'lrg';
+	} else if(CV.viewport.width > Config.bkptSml){
+	  CV.bkpt = 'med';
+	} else{
+	  CV.bkpt = 'sml';
+	}
 
-    if(this.currentPageView && this.currentPageView.onResize) {
+	if(this.currentPageView && this.currentPageView.onResize) {
 			this.currentPageView.onResize();
 		}
   }
@@ -128,7 +128,7 @@ export default class PageManager {
 		CV.touch.direction == null;
   }
 
-  onRAF() {
+	onRAF() {
 		//call raf on current page view
 		if(this.currentPageView && this.currentPageView.onRAF) {
 			this.currentPageView.onRAF();
@@ -142,6 +142,10 @@ export default class PageManager {
 
 		if(this.aboutPage.isOpen) {
 			this.aboutPage.close();
+		}
+
+		if($('body').hasClass('error')) {
+			$('body').removeClass('error');
 		}
 
 		if(this.currentPageView == null) {//first time loading

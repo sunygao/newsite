@@ -19,6 +19,7 @@ body {
     -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
     @include roboto;
+    height: 100%;
 
     &.no-scroll {
         height: 100%;
@@ -29,6 +30,11 @@ body {
 #main-content {
     position: relative;
     padding: $padding-top 0 0;
+}
+
+.error #main-content {
+    padding-top: 0;
+    height: 100%;
 }
 
 
