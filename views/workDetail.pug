@@ -1,11 +1,12 @@
 #work-detail
-	section.next-project
-		ul
-			
-			li
-				a(href="/work/" + data.next)
-					h2=nextData.title
-					h3=nextData.client
+	if(nextData)
+		section.next-project
+			ul
+				
+				li
+					a(href="/work/" + data.next)
+						h2=nextData.title
+						h3=nextData.client
 
 
 	section.work-detail
@@ -23,28 +24,42 @@
 
 			article.credits
 				ul 
-					each credit in data.credits
+					if(data.credits.agency)
 						li
-							h4= credit.type
-							if credit.url
-								p
-									a(href= credit.url)= credit.text
-							else
-								p= credit.text
+							h4 Agency
+							each agency in data.credits.agency
+								if agency.url
+									p
+										a(href= agency.url, target="_blank")= agency.text
+								else
+									p= agency.text
+						li
+							h4 Role
+							p=data.credits.role
+						li
+							h4 Date
+							p=data.credits.date
 			if data.links
 				article.links
 					ul
-						each link in data.links
+						if(data.links.site)
 							li
-								a(class="button", href= link.url, target="_blank")= link.title
+								a(class="button", href= data.links.site, target="_blank") Launch Site
+						if(data.links.caseStudy)
+							li
+								a(class="button", href= data.links.caseStudy, target="_blank") Case Study
+						
 			if data.press
 				article.press
 					h4 Press
 					ul
 						each article in data.press
 							li 
-								p
-									a(href= article.url, target="_blank")= article.title
+								if article.url
+									p
+										a(href= article.url, target="_blank")= article.title
+								else 
+									p= article.title
 
 			if data.awards
 				article.awards
@@ -52,8 +67,11 @@
 					ul
 						each article in data.awards
 							li 
-								p
-									a(href= article.url, target="_blank")= article.title
+								if article.url
+									p
+										a(href= article.url, target="_blank")= article.title
+								else 
+									p= article.title
 			
 		
 		.project-images

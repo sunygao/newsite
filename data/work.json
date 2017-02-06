@@ -8,45 +8,36 @@
 		"title" : "I Smoke Weed",
 		"client" : "Viceland",
 		"heroImage" : "weed-form-hero.jpg",
-		"description" : "Thought marijuana has been decriminalized in many states, weed usage is still stigmatized in the America, and admitting to smoking weed is likely to invoke cartoonish stoner stereotypes. In conjunction with Viceland's TV campaign, Stink Studios created a platform for users to publicly and proudly declare \"I smoke weed.\" ",
-		"credits" : [
-			{
-				"type" : "Agency",
-				"text" : "Stink Studios",
-				"url" : "http://www.stinkstudios.com"
-			},
-			{
-				"type": "role",
-				"text" : "Front End Developer"
-			},
-			{
-				"type": "date",
-				"text" : "October 2016"
-			}
-		],	
-		"links" : [
-			{
-				"title" : "launch site",
-				"url" : "http://www.ismokeweed.com"
-			},
-			{
-				"title" : "case study",
-				"url" : "http://www.stinkstudios.com/work/viceland-i-smoke-weed"
-			}
-		],
+		"description" : "Thought marijuana has been decriminalized in many states, weed usage is still stigmatized in the America, and admitting to smoking weed is likely to invoke cartoonish stoner stereotypes. In conjunction with Viceland's TV campaign, Stink Studios created a platform for users to publicly and proudly proclaim \"I smoke weed.\" ",
+		"credits" : {
+			"agency" : [
+				{
+					"text": "Stink Studios",
+					"url" : "http://www.stinkstudios.com"
+				}
+			],
+			"role" : "Front End Developer",
+			"date" : "October 2016"
+		},	
+		"links" : {
+			"site" : "http://www.ismokeweed.com",
+			"caseStudy" : "http://www.stinkstudios.com/work/viceland-i-smoke-weed"
+		},
 		"mainContent": [
-			{ 
-				"type": "image",
-				"images" : [
-					"weed-hero.jpg"
-				]
-			},
 			{ 
 				"type": "image",
 				"images" : [
 					"weed-mobile-desktop.jpg"
 				]
 			},
+			
+			{ 
+				"type": "image",
+				"images" : [
+					"weed-hero.jpg"
+				]
+			},
+			
 			{ 
 				"type": "image",
 				"images" : [
@@ -79,26 +70,21 @@
 			"title" : "Suny Gao - Year in Music",
 			"description" : "Spotify's Year in Music, 2015"
 		},
-		"next": "i-smoke-weed",
+		"next": "camp-google",
 		"title" : "Year in Music",
 		"client" : "Spotify",
-		"heroImage" : "yim-1.jpg",
-		"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium nunc velit, id cursus libero porta quis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus laoreet nisi ut nisl ultricies, vitae tincidunt purus rhoncus. Vestibulum libero metus, mollis a laoreet nec, euismod sed erat. Aenean tortor elit, blandit et felis nec, placerat dapibus neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam facilisis metus sed ex vehicula tincidunt. Pellentesque vel suscipit quam. Cras pharetra venenatis neque, a feugiat ex scelerisque ut. Fusce mattis non dolor at dictum.",
-		"credits" : [
-			{
-				"type" : "Agency",
-				"text" : "Stink Studios",
-				"url" : "http://www.stinkstudios.com"
-			},
-			{
-				"type": "role",
-				"text" : "Front End Developer"
-			},
-			{
-				"type": "date",
-				"text" : "December 2015"
-			}
-		],	
+		"heroImage" : "yim-hero.jpg",
+		"description" : "In 2015, Stink Studio partnered with Spotify to create their annual Year in Music experience. The webGL based site turned Spotify's massive collection of user data into a personalized experience for each of its 100 million users worldwide. In addition to displaying unique data, the site also featured global listening insights, as well as stories and highlights from the year. The site was translated into 35 languages and had over 5 million unique visits.",
+		"credits" : {
+			"agency" : [
+				{
+					"text": "Stink Studios",
+					"url" : "http://www.stinkstudios.com"
+				}
+			],
+			"role" : "Front End Developer",
+			"date" : "December 2015"
+		},	
 		"press" : [
 			{
 				"title" : "The Verge",
@@ -127,43 +113,60 @@
 		],
 		"awards" : [
 			{
-				"title" : "Webby - Winner in Advertising: Best User Interface"
+				"title" : "Webby - Advertising: Best User Interface",
+				"url" : "http://webbyawards.com/winners/2016/websites/general-website/music/spotify-year-in-music-2015/"
 			},
 			{
-				"title" : "Webby - People's Voice Winner in Advertising: Best User Interface"
+				"title" : "Webby - Advertising - Digital Campaigns",
+				"url" : "http://webbyawards.com/winners/2016/advertising-media/campaigns/digital-campaigns/spotify-year-in-music-2015/"
 			},
 			{
-				"title" : "Webby - People's Voice Winner in Advertising: Digital Campaigns"
+				"title" : "Awwwards - Site of the Day",
+				"url" : "http://www.awwwards.com/sites/year-in-music"
 			},
 			{
-				"title" : "Webby - People's Voice Winner in Web: Music"
+				"title" : "FWA - Site of the Day",
+				"url" : "https://thefwa.com/cases/year-in-music"
 			},
 			{
-				"title" : "Awwwards - Site of the Day"
-			},
-			{
-				"title" : "FWA - Site of the Day"
-			},
-			{
-				"title" : "FWA - Mobile of the Day"
+				"title" : "FWA - Mobile of the Day",
+				"url" : "https://thefwa.com/cases/year-in-music"
 			}
 			
 		],
-		"links" : [
-			{
-				"title" : "case study",
-				"url" : "http://www.stinkstudios.com/work/spotifyyearinmusic"
-			}
-		],
+		"links" : {
+			"caseStudy" : "http://www.stinkstudios.com/work/spotifyyearinmusic"
+		},
+		
 		"mainContent": [
 			{ 
 				"type": "image",
 				"images" : [
-					"desktop1.jpg",
-					"desktop2.jpg",
-					"desktop3.jpg"
+					"yim-desktop-1.jpg",
+					"yim-desktop-2.jpg",
+					"yim-desktop-3.jpg",
+					"yim-desktop-4.jpg"
 				],
-				"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium nunc velit, id cursus libero porta quis. Interdum et malesuada fames ac ante ipsum primis in faucibus."
+				"description" : "Users can browse insights from around the globe, by country, or login for a completely personalized experience."
+			},
+			{ 
+				"type": "image",
+				"images" : [
+					"yim-desktop-5.jpg",
+					"yim-desktop-6.jpg"
+				],
+				"description" : "As users progressed through the site, colors of the background gradient changed to reflect the current season."
+			},
+			{ 
+				"type": "image",
+				"images" : [
+					"yim-desktop-7.jpg",
+					"yim-desktop-8.jpg",
+					"yim-desktop-9.jpg",
+					"yim-desktop-10.jpg",
+					"yim-desktop-11.jpg"
+				],
+				"description" : "A selection of 2015's culturally impactful stories and events."
 			},
 			{ 
 				"type": "col-2",
@@ -172,9 +175,162 @@
 					"mobile2.jpg",
 					"mobile3.jpg",
 					"mobile4.jpg"
-				],
-				"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium nunc velit, id cursus libero porta quis. Interdum et malesuada fames ac ante ipsum primis in faucibus."
+				]
 			}
+		]
+	},
+	"camp-google" : {
+		"meta" : {
+			"title" : "Suny Gao - Camp Google",
+			"description" : "Camp Google, an online summer camp for kids"
+		},
+		"next": "google-calendar",
+		"title" : "Camp Google",
+		"client" : "Google",
+		"heroImage" : "camp_google_1.jpg",
+		"description" : "Camp google description in parternship with 72 and sunny",
+		"credits" : {
+			"agency" : [
+				{
+					"text": "Stink Studios",
+					"url" : "http://www.stinkstudios.com"
+				},
+				{
+					"text": "72 and Sunny",
+					"url" : "https://www.72andsunny.com/"
+				}
+			],
+			"role" : "Front End Developer",
+			"date" : "July 2015"
+		},	
+		"press" : [
+			{
+				"title" : "Engadget",
+				"url" : "https://www.engadget.com/2015/07/06/camp-google-2015/"
+			},
+
+			{
+				"title" : "Venture Beat",
+				"url" : "http://venturebeat.com/2015/07/13/google-partners-with-khan-academy-nasa-more-to-teach-kids-science-via-a-4-week-summer-camp/"
+			}
+		],
+		
+		"links" : {
+			"caseStudy" : "https://www.72andsunny.com/work/google/camp-google"
+		},
+		"mainContent": [
+			{ 
+				"type": "image",
+				"images" : [
+					"desktop1.jpg",
+					"desktop2.jpg",
+					"desktop3.jpg",
+					"desktop4.jpg",
+					"desktop5.jpg"
+				],
+				"description" : "Users can browse insights from around the globe, by country, or login to view their personal experience."
+			},
+			{ 
+				"type": "col-2",
+				"images" : [
+					"mobile1.jpg",
+					"mobile2.jpg",
+					"mobile3.jpg",
+					"mobile4.jpg"
+				]
+			}
+		]
+	},
+	"google-calendar" : {
+		"meta" : {
+			"title" : "Suny Gao - Google Calendar",
+			"description" : "Google Calendar"
+		},
+		"next": "hello-chime",
+		"title" : "Google Calendar",
+		"client" : "Google",
+		"heroImage" : "google_calendar_1.jpg",
+		"description" : "Google Calendar description!",
+		"credits" : {
+			"agency" : [
+				{
+					"text": "B-Reel",
+					"url" : "http://www.b-reel.com"
+				}
+			],
+			"role" : "Front End Developer",
+			"date" : "March 2015"
+		},		
+		"press" : [
+			{
+				"title" : "Creativity Online",
+				"url" : "http://creativity-online.com/work/google-the-new-google-calendar-app/37741"
+			},
+
+			{
+				"title" : "The Verge",
+				"url" : "http://www.theverge.com/2015/3/10/8183753/google-calendar-app-for-iphone"
+			}
+		],
+		
+		"links" : {
+			"site" : "https://www.google.com/calendar/about/", 
+			"caseStudy" : "http://www.b-reel.com/projects/google-calendar"
+		},
+		"mainContent": [
+			
+		]
+	},
+
+
+	"hello-chime" : {
+		"meta" : {
+			"title" : "Suny Gao - Hello Chime",
+			"description" : "Hello Chime project"
+		},
+		"next": "internet-dot-org",
+		"title" : "Chime Homepage",
+		"client" : "Chime",
+		"heroImage" : "internet1.jpg",
+		"description" : "Chime description!",
+		"credits" : {
+			"agency" : [
+				{
+					"text": "Chime",
+					"url" : "http://www.hellochime.com"
+				}
+			],
+			"role" : "Front End Developer",
+			"date" : "August 2016"
+		},		
+		
+		"mainContent": [
+			
+		]
+	},
+		"internet-dot-org" : {
+		"meta" : {
+			"title" : "Suny Gao - Internet.org",
+			"description" : "Internet.org project"
+		},
+		"next": "i-smoke-weed",
+		"title" : "Internet.org",
+		"client" : "Facebook",
+		"heroImage" : "internet1.jpg",
+		"description" : "Internet.org description!",
+		"credits" : {
+			"agency" : [
+				{
+					"text": "B-Reel",
+					"url" : "http://www.b-reel.com"
+				}
+			],
+			"role" : "Front End Developer - Mobile",
+			"date" : "January 2015"
+		},		
+		
+		"mainContent": [
+			
 		]
 	}
 }

@@ -13,7 +13,6 @@ var gulp    = require('gulp'),
 gulp.task('build', function(callback) {
   runSequence('set-env-prod',
               'clean',
-              'iconfonts',
               ['sass', 'webpack'],
               callback);
 });

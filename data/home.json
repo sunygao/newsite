@@ -24,6 +24,11 @@
 			]
 		},
 		{
+			"title" : "Google Calendar",
+			"client" : "google",
+			"slug" : "google-calendar"
+		},
+		{
 			"title" : "Camp Google",
 			"client" : "google",
 			"slug" : "camp-google",
@@ -32,20 +37,16 @@
 				"camp-google-2.jpg"
 			]
 		},
+		
 		{
-			"title" : "Google Calendar",
-			"client" : "google",
-			"slug" : "google-calendar"
+			"title" : "Hello Chime",
+			"client" : "chime",
+			"slug" : "hello-chime"
 		},
 		{
 			"title" : "Internet.org",
 			"client" : "facebook",
 			"slug" : "internet-org"
-		},
-		{
-			"title" : "Hello Chime",
-			"client" : "chime",
-			"slug" : "hello-chime"
 		}
 	]
 }
