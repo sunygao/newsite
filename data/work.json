@@ -2,7 +2,7 @@
 	"i-smoke-weed" : {
 		"meta" : {
 			"title" : "Suny Gao - I Smoke Weed",
-			"description" : "I Smoke Weed - Viceland"
+			"description" : "Viceland's I Smoke Weed"
 		},
 		"next" : "year-in-music",
 		"title" : "I Smoke Weed",
@@ -70,7 +70,7 @@
 			"title" : "Suny Gao - Year in Music",
 			"description" : "Spotify's Year in Music, 2015"
 		},
-		"next": "camp-google",
+		"next": "google-calendar",
 		"title" : "Year in Music",
 		"client" : "Spotify",
 		"heroImage" : "yim-hero.jpg",
@@ -179,16 +179,68 @@
 			}
 		]
 	},
+
+	"google-calendar" : {
+		"meta" : {
+			"title" : "Suny Gao - Google Calendar",
+			"description" : "Introducing the new Google Calendar app"
+		},
+		"next": "camp-google",
+		"title" : "Google Calendar",
+		"client" : "Google",
+		"heroImage" : "calendar-hero.jpg",
+		"description" : "In 2014, Google approached B-Reel to help introduce their brand new, overhauled calendar app to the world. In addition to a product film, B-Reel created a website to showcase the app's new features. The site featured heavy use of HTML5 video and timeline animations, and was developed using Google's Closure library.",
+		"credits" : {
+			"agency" : [
+				{
+					"text": "B-Reel",
+					"url" : "http://www.b-reel.com"
+				}
+			],
+			"role" : "Front End Developer",
+			"date" : "October 2014"
+		},		
+		"press" : [
+			{
+				"title" : "Creativity Online",
+				"url" : "http://creativity-online.com/work/google-the-new-google-calendar-app/37741"
+			},
+
+			{
+				"title" : "The Verge",
+				"url" : "http://www.theverge.com/2015/3/10/8183753/google-calendar-app-for-iphone"
+			}
+		],
+		
+		"links" : {
+			"site" : "https://www.google.com/calendar/about/", 
+			"caseStudy" : "http://www.b-reel.com/projects/google-calendar"
+		},
+		"mainContent": [
+			{ 
+				"type": "image",
+				"images" : [
+					"calendar-desktop-1.jpg",
+					"calendar-desktop-2.jpg",
+					"calendar-desktop-3.jpg",
+					"calendar-desktop-4.jpg",
+					"calendar-desktop-5.jpg",
+					"calendar-desktop-6.jpg"
+				]
+			}
+		]
+	},
+
 	"camp-google" : {
 		"meta" : {
 			"title" : "Suny Gao - Camp Google",
 			"description" : "Camp Google, an online summer camp for kids"
 		},
-		"next": "google-calendar",
+		"next": "hello-chime",
 		"title" : "Camp Google",
 		"client" : "Google",
-		"heroImage" : "camp_google_1.jpg",
-		"description" : "Camp google description in parternship with 72 and sunny",
+		"heroImage" : "camp-hero.jpg",
+		"description" : "Google partnered with National Geographic, Khan Academy and the National Park Service to create Camp Google, a 4 week online summer camp for kids. Each week revealed activities and trivia focused on a theme, like the ocean or music. Parents can help their kids and do the activities at home, earn and print badges, watch videos related to the week's theme",
 		"credits" : {
 			"agency" : [
 				{
@@ -214,7 +266,6 @@
 				"url" : "http://venturebeat.com/2015/07/13/google-partners-with-khan-academy-nasa-more-to-teach-kids-science-via-a-4-week-summer-camp/"
 			}
 		],
-		
 		"links" : {
 			"caseStudy" : "https://www.72andsunny.com/work/google/camp-google"
 		},
@@ -222,65 +273,40 @@
 			{ 
 				"type": "image",
 				"images" : [
-					"desktop1.jpg",
-					"desktop2.jpg",
-					"desktop3.jpg",
-					"desktop4.jpg",
-					"desktop5.jpg"
-				],
-				"description" : "Users can browse insights from around the globe, by country, or login to view their personal experience."
+					"camp-google-mobile.jpg"
+				]
 			},
 			{ 
-				"type": "col-2",
+				"type": "image",
 				"images" : [
-					"mobile1.jpg",
-					"mobile2.jpg",
-					"mobile3.jpg",
-					"mobile4.jpg"
+					"camp-google-1.jpg",
+					"camp-google-2.jpg",
+					"camp-google-3.jpg",
+					"camp-google-4.jpg",
+					"camp-google-5.jpg"
+				],
+				"description" : "Each week had its own theme - Ocean Week, Space Week, Nature Week and Music Week"
+			},
+			{ 
+				"type": "image",
+				"images" : [
+					"camp-google-9.jpg"
+				]
+			},
+			{ 
+				"type": "image",
+				"images" : [
+					"camp-google-11.jpg",
+					"camp-google-12.jpg",
+					"camp-google-13.jpg",
+					"camp-google-14.jpg",
+					"camp-google-15.jpg",
+					"camp-google-16.jpg"
 				]
 			}
 		]
 	},
-	"google-calendar" : {
-		"meta" : {
-			"title" : "Suny Gao - Google Calendar",
-			"description" : "Google Calendar"
-		},
-		"next": "hello-chime",
-		"title" : "Google Calendar",
-		"client" : "Google",
-		"heroImage" : "google_calendar_1.jpg",
-		"description" : "Google Calendar description!",
-		"credits" : {
-			"agency" : [
-				{
-					"text": "B-Reel",
-					"url" : "http://www.b-reel.com"
-				}
-			],
-			"role" : "Front End Developer",
-			"date" : "March 2015"
-		},		
-		"press" : [
-			{
-				"title" : "Creativity Online",
-				"url" : "http://creativity-online.com/work/google-the-new-google-calendar-app/37741"
-			},
 
-			{
-				"title" : "The Verge",
-				"url" : "http://www.theverge.com/2015/3/10/8183753/google-calendar-app-for-iphone"
-			}
-		],
-		
-		"links" : {
-			"site" : "https://www.google.com/calendar/about/", 
-			"caseStudy" : "http://www.b-reel.com/projects/google-calendar"
-		},
-		"mainContent": [
-			
-		]
-	},
 
 
 	"hello-chime" : {
