@@ -9,9 +9,8 @@
 			"client" : "vice weediquette",
 			"slug" : "i-smoke-weed",
 			"previewImages" : [
-				"weed-1.jpg",
-				"weed-2.jpg",
-				"weed-3.jpg"
+				"weed-hero.jpg",
+				"weed-featured-gallery.jpg"
 			]
 		},
 		{
@@ -19,34 +18,47 @@
 			"client" : "spotify",
 			"slug" : "year-in-music",
 			"previewImages" : [
-				"yim-1.jpg",
-				"yim-2.jpg"
+				"yim-hero-square.jpg",
+				"yim-iphone.png"
 			]
 		},
 		{
 			"title" : "Google Calendar",
 			"client" : "google",
-			"slug" : "google-calendar"
+			"slug" : "google-calendar",
+			"previewImages" : [
+				"calendar-hero.jpg",
+				"calendar-phone.jpg"
+
+			]
 		},
 		{
 			"title" : "Camp Google",
 			"client" : "google",
 			"slug" : "camp-google",
 			"previewImages" : [
-				"camp-google-1.jpg",
-				"camp-google-2.jpg"
+				"camp-desktop.png",
+				"camp-tablet.png"
 			]
 		},
 		
 		{
 			"title" : "Hello Chime",
 			"client" : "chime",
-			"slug" : "hello-chime"
+			"slug" : "hello-chime",
+			"previewImages": [
+				"chime-phone-1.png",
+				"chime-desktop-4.jpg"
+			]
 		},
 		{
 			"title" : "Internet.org",
 			"client" : "facebook",
-			"slug" : "internet-dot-org"
+			"slug" : "internet-dot-org",
+			"previewImages": [
+				"internet-phone-1.png",
+				"internet-phone-2.png"
+			]
 		}
 	]
 }

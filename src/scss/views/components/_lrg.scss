@@ -76,30 +76,6 @@ p {
     @include robotoMed;
 }
 
-.work-list {
-    padding: 0 4.1667%;
-    @include span(15);
-
-    li {
-        margin-bottom: 60px;
-
-        a {
-            display: inline-block;
-            transition: all .2s ease-out;
-        }
-
-        h2 {
-            white-space: nowrap;
-        }
-
-        &.inactive {
-            a {
-                opacity: .2;
-            }
-        }
-
-    }
-}
 
 #error {
     position: absolute;

@@ -1,4 +1,29 @@
 #home {
+	.work-list {
+	    padding: 0 4.1667%;
+	    @include span(15);
+
+	    li {
+	        margin-bottom: 60px;
+
+	        a {
+	            display: inline-block;
+	            transition: all .2s ease-out;
+	        }
+
+	        h2 {
+	            white-space: nowrap;
+	        }
+
+	        &.inactive {
+	            a {
+	                opacity: .1;
+	            }
+	        }
+
+	    }
+	}
+
 	.images {
 		//opacity: 0;
 		position: fixed;
@@ -6,7 +31,7 @@
 		z-index: -1;
 		top: 0;
 		height: 100%;
-		@include span(12);
+		@include span(14);
 
 		.image-wrapper {
 			position: absolute;
@@ -33,21 +58,23 @@
 
 		#year-in-music {
 			//display: none;
+			//opacity: 1;
 
 			li {
 				background-size: cover;
 
 				&:nth-child(1) {
-					background-color: #3718fc;
-					margin-top: 10%;
-					padding-bottom: 63%;
+					margin-top: 20%;
+					margin-left: 20%;
+					width: 60%;
+					padding-bottom: 60%;
+					z-index: 2;
 				}
 				&:nth-child(2) {
-					background-color: #e647a7;
-					width: 50%;
-				    margin-left: -14%;
-				    margin-top: -24%;
-				    padding-bottom: 50%;
+					width: 40%;
+				    margin-left: 66%;
+    				margin-top: -14%;
+				    padding-bottom: 79%;
 				}
 
 				
@@ -56,58 +83,102 @@
 
 		#i-smoke-weed {
 			//display: none;
+			//opacity: 1;
 
 			li {
 				background-size: 100% auto;
-				//border: 20px solid $grey;
-				background-color: $grey;
-
-
+				
 				&:nth-child(1) {
-					margin-top: 0;
-					padding-bottom: 51%;
+					margin-top: 20%;
+					padding-bottom: 54%;
 					margin-left: -10%;
+					z-index: 2;
 				}
 				&:nth-child(2) {
-					width: 60%;
-				    margin-left: 46%;
-				    margin-top: -34%;
-				    padding-bottom: 31%;
+				    margin-left: 26%;
+				    margin-top: -14%;
 				}
+			}
+		}
 
-				&:nth-child(3) {
+		#google-calendar {
+			//opacity: 1;
+
+			li {
+				padding-bottom: 55%;
+
+				&:nth-child(1) {
 					margin-top: 30%;
-				    padding-bottom: 51%;
-				    margin-left: 10%;
-				    z-index: -1;
+					z-index: 2;
 				}
 
-				
+				&:nth-child(2) {
+					width: 80%;
+    				padding-bottom: 64%;
+    				margin-left: 38%;
+    				margin-top: -10%;
+				}
 			}
 		}
 
 		#camp-google {
+			//opacity: 1;
+
 			li {
 				&:nth-child(1) {
-					margin-top: 30%;
-				    width: 55%;
 				    z-index: 2;
 				    margin-left: 40%;
 				}
 
 				&:nth-child(2) {
-					margin-top: -1%;
-	    			margin-left: 7%;
-				}
-
-				&:nth-child(3) {
-					background: #53b1ff;
-					margin-top: -14%;
-				    margin-left: 0%;
-				    z-index: -1;
-				    width: 50%;
+					width: 39%;
+				    margin-top: -17%;
+				    margin-left: 21%;
 
 				}
+
+			
+			}
+		}
+
+		#hello-chime {
+			//opacity: 1;
+
+			li {
+				width: 50%;
+    			padding-bottom: 90%;
+
+    			&:nth-child(1) {
+    				z-index: 2;
+    				margin-left: 30%;
+    				margin-top: 10%;
+    			}
+
+    			&:nth-child(2) {
+    				margin-left: 60%;
+    				margin-top: -20%;
+    				width: 100%;
+    				padding-bottom: 63%;
+    			}
+			}
+		}
+
+		#internet-dot-org {
+			//opacity: 1;
+
+			li {
+				width: 50%;
+    			padding-bottom: 90%;
+
+    			&:nth-child(1) {
+    				margin-left: 20%;
+    				margin-top: -10%;
+    			}
+
+    			&:nth-child(2) {
+    				margin-left: 60%;
+    				margin-top: 10%;
+    			}
 			}
 		}
 	}

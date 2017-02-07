@@ -27,7 +27,7 @@
 			{ 
 				"type": "image",
 				"images" : [
-					"weed-mobile-desktop.jpg"
+					"weed-desktop-and-mobile.jpg"
 				]
 			},
 			
@@ -50,7 +50,6 @@
 			{ 
 				"type": "image",
 				"images" : [
-					"weed-featured-gallery.jpg",
 					"weed-featured-story.jpg"
 				],
 				"description" : "The site also featured stories from Viceland's TV campaign."
@@ -169,14 +168,12 @@
 				"description" : "A selection of 2015's culturally impactful stories and events."
 			},
 			{ 
-				"type": "col-2",
+				"type": "image",
 				"images" : [
-					"mobile1.jpg",
-					"mobile2.jpg",
-					"mobile3.jpg",
-					"mobile4.jpg"
+					"yim-mobile-screens.jpg"
 				]
 			}
+			
 		]
 	},
 
