@@ -30,7 +30,7 @@ export default class PageManager {
 			  $('html').addClass('is-touch');
 			  $('body').scrollTop(0);
 		} else { //desktop
-		  CV.animate = false;
+		  CV.animate = true;
 		}
 
 		if(CV.isIE !== -1) {
