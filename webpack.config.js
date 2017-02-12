@@ -11,7 +11,8 @@ module.exports = {
     ],
     alias: {
       'jquery' : 'jquery.min',
-      'TweenMax' : 'TweenMax'
+      'TweenMax' : 'TweenMax',
+      'underscore' : 'lodash-min'
     }
   },
   entry: [

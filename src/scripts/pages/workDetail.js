@@ -2,6 +2,12 @@ import Page from 'abstract/page';
 import data from 'work.json';
 import Template from 'workDetail.pug';
 
+//page components
+import ScrollAnimation from 'components/scrollAnimation';
+
+//subviews
+import ImageArticle from './subviews/imageArticle';
+
 export default class WorkDetail extends Page{
 
 	initialize(data, params) {
@@ -17,12 +23,19 @@ export default class WorkDetail extends Page{
 		this.headline = this.$el.find('.headline');
 		this.hero = this.$el.find('.hero');
 		this.details = this.$el.find('.project-details');
-		this.images = this.$el.find('.project-images');
+		this.images = this.$el.find('.project-images .image-wrapper');
 		this.next = this.$el.find('.next-project');
 
 		this.createTimeline();
 
 		this.bindEvents();
+
+		this.initSubviews();
+
+		this.initComponents();		
+
+		this.onResize();
+
 	}	
 
 	events() {
@@ -30,7 +43,27 @@ export default class WorkDetail extends Page{
 
 		}
 	}
+	initComponents() {
+		super.initComponents();
 
+		this.components.push(this.scrollAnimation);
+
+	}
+
+	initSubviews() {
+		super.initSubviews();
+		let _this = this;
+
+		_.each(this.images, function(el, i) {
+			let imageEl = new ImageArticle({ $el: $(el) });
+			console.log(imageEl);
+			_this.subviews.push(imageEl);
+		});
+
+		this.scrollAnimation = new ScrollAnimation({
+	      sections: this.subviews
+	    });
+	}
 	createTimeline() {
 		super.createTimeline();
 

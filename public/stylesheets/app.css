@@ -583,6 +583,15 @@ footer ul li a {
 #work-detail .project-images .image-wrapper,
 #work-detail .project-images .video-player {
   margin-bottom: 80px;
+  transition: all .5s ease-out;
+}
+
+#work-detail .project-images .image-wrapper.ahead,
+#work-detail .project-images .video-player.ahead {
+  opacity: 0;
+  -webkit-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+          transform: translateY(10px);
 }
 
 #work-detail .project-images .description {

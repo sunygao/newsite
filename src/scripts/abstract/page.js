@@ -15,10 +15,6 @@ export default class Page extends Backbone.View.extend({
 
     this.subviews = [];
 
-    this.initSubviews();
-
-    this.initComponents();
-
     this.footer = $('footer');
   }
 
