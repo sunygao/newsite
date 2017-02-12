@@ -1,9 +1,26 @@
 #work-detail {
+	.headline,
+	.hero,
+	.project-details {
+		transform-origin: 0 0;
+		opacity: 0;
+	}
 	.next-project {
 		position: fixed;
+		display: none;
 		width: 100%;
 		@include at-col(23);
+
+		a {
+			display: block;
+			transition: all .2s ease-out;
+			
+			&:hover {
+				transform: translateX(-20px)
+			}
+		}
 		
+	
 		h3 {
 			//opacity: 0;
 		}
@@ -16,6 +33,7 @@
 	.work-detail {
 		@include span(21);
 		@include at-col(1);
+		transition: opacity .2s ease-out;
 		
 		img {
 			display: block;

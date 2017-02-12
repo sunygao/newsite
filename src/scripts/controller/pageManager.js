@@ -11,7 +11,7 @@ export default class PageManager {
 
 		this.currentPageName  = "",
 		this.previousPageAnimateComplete = false;
-
+		this.footer = $('footer');
 		this.init();
 
 		this.bindEvents();
@@ -136,9 +136,12 @@ export default class PageManager {
 	}
 
 	loadPage(options) {
+		//this.footer.addClass('hide');
+
 		let View = options.view,
 		data = options.data,
-		params = options.params;
+		params = options.params,
+		_this = this;
 
 		if(this.aboutPage.isOpen) {
 			this.aboutPage.close();
@@ -149,14 +152,19 @@ export default class PageManager {
 		}
 
 		if(this.currentPageView == null) {//first time loading
-			this.loadView(View, data, params);			
+			//load the assets here, for now, just timeout
+			setTimeout(function() {
+				_this.loadView(View, data, params);		
+			}, 100);
 
 		} else {//a previous page exists
 			this.previousPageAnimateComplete = false;
 			this.previousPageView = this.currentPageView;
 
 			this.previousPageView.on('animatedOut', $.proxy(function() {
-				this.loadView(View, data, params);
+				setTimeout(function() { 
+					_this.loadView(View, data, params);
+				}, 100);
 			}, this));
 
 			this.previousPageView.animateOut();
@@ -167,6 +175,12 @@ export default class PageManager {
 		this.currentPageView  = new View(data, params);
 		this.currentPageView.animateIn();
 		document.title = data.meta.title;
+		// this.currentPageView.on('animatedIn', $.proxy(function() {
+		// 	if(this.footer.hasClass('hide')) {
+		// 		console.log('remove');
+		// 		this.footer.removeClass('hide');
+		// 	}
+		// }, this));
 	}
 
 }

@@ -1,12 +1,9 @@
 #work-detail
 	if(nextData)
 		section.next-project
-			ul
-				
-				li
-					a(href="/work/" + data.next)
-						h2=nextData.title
-						h3=nextData.client
+			a(href="/work/" + data.next)
+				h2=nextData.title
+				h3=nextData.client
 
 
 	section.work-detail

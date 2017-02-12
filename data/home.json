@@ -5,8 +5,8 @@
 	},
 	"projects" : [
 		{
-			"title" : "ismokeweed.com",
-			"client" : "vice weediquette",
+			"title" : "I Smoke Weed",
+			"client" : "viceland",
 			"slug" : "i-smoke-weed",
 			"previewImages" : [
 				"weed-hero.jpg",
@@ -18,8 +18,8 @@
 			"client" : "spotify",
 			"slug" : "year-in-music",
 			"previewImages" : [
-				"yim-hero-square.jpg",
-				"yim-iphone.png"
+				"yim-iphone.png",
+				"yim-hero-square.jpg"
 			]
 		},
 		{

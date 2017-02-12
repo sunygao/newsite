@@ -26,9 +26,42 @@ export default class Home extends Page{
 			_this.images.push($(el));
 		});		
 
+		this.createTimeline();
+
 		this.bindEvents();
 		
 	}	
+
+	createTimeline() {
+		super.createTimeline();
+
+		this.introTimeline.staggerFromTo(this.workLinks, .5, {
+			opacity: 0,
+			y: 10,
+			skewX: '-2deg',
+			skewY: '-2deg'
+		},
+		{
+			opacity: 1,
+			y: 0,
+			skewX: '0deg',
+			skewY: '0deg'
+		}, .2);
+
+		this.outroTimeline.staggerFromTo(this.workLinks, .5, {
+			opacity: 1,
+			y: 0,
+			skewX: '0deg',
+			skewY: '0deg'
+		},
+		{
+			opacity: 0,
+			y: 10,
+			skewX: '-2deg',
+			skewY: '-2deg'
+		}, .2);
+	}
+
 
 	events() {
 		return {
@@ -64,7 +97,7 @@ export default class Home extends Page{
 		this.currentWorkIndex = -1;
 		this.showCurrentWork();
 		_.each(this.workLinks, function($el) {
-			$el.removeClass('inactive');
+			$el.find('a').removeClass('inactive');
 		});
 	}
 
@@ -73,7 +106,7 @@ export default class Home extends Page{
 		this.currentWorkIndex = i;
 		
 		_.each(_.without(this.workLinks, $el), function($el) {
-			$el.addClass('inactive');
+			$el.find('a').addClass('inactive');
 		});
 		this.showCurrentWork();
 	}
@@ -86,6 +119,13 @@ export default class Home extends Page{
 		} else {
 			this.images[this.currentWorkIndex].addClass('active');
 		}
+	}
+
+	animateOut() {
+		_.each(this.images, function($el) {
+			$el.removeClass('active');
+		});
+		super.animateOut();
 	}
 }
 

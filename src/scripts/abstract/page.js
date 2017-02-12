@@ -19,26 +19,70 @@ export default class Page extends Backbone.View.extend({
 
     this.initComponents();
 
-    this.createTimelines;
+    this.footer = $('footer');
   }
 
-  createTimelines() {
+  createTimeline() {
+    let _this = this;
+
+    this.introTimeline = new TimelineMax({
+      paused: true,
+      ease: Power4.easeOut,
+      onComplete: function() {
+        _this.onShown();
+      },
+      onReverseComplete: function() {
+        
+      }
+    });
+
+    this.outroTimeline = new TimelineMax({
+      paused: true,
+      ease: Power4.easeOut,
+      onComplete: function() {
+        _this.onHidden();
+      }
+    });
+
+    return this.introTimeline;
 
   }
 
   animateIn() {
+    window.scrollTo(0, 0);
+
+    this.footer.addClass('hidden');
+
     //play the intro timeline
-    this.onShown();
+    if(this.introTimeline) {
+      this.introTimeline.play();
+    } else {
+      this.onShown();
+    }
   }
 
   animateOut() {
+    this.footer.addClass('hidden');
+
+    if(this.outroTimeline) {
+      this.outroTimeline.play();
+    } else {
+      this.onHidden();
+    }
     //play the outro timeline
-    this.dispose();
-    this.trigger('animatedOut');
+   
   }
 
   onShown() {
+    this.trigger('animatedIn');
+    this.footer.removeClass('hidden');
 
+  }
+
+  onHidden() {
+    this.introTimeline.pause(0);
+    this.dispose();
+    this.trigger('animatedOut');
   }
 
   initComponents() {

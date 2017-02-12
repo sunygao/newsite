@@ -5,6 +5,8 @@
 
 	    li {
 	        margin-bottom: 60px;
+	        opacity: 0;
+	        transform-origin: 0 0;
 
 	        a {
 	            display: inline-block;
@@ -15,10 +17,10 @@
 	            white-space: nowrap;
 	        }
 
-	        &.inactive {
-	            a {
-	                opacity: .1;
-	            }
+	        &:hover {
+	        	a {
+	        		transform: translateX(5px);
+	        	}
 	        }
 
 	    }
@@ -30,6 +32,7 @@
 		right: 0;
 		z-index: -1;
 		top: 0;
+		max-width: 700px;
 		height: 100%;
 		@include span(14);
 
@@ -37,10 +40,21 @@
 			position: absolute;
 			width: 100%;
 			height: 100%;
-			opacity: 0;
+
+			li {
+				@for $i from 1 to 5 {
+					&:nth-child(#{$i}) {
+						//transition-delay: .02s * $i;
+					}
+				}
+			}
+			
 
 			&.active {
-				opacity: 1;
+				li {
+					opacity: 1;
+					transform: translateY(-50%) skewY(0deg);
+				}
 			}
 
 		}
@@ -50,32 +64,37 @@
 			position: absolute;
 			padding-bottom: 60%;
 			top: 50%;
-			transform: translateY(-50%);
+			transform: translateY(-48%) skewY(-1deg);
 			background-size: 100% auto;
 			background-position: center;	
 			background-repeat: no-repeat;	
+			transition: all .2s ease-out;
+			opacity: 0;
+
 		}
 
 		#year-in-music {
 			//display: none;
-			//opacity: 1;
+			
 
 			li {
 				background-size: cover;
-
+				//opacity: 1;
 				&:nth-child(1) {
+					width: 40%;
+				    margin-left: 66%;
+    				margin-top: -14%;
+				    padding-bottom: 79%;
+				}
+
+				&:nth-child(2) {
 					margin-top: 20%;
 					margin-left: 20%;
 					width: 60%;
 					padding-bottom: 60%;
 					z-index: 2;
 				}
-				&:nth-child(2) {
-					width: 40%;
-				    margin-left: 66%;
-    				margin-top: -14%;
-				    padding-bottom: 79%;
-				}
+				
 
 				
 			}
@@ -83,7 +102,7 @@
 
 		#i-smoke-weed {
 			//display: none;
-			//opacity: 1;
+			//]]]opacity: 1;
 
 			li {
 				background-size: 100% auto;
