@@ -110,11 +110,19 @@ export default class About extends Backbone.View.extend({
     this.$el.addClass('show');
     $('#main-nav').addClass('about-open');
     $('html').addClass('no-scroll');
-    this.introTimeline.play();
+    if(CV.animate) {
+      this.introTimeline.play();
+    } else {
+      this.introTimeline.progress(1);
+    }
   }
 
   close() {
-    this.outroTimeline.play();
+    if(CV.animate) {
+      this.outroTimeline.play();
+    } else {
+      this.outroTimeline.progress(1);
+    }
   }
 
   onShown() {

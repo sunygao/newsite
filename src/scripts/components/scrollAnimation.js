@@ -20,6 +20,7 @@ export default class ScrollAnimation {
 
 
   getOffsets() { //called by resize
+
     if( this.sections == null ){
       return;
     }

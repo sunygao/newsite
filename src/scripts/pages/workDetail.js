@@ -56,7 +56,6 @@ export default class WorkDetail extends Page{
 
 		_.each(this.images, function(el, i) {
 			let imageEl = new ImageArticle({ $el: $(el) });
-			console.log(imageEl);
 			_this.subviews.push(imageEl);
 		});
 

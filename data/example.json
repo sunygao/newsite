@@ -12,3 +12,42 @@
 		}
 	]
 }
+
+"internet-dot-org" : {
+		"meta" : {
+			"title" : "Suny Gao - Internet.org",
+			"description" : "Internet.org project"
+		},
+		"backgroundColor" : "#6b20a1",
+		"next": "i-smoke-weed",
+		"title" : "Internet.org",
+		"client" : "Facebook",
+		"heroImage" : "internet1.jpg",
+		"description" : "In early 2015, Facebook launched its Internet.org initiative, a campaign to bring the web to parts of the world that don't have internet access. B-Reel helped introduce the project to the world with a site that emphasized accessibility and the mobile experience. To ensure the widest possible browser support, we created 5 different sites - a full featured site experience for modern desktop browsers, a full featured site for modern smartphones, a limited site for outdated desktop browsers, a light mobile experience for legacy smart phones, and a bare bones mobile site for old phones with limited capabilities.",
+		"credits" : {
+			"agency" : [
+				{
+					"text": "B-Reel",
+					"url" : "http://www.b-reel.com"
+				}
+			],
+			"role" : "Front End Developer - Mobile",
+			"date" : "January 2015"
+		},		
+		
+		"mainContent": [
+			{ 
+				"type": "col-2",
+				"images" : [
+					"internet1.jpg",
+					"internet2.jpg",
+					"internet3.jpg",
+					"internet4.jpg",
+					"internet5.jpg",
+					"internet6.jpg"
+				],
+				"description" : "One of our biggest challenges was bringing animation, like a spinning globe, and inline videos to mobile browsers."
+			}
+
+		]
+	}

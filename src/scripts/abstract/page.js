@@ -51,7 +51,11 @@ export default class Page extends Backbone.View.extend({
 
     //play the intro timeline
     if(this.introTimeline) {
-      this.introTimeline.play();
+      if(CV.animate) {
+        this.introTimeline.play();
+      } else {
+        this.introTimeline.progress(1);
+      }
     } else {
       this.onShown();
     }
@@ -61,7 +65,11 @@ export default class Page extends Backbone.View.extend({
     this.footer.addClass('hidden');
 
     if(this.outroTimeline) {
-      this.outroTimeline.play();
+      if(CV.animate) {
+        this.outroTimeline.play();
+      } else {
+        this.outroTimeline.progress(1);
+      }
     } else {
       this.onHidden();
     }

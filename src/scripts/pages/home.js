@@ -1,3 +1,4 @@
+import CV from 'config/CV';
 import Page from 'abstract/page';
 import Template from 'index.pug';
 
@@ -80,15 +81,17 @@ export default class Home extends Page{
 
 		let _this = this;
 
-		_.each(this.workLinks, function($el, i) {
-			$el.on('mouseover', function() {
-				_this.onMouseOver($el, i);
-			});
+		if(CV.animate) {
+			_.each(this.workLinks, function($el, i) {
+				$el.on('mouseover', function() {
+					_this.onMouseOver($el, i);
+				});
 
-			$el.on('mouseout', function() {
-				_this.onMouseOff($el);
+				$el.on('mouseout', function() {
+					_this.onMouseOff($el);
+				});
 			});
-		});
+		}
 
 		
 	}

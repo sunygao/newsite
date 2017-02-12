@@ -50,15 +50,6 @@
 				"chime-phone-1.png",
 				"chime-desktop-4.jpg"
 			]
-		},
-		{
-			"title" : "Internet.org",
-			"client" : "facebook",
-			"slug" : "internet-dot-org",
-			"previewImages": [
-				"internet-phone-1.png",
-				"internet-phone-2.png"
-			]
 		}
 	]
 }

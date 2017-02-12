@@ -25,14 +25,12 @@ export default class PageManager {
 	}
 
 	init() {
-		console.log('init page manager');
-
 		 if(CV.isTouchDevice) { //touch devices
 			  CV.animate = false;  
 			  $('html').addClass('is-touch');
 			  $('body').scrollTop(0);
 		} else { //desktop
-		  CV.animate = true;
+		  CV.animate = false;
 		}
 
 		if(CV.isIE !== -1) {

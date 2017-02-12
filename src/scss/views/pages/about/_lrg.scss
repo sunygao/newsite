@@ -7,8 +7,9 @@
 	height: 100%;
 	background: $black;
 	top: 0;
-	padding: $padding-top 8.333% 0;
+	padding: $padding-top 8.333%;
 	transition: all .2s ease-out;
+	overflow: scroll;
 
 	// .inner-wrapper {
 	// 	transform: translateY(2%) skewY(-1deg);
