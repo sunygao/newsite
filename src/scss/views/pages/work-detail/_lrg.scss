@@ -105,11 +105,16 @@
 		.image-wrapper,
 		.video-player {
 			margin-bottom: 80px;
-			transition: all .5s ease-out;
+			
+			img {
+				transition: all .5s ease-out;
+			}
 			
 			&.ahead {
-				opacity: 0;
-        		transform: translateY(10px);
+				img {
+					opacity: 0;
+        			//transform: translateY(10px);
+        		}
 			}
 		}
 

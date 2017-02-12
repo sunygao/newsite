@@ -76,7 +76,7 @@
 			each content in data.mainContent
 				if(content.type == "video")
 					article.video
-						.video-player
+						.video-player(style="background-color:" + data.backgroundColor)
 							img(class="preview-image", src="../images/projects/" + slug + "/" +content.previewImage)
 							video
 								each src in content.videoSrc
@@ -90,7 +90,7 @@
 						article.col-2
 							.image-container
 								each image in content.images
-									.image-wrapper
+									.image-wrapper(style="background-color:" + data.backgroundColor)
 										img(class="preview-image", src="../images/projects/" + slug + "/" +image)
 							if(content.description)
 								.description
@@ -99,7 +99,7 @@
 					else
 						article
 							each image in content.images
-								.image-wrapper
+								.image-wrapper(style="background-color:" + data.backgroundColor)
 									img(class="preview-image", src="../images/projects/" + slug + "/" +image)
 							if(content.description)
 								.description

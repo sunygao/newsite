@@ -4,6 +4,7 @@
 			"title" : "Suny Gao - I Smoke Weed",
 			"description" : "Viceland's I Smoke Weed"
 		},
+		"backgroundColor" : "#ffffff",
 		"next" : "year-in-music",
 		"title" : "I Smoke Weed",
 		"client" : "Viceland",
@@ -69,6 +70,7 @@
 			"title" : "Suny Gao - Year in Music",
 			"description" : "Spotify's Year in Music, 2015"
 		},
+		"backgroundColor" : "#f5c9d6",
 		"next": "google-calendar",
 		"title" : "Year in Music",
 		"client" : "Spotify",
@@ -182,6 +184,7 @@
 			"title" : "Suny Gao - Google Calendar",
 			"description" : "Introducing the new Google Calendar app"
 		},
+		"backgroundColor" : "#5f92ee",
 		"next": "camp-google",
 		"title" : "Google Calendar",
 		"client" : "Google",
@@ -233,6 +236,7 @@
 			"title" : "Suny Gao - Camp Google",
 			"description" : "Camp Google, an online summer camp for kids"
 		},
+		"backgroundColor" : "#fdf6ae",
 		"next": "hello-chime",
 		"title" : "Camp Google",
 		"client" : "Google",
@@ -309,6 +313,7 @@
 			"title" : "Suny Gao - Hello Chime",
 			"description" : "Hello Chime project"
 		},
+		"backgroundColor" : "#262231",
 		"next": "internet-dot-org",
 		"title" : "Chime Homepage",
 		"client" : "Chime",
@@ -343,6 +348,7 @@
 			"title" : "Suny Gao - Internet.org",
 			"description" : "Internet.org project"
 		},
+		"backgroundColor" : "#6b20a1",
 		"next": "i-smoke-weed",
 		"title" : "Internet.org",
 		"client" : "Facebook",
