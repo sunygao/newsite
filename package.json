@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "DEBUG=myapp:* node ./bin/www",
-    "postinstall": "npm install && gulp build"
+    "start": "DEBUG=myapp:* node ./bin/www"
   },
   "engines": {
     "node": "6.9.2"
