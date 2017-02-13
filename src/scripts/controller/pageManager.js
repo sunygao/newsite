@@ -87,8 +87,8 @@ export default class PageManager {
 	}
 
 	if(this.currentPageView && this.currentPageView.onResize) {
-			this.currentPageView.onResize();
-		}
+		this.currentPageView.onResize();
+	}
   }
 
   onTouchStart(e) {

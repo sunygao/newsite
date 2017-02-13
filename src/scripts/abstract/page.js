@@ -80,6 +80,9 @@ export default class Page extends Backbone.View.extend({
   onShown() {
     this.trigger('animatedIn');
     this.footer.removeClass('hidden');
+    this.initSubviews();
+    this.initComponents();    
+    this.onResize();
 
   }
 

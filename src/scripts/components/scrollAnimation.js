@@ -7,7 +7,6 @@ export default class ScrollAnimation {
     this.sections = options.sections;
     this.sectionOffsets = [];
     this.curSectionIndex = -1;
-    this.showNavOffset = 0;
 
     let _this = this;
 
@@ -101,5 +100,11 @@ export default class ScrollAnimation {
     if(this.sections[sectionIndex].animateOut) {
       this.sections[sectionIndex].animateOut();
     }
+  }
+
+  dispose() {
+    this.sections = null;
+    this.sectionOffsets = [];
+    this.curSectionIndex = -1;
   }
 }

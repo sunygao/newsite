@@ -30,12 +30,6 @@ export default class WorkDetail extends Page{
 
 		this.bindEvents();
 
-		this.initSubviews();
-
-		this.initComponents();		
-
-		this.onResize();
-
 	}	
 
 	events() {
