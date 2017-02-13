@@ -9,13 +9,6 @@ import Home from 'pages/home';
 
 class Main {
   onReady() {
-
-   	$(document.body).on('keydown', function(e) {
-   		if(e.keyCode == 71) {
-   			$('#grid').toggle();
-   		}
-   	});
-
    	new Router();
     Backbone.history.start({ pushState: true });
   }
