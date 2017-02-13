@@ -72,6 +72,11 @@
 			margin-bottom: 15px;
 			@include roboto;
 			text-transform: lowercase;
+			transition: color .2s ease-out;
+
+			&:hover {
+				color: #fff;
+			}
 		}
 	}
 }

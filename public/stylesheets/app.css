@@ -203,9 +203,41 @@ p {
   font-size: 1.6vw;
   text-transform: lowercase;
   font-style: italic;
-  border-bottom: 3px solid #191919;
+  position: relative;
   font-family: 'Roboto Mono', monospace;
   font-weight: 500;
+}
+
+.button:after {
+  content: '';
+  height: 3px;
+  width: 100%;
+  display: block;
+  background: #191919;
+  margin-top: .2em;
+  transition: all .2s ease-out;
+}
+
+.button:hover:after {
+  width: 0%;
+}
+
+.link {
+  display: inline-block;
+}
+
+.link:after {
+  content: '';
+  height: 1px;
+  width: 0%;
+  display: block;
+  background: #616161;
+  margin-top: .1em;
+  transition: all .2s ease-out;
+}
+
+.link:hover:after {
+  width: 100%;
 }
 
 #error {
@@ -696,6 +728,11 @@ footer ul li a {
   font-family: 'Roboto Mono', monospace;
   font-weight: 400;
   text-transform: lowercase;
+  transition: color .2s ease-out;
+}
+
+#about .links a:hover {
+  color: #fff;
 }
 
 @media (max-width: 767px) {
