@@ -25,7 +25,12 @@
 			"caseStudy" : "http://www.stinkstudios.com/work/viceland-i-smoke-weed"
 		},
 		"mainContent": [
-			
+			{ 
+				"type": "image",
+				"images" : [
+					"weed-desktop-and-mobile.jpg"
+				]
+			},
 			
 			{ 
 				"type": "image",
