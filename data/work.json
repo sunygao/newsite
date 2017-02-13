@@ -75,7 +75,7 @@
 		"title" : "Year in Music",
 		"client" : "Spotify",
 		"heroImage" : "yim-hero.jpg",
-		"description" : "In 2015, Stink Studio partnered with Spotify to create their annual Year in Music experience. The webGL based site turned Spotify's massive collection of user data into a personalized experience for each of its 100 million users worldwide. In addition to displaying unique data, the site also featured global listening insights, as well as stories and highlights from the year. The site was translated into 35 languages and had over 5 million unique visits.",
+		"description" : "In 2015, Stink Studio partnered with Spotify to create their annual Year in Music experience. The site turned Spotify's massive collection of user data into a personalized experience for each of its 100 million users worldwide. In addition to displaying unique data, the site also featured global listening insights, as well as stories and highlights from the year. The site was translated into 35 languages and had over 5 million unique visits. I worked with a team of in house developers to create the animation heavy, WebGL-centric site, using tools like pixi.js to create duotone effects and gradients, Backbone.js and Handlebars for shared front end and back end templates, HTML5 audio, and Webpack.",
 		"credits" : {
 			"agency" : [
 				{
