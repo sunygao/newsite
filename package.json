@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "DEBUG=myapp:* node ./bin/www & parallelshell 'gulp' "
+    "start": "DEBUG=myapp:* node ./bin/www & parallelshell 'gulp' ",
+    "build" : "gulp build"
   },
   "engines": {
     "node": "^6.11.1"

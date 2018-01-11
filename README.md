@@ -1,4 +1,7 @@
 ```npm i```
 ```npm start```
 
-##Browser: localhost:8080
+## Browser: localhost:8080
+
+## Building
+```npm run build```
