@@ -54,7 +54,7 @@ export default class ScrollAnimation {
   }
 
   onRAF() {
-    if(!CV.animate || this.sections == null) {                
+    if(!CV.animate || this.sections == null || !CV.scrollTicker) {                
       return;
     }
 
@@ -66,6 +66,7 @@ export default class ScrollAnimation {
         if(_this.curSectionIndex == i) {
           return; 
         }
+        
         _this.curSectionIndex = i;
         _this.activateSectionCurrent(i);
       } else if (y <= section.offsetReset) {
@@ -85,15 +86,20 @@ export default class ScrollAnimation {
   activateSectionAhead(sectionIndex) {
     this.sectionOffsets[sectionIndex].$el.removeClass('current').addClass('ahead');
      if(this.sections[sectionIndex].resetAnimation) {
+      this.sections[sectionIndex].isActive = false;
       this.sections[sectionIndex].resetAnimation();
     }
   }
 
   activateSectionCurrent(sectionIndex) {
     this.sectionOffsets[sectionIndex].$el.removeClass('ahead').addClass('current');
+
     if(this.sections[sectionIndex].animateIn) {
+      this.sections[sectionIndex].isActive = true;
       this.sections[sectionIndex].animateIn();
     }
+
+   // console.log('current section is', sectionIndex);
   }
 
   activateSectionPast(sectionIndex) {

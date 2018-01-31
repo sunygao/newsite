@@ -14,6 +14,8 @@ export default class PageManager {
 		this.footer = $('footer');
 		this.init();
 
+		this.scrollTimer = null;
+
 		this.bindEvents();
 		
 		this.onResize();
@@ -47,11 +49,20 @@ export default class PageManager {
 			  this.onResize();
 		  }, this), Config.throttle.resize));
 
-		window.addEventListener(
-		  'scroll', 
-		  _.debounce($.proxy(function () {
-			  this.onScroll();
-		  }, this), Config.throttle.scroll));
+		window.addEventListener('scroll', (e) => { 
+			CV.scrollTicker = true;
+			this.onScroll();
+
+			if(this.scrollTimer) {
+				clearTimeout(this.scrollTimer);
+				this.scrollTimer = null;
+			} 
+
+			this.scrollTimer = setTimeout(() => {
+				CV.scrollTicker = false;
+			}, 100);
+			
+		}, false);
 
 		$(document.body).on('touchstart', $.proxy(function(e) {
 		  this.onTouchStart(e);

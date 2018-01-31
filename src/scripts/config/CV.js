@@ -6,6 +6,7 @@ var CV = {
   bkpt: null,
   touch: { x: 0, y: 0, startX: 0, startY: 0, deltaX: 0, deltaY: 0, direction: null },
   scroll: { y: 0 },
+  scrollTicker: false,
   scrollEl: null,
   isTouchDevice : 'ontouchstart' in document.documentElement,
   OS: Utils.getOS(),
