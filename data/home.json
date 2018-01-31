@@ -5,6 +5,15 @@
 	},
 	"projects" : [
 		{
+			"title" : "Chobani.com",
+			"client" : "chobani",
+			"slug" : "chobani",
+			"previewImages" : [
+				"weed-hero.jpg",
+				"weed-featured-gallery.jpg"
+			]
+		},
+		{
 			"title" : "I Smoke Weed",
 			"client" : "viceland",
 			"slug" : "i-smoke-weed",

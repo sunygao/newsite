@@ -17,5 +17,7 @@ class Main {
 
 //init main when document is ready
 var main = module.exports = new Main();
-$(document).ready(main.onReady.bind(main));
+$(document).ready(
+	setTimeout(() => main.onReady(), 800) 
+);
 

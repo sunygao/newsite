@@ -47,7 +47,7 @@ export default class Home extends Page{
 			y: 0,
 			skewX: '0deg',
 			skewY: '0deg'
-		}, .2);
+		}, .1);
 
 		this.outroTimeline.staggerFromTo(this.workLinks, .5, {
 			opacity: 1,
@@ -60,7 +60,7 @@ export default class Home extends Page{
 			y: 10,
 			skewX: '-2deg',
 			skewY: '-2deg'
-		}, .2);
+		}, 0);
 	}
 
 

@@ -71,7 +71,7 @@ export default class About extends Backbone.View.extend({
       y: 0,
       skewX: '0deg',
       skewY: '0deg'
-    }, .05);
+    }, .01, '-=.3');
 
     this.introTimeline.fromTo(this.text, .2, {
       opacity: 0,

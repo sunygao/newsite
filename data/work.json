@@ -1,4 +1,70 @@
 {
+		"chobani" : {
+		"meta" : {
+			"title" : "Suny Gao - Chobani.com",
+			"description" : "Chobani Home Page"
+		},
+		"backgroundColor" : "#1a3c34",
+		"next" : "i-smoke-weed",
+		"title" : "Chobani.com",
+		"client" : "Chobani",
+		"heroImage" : "",
+		"description" : "Lorem Ipsum",
+		"credits" : {
+			"agency" : [
+				{
+					"text": "Stink Studios",
+					"url" : "http://www.stinkstudios.com"
+				}
+			],
+			"role" : "Front End Developer",
+			"date" : "January 2018"
+		},	
+		"links" : {
+			"site" : "http://www.chobani.com",
+			"caseStudy" : "http://www.stinkstudios.com/"
+		},
+		"mainContent": [
+			{ 
+				"type": "image",
+				"images" : [
+					"weed-desktop-and-mobile.jpg"
+				]
+			},
+			
+			{ 
+				"type": "image",
+				"images" : [
+					"weed-hero.jpg"
+				]
+			},
+			
+			{ 
+				"type": "image",
+				"images" : [
+					"weed-form.jpg",
+					"weed-form-filled.jpg",
+					"weed-submission-preview.jpg"
+				],
+				"description" : "Visitors can tell their story, upload a photo, and share their declaration on Facebook and Twitter."
+			},
+			{ 
+				"type": "image",
+				"images" : [
+					"weed-featured-story.jpg"
+				],
+				"description" : "The site also featured stories from Viceland's TV campaign."
+			},
+
+			{ 
+				"type": "image",
+				"images" : [
+					"weed-gallery.jpg"
+				],
+				"description" : "Submissions gallery"
+			}
+		]
+	},
 	"i-smoke-weed" : {
 		"meta" : {
 			"title" : "Suny Gao - I Smoke Weed",
@@ -320,7 +386,7 @@
 			"description" : "Hello Chime project"
 		},
 		"backgroundColor" : "#262231",
-		"next": "i-smoke-weed",
+		"next": "chobani",
 		"title" : "Chime Homepage",
 		"client" : "Chime",
 		"heroImage" : "chime-desktop-1.jpg",
