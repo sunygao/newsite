@@ -8,6 +8,7 @@
 
 var gulp  = require('gulp'),
 	sass = require('gulp-sass'),
+  sourcemaps = require('gulp-sourcemaps'),
   autoprefixer = require('gulp-autoprefixer'),
   pug = require('gulp-pug'),
   webpack = require("webpack"),
@@ -57,22 +58,22 @@ gulp.task('sass', function() {
 
   //dev config
   cssPath = config.development.css.path,
-  options.outputStyle = 'expanded',
-  sourcemap = true;
+  options.outputStyle = 'expanded';
   
   // if for deployment
   if(gutil.env == 'prod') {
     cssPath = config.deploy.css.path,
     options.outputStyle = "compressed";
-    options.sourcemap = false;
   }
   
   gulp.src(config.src.sass.files)
     .pipe( plumber())
+      .pipe(sourcemaps.init())
       .pipe(sass(options).on('error', sass.logError))
       .pipe(autoprefixer({
         browsers: ['last 4 versions'],
       }))
+      .pipe(sourcemaps.write())
       .pipe(gulp.dest(cssPath));
 });
 
