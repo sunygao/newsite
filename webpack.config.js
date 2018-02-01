@@ -43,9 +43,8 @@ module.exports = {
         query: {
           presets: [require.resolve('babel-preset-es2015')],
           plugins: [
-            ["transform-es2015-classes", {
-              "loose": true
-            }]
+            "transform-class-properties",
+            ["transform-es2015-classes", {"loose": true}]
           ]
         }
       }

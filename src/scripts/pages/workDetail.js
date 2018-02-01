@@ -1,5 +1,4 @@
 import Page from 'abstract/page';
-import data from 'work.json';
 import Template from 'workDetail.pug';
 
 //page components
@@ -12,7 +11,6 @@ export default class WorkDetail extends Page{
 
 	initialize(data, params) {
 		super.initialize(data, params);
-
 		this.slug = params.slug;
 		this.nextData = params.nextData;
 
@@ -25,6 +23,7 @@ export default class WorkDetail extends Page{
 		this.details = this.$el.find('.project-details');
 		this.images = this.$el.find('.project-images .image-wrapper');
 		this.next = this.$el.find('.next-project');
+		this.reachedEnd = false;
 
 		this.createTimeline();
 
@@ -41,7 +40,6 @@ export default class WorkDetail extends Page{
 		super.initComponents();
 
 		this.components.push(this.scrollAnimation);
-
 	}
 
 	initSubviews() {
@@ -89,27 +87,27 @@ export default class WorkDetail extends Page{
 			opacity: 1,
 			y: 0
 		});
-		this.introTimeline.fromTo(this.next, .5, {
-			opacity: 0,
-			display: 'none',
-			x: 20		
-		},
-		{
-			opacity: 1,
-			display: 'block',
-			x: 0
-		}, '-=.2');
+		// this.introTimeline.fromTo(this.next, .5, {
+		// 	opacity: 0,
+		// 	display: 'none',
+		// 	x: 20		
+		// },
+		// {
+		// 	opacity: 1,
+		// 	display: 'block',
+		// 	x: 0
+		// }, '-=.2');
 
 
-		this.outroTimeline.fromTo(this.next, .2, {
-			opacity: 1,
-			display: 'block',
-			x: 0
-		}, {
-			opacity: 0,
-			display: 'none',
-			x: 20
-		});
+		// this.outroTimeline.fromTo(this.next, .2, {
+		// 	opacity: 1,
+		// 	display: 'block',
+		// 	x: 0
+		// }, {
+		// 	opacity: 0,
+		// 	display: 'none',
+		// 	x: 20
+		// });
 
 		this.outroTimeline.fromTo(this.headline, .2, {
 			opacity: 1,
@@ -152,6 +150,22 @@ export default class WorkDetail extends Page{
 		}));
 
 		super.render();
+	}
+
+	onLeftEnd = () => {
+		//not at the end, hide next project btn
+		if(this.reachedEnd === false) return;
+		this.reachedEnd = false;
+		console.log('on left end');
+		this.next.removeClass('show');
+	}
+
+	onReachedEnd = () => {
+		//reached end of page
+		if(this.reachedEnd === true) return;
+		this.reachedEnd = true;
+		console.log('on reached end');
+		this.next.addClass('show');
 	}
 
 	bindNextHover() {

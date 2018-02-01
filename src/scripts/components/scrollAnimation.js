@@ -2,7 +2,6 @@ import CV from 'config/CV';
 
 export default class ScrollAnimation {
   constructor(options) {
-
     this.scrollTop = CV.scroll.y;
     this.sections = options.sections;
     this.sectionOffsets = [];
@@ -59,20 +58,24 @@ export default class ScrollAnimation {
     }
 
     let y = CV.scroll.y;
-    let _this = this;
 
-    _(this.sectionOffsets).forEach(function(section, i) {
+    _(this.sectionOffsets).forEach((section, i) => {
       if(_.inRange(y, section.offsetTop, section.offsetPast)) {
-        if(_this.curSectionIndex == i) {
+        if(this.curSectionIndex == i || section.isActive) {
           return; 
         }
-        
-        _this.curSectionIndex = i;
-        _this.activateSectionCurrent(i);
+        section.isActive = true;
+        this.curSectionIndex = i;
+        this.activateSectionCurrent(i);
+
+
       } else if (y <= section.offsetReset) {
-        _this.activateSectionAhead(i); //ahead
+        section.isActive = false;
+        this.activateSectionAhead(i); //ahead
+
       } else if (y > section.offsetPast) {
-        _this.activateSectionPast(i); 
+        section.isActive = false;
+        this.activateSectionPast(i); 
       }
     });
 
@@ -85,8 +88,8 @@ export default class ScrollAnimation {
 
   activateSectionAhead(sectionIndex) {
     this.sectionOffsets[sectionIndex].$el.removeClass('current').addClass('ahead');
+
      if(this.sections[sectionIndex].resetAnimation) {
-      this.sections[sectionIndex].isActive = false;
       this.sections[sectionIndex].resetAnimation();
     }
   }
@@ -95,11 +98,8 @@ export default class ScrollAnimation {
     this.sectionOffsets[sectionIndex].$el.removeClass('ahead').addClass('current');
 
     if(this.sections[sectionIndex].animateIn) {
-      this.sections[sectionIndex].isActive = true;
       this.sections[sectionIndex].animateIn();
     }
-
-   // console.log('current section is', sectionIndex);
   }
 
   activateSectionPast(sectionIndex) {
@@ -107,6 +107,7 @@ export default class ScrollAnimation {
       this.sections[sectionIndex].animateOut();
     }
   }
+
 
   dispose() {
     this.sections = null;
