@@ -1,3 +1,5 @@
+import CV from 'config/CV';
+
 import Page from 'abstract/page';
 import Template from 'workDetail.pug';
 
@@ -24,6 +26,9 @@ export default class WorkDetail extends Page {
 		this.images = this.$el.find('.project-images .image-wrapper');
 		this.next = this.$el.find('.next-project');
 		this.reachedEnd = false;
+
+		this.imagesLoaded = 0;
+		this.maxScroll = null;
 
 		this.createTimeline();
 
@@ -57,7 +62,8 @@ export default class WorkDetail extends Page {
 				$imageEl: $imageEl,
 				src: src,
 				width: width,
-				height: height
+				height: height,
+				onLoaded : this.onImageLoaded
 			});
 			this.subviews.push(imageEl);
 		});
@@ -65,6 +71,26 @@ export default class WorkDetail extends Page {
 		// this.scrollAnimation = new ScrollAnimation({
 	 //      sections: this.subviews
 	 //    });
+	}
+
+	onImageLoaded = () => {
+		//called when image container is set to correct dimensions
+		//not when actual image element is loaded
+		this.imagesLoaded++;
+		if(this.imagesLoaded === this.images.length) {
+			this.onAllLoaded();
+		}
+	}
+
+	onAllLoaded() {
+		//when all containers are set to correct dimensions
+		//get the max scroll
+		this.getMaxScroll();
+	}
+
+	getMaxScroll() {
+		let contentH = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight );
+		this.maxScroll = contentH - CV.viewport.height - 10;;
 	}
 
 	createTimeline() {
@@ -99,6 +125,7 @@ export default class WorkDetail extends Page {
 			opacity: 1,
 			y: 0
 		});
+
 		this.introTimeline.fromTo(this.next, .5, {
 			opacity: 0,
 			display: 'none',
@@ -164,6 +191,25 @@ export default class WorkDetail extends Page {
 		super.render();
 	}
 
+	onResize() {
+		super.onResize();
+		console.log('on resize');
+		this.getMaxScroll();
+	}
+
+	onScroll() {
+		super.onScroll();
+
+		if(!this.maxScroll) return;
+
+		let y = CV.scroll.y;
+
+		if(y > this.maxScroll) {
+			this.onReachedEnd();
+		} else {
+			this.onLeftEnd();
+		}
+	}
 	onLeftEnd = () => {
 		//not at the end, hide next project btn
 		if(this.reachedEnd === false) return;

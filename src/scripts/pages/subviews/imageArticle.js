@@ -19,6 +19,7 @@ export default class ImageArticle {
   	//set the container size based on image dimensions
   	let paddingBottom = 100 * (this.height/this.width);
 	this.$el.css('padding-bottom', paddingBottom + '%');
+	this.onLoaded();
   }
 
   getOffset() {
@@ -41,6 +42,7 @@ export default class ImageArticle {
 
   load() {
   	let img = new Image;
+
 	img.onload = () => {
 		this.isLoaded = true;
 		this.$imageEl.attr('src', this.src).addClass('isLoaded');

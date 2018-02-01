@@ -17,15 +17,6 @@
 		//transition: all .2s $cubic-ease-out;
 		//pointer-events: none;
 
-		// &.show {
-		// 	transform: translateX(-10px);
-		// 	opacity: 1;
-
-		// 	a {
-		// 		pointer-events: auto;
-		// 	}
-		// }
-
 		a {
 			display: block;
 			transition: all .2s $cubic-ease-out;
@@ -36,16 +27,48 @@
 			
 		}
 		
+		&.show {
+			a {
+				transform: translateX(-30px);
+
+				&:hover {
+					transform: translateX(-50px);
+				}
+			}
+
+			
+		}
+
+		&:hover {
+			h3 {
+				span {
+					transform: translateY(-100%);
+				}
+			}
+		}
 	
 		h3 {
+			overflow: hidden;
+			position: relative;
+
+			span {
+				display: block;
+				white-space: nowrap;
+				padding-bottom: 10px;
+				transition: all .5s $cubic-ease-out;
+				
+				&.next {
+					position: absolute;
+				}
+			}
 			//opacity: 0;
 		}
 
 		h2 {
 			//font-size: 6vmin;	
 		}
-
 	}
+
 	.work-detail {
 		@include span(21);
 		@include at-col(1);
@@ -122,7 +145,8 @@
 			margin-bottom: 80px;
 			height: 0;
 			position: relative;
-			
+			padding-bottom: 56%; //default, will be reset by javascript
+
 			img {
 				transition: all .5s ease-out;
 				position: absolute;
