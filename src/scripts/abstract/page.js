@@ -114,6 +114,20 @@ export default class Page extends Backbone.View.extend({
     });
   }
 
+  onScrollStop() {
+    _.forEach(this.components, function(el) {
+      if(el && el.onScrollStop) {
+       el.onScrollStop();
+      }
+    });
+
+    _.forEach(this.subviews, function(el) {
+      if(el && el.onScrollStop) {
+       el.onScrollStop();
+      }
+    });
+  }
+
   onResize() {
      _.forEach(this.components, function(el) {
       if(el && el.onResize) {

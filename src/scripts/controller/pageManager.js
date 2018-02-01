@@ -15,6 +15,7 @@ export default class PageManager {
 		this.init();
 
 		this.scrollTimer = null;
+		this.scrollDelta;
 
 		this.bindEvents();
 		
@@ -49,9 +50,21 @@ export default class PageManager {
 			  this.onResize();
 		  }, this), Config.throttle.resize));
 
+		
+		let lastScrollTop = 0;
 		window.addEventListener('scroll', (e) => { 
+			
 			CV.scrollTicker = true;
+
+			let st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+		   	if(st == lastScrollTop) return;
+
+		   	this.scrollDelta = st - lastScrollTop;
+
+		   	lastScrollTop = st;
+
 			this.setScroll();
+			this.setScrollDelta();
 
 			if(this.scrollTimer) {
 				clearTimeout(this.scrollTimer);
@@ -60,9 +73,26 @@ export default class PageManager {
 
 			this.scrollTimer = setTimeout(() => {
 				CV.scrollTicker = false;
+				this.onScrollStop();
 			}, 100);
 			
 		}, false);
+
+		//TODO test mousewheel
+
+		// $(window).on('DOMMouseScroll wheel', (event) => {
+		// 	if(!event.deltaY) return;
+			
+		// 	let scrollDirection;
+
+		//  	if(event.deltaY > 0 ) {
+		//     	scrollDirection = 'down';
+		//   	} else {
+		//     	scrollDirection = 'up';
+		//   	}
+
+		//   	CV.scrollDirection = scrollDirection;
+		// });
 
 		$(document.body).on('touchstart', $.proxy(function(e) {
 		  this.onTouchStart(e);
@@ -83,6 +113,10 @@ export default class PageManager {
 
 	setScroll() {
 		CV.scroll.y = window.pageYOffset;
+	}
+
+	setScrollDelta() {
+		CV.scroll.delta = this.scrollDelta;
 	}
 
   onResize() {
@@ -145,12 +179,19 @@ export default class PageManager {
 
 		if(CV.scrollTicker) {
 			this.onScroll();
-		}
+		} 
 	}
 
 	onScroll() {
 		if(this.currentPageView && this.currentPageView.onScroll) {
 			this.currentPageView.onScroll();
+		}
+
+	}
+
+	onScrollStop() {
+		if(this.currentPageView && this.currentPageView.onScrollStop) {
+			this.currentPageView.onScrollStop();
 		}
 
 	}

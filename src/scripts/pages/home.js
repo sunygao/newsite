@@ -12,7 +12,9 @@ export default class Home extends Page{
 
 		this.workContainer = this.$el.find('section.work-list');
 		this.imageContainer = this.$el.find('section.images');
+		//this.$workList = $(this.workContainer).find('ul');
 		this.workLinks = [];
+		//this.workLinksAnchor = []; //for scrolling skew affect, use the anchor instead of li to not interfere with tweenmax
 		this.images = [];
 		this.currentWorkIndex = -1;
 		
@@ -21,6 +23,7 @@ export default class Home extends Page{
 
 		_.each(this.workContainer.find('li'), function(el) {
 			_this.workLinks.push($(el));
+			//_this.workLinksAnchor.push($(el).find('a'));
 		});
 
 		_.each(this.imageContainer.find('ul'), function(el) {
@@ -130,6 +133,29 @@ export default class Home extends Page{
 		});
 		super.animateOut();
 	}
+
+// 	onScroll() {
+// 		super.onScroll();
+// 		console.log('scrolling', CV.scroll.delta);
+		
+// 		let skew = CV.scroll.delta / 5 + 'deg';
+// 		console.log(skew)
+
+
+// 		TweenMax.set(this.$workList, {
+// 			skewY: skew
+// 		});
+		
+// 	}
+
+// 	onScrollStop() {
+// 		super.onScrollStop();
+// //		console.log('scrollStopped');
+
+// 		TweenMax.to(this.$workList, .1, {
+// 			skewY: 0
+// 		});
+// 	}
 }
 
 
