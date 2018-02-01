@@ -193,7 +193,6 @@ export default class WorkDetail extends Page {
 
 	onResize() {
 		super.onResize();
-		console.log('on resize');
 		this.getMaxScroll();
 	}
 
