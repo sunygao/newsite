@@ -77,7 +77,7 @@
 				if(content.type == "video")
 					article.video
 						.video-player(style="background-color:" + data.backgroundColor)
-							img(class="preview-image", src="../images/projects/" + slug + "/" +content.previewImage)
+							img(class="preview-image", src="../images/projects/" + slug + "/" +content.previewImage.src)
 							video
 								each src in content.videoSrc
 									source(src=src.src, type="../images/projects/" + slug + "/" + src.type)
@@ -91,7 +91,7 @@
 							.image-container
 								each image in content.images
 									.image-wrapper(style="background-color:" + data.backgroundColor)
-										img(class="preview-image", src="../images/projects/" + slug + "/" +image)
+										img(class="preview-image", data-src="../images/projects/" + slug + "/" +image.src, data-width=image.width, data-height=image.height)
 							if(content.description)
 								.description
 									p= content.description
@@ -100,7 +100,7 @@
 						article
 							each image in content.images
 								.image-wrapper(style="background-color:" + data.backgroundColor)
-									img(class="preview-image", src="../images/projects/" + slug + "/" +image)
+									img(class="preview-image", data-src="../images/projects/" + slug + "/" +image.src, data-width=image.width, data-height=image.height)
 							if(content.description)
 								.description
 									p= content.description

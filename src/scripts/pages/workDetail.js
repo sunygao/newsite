@@ -7,7 +7,7 @@ import ScrollAnimation from 'components/scrollAnimation';
 //subviews
 import ImageArticle from './subviews/imageArticle';
 
-export default class WorkDetail extends Page{
+export default class WorkDetail extends Page {
 
 	initialize(data, params) {
 		super.initialize(data, params);
@@ -39,22 +39,34 @@ export default class WorkDetail extends Page{
 	initComponents() {
 		super.initComponents();
 
-		this.components.push(this.scrollAnimation);
+		//this.components.push(this.scrollAnimation);
 	}
 
 	initSubviews() {
 		super.initSubviews();
-		let _this = this;
 
-		_.each(this.images, function(el, i) {
-			let imageEl = new ImageArticle({ $el: $(el) });
-			_this.subviews.push(imageEl);
+		_.each(this.images, (el, i) => {
+			let $el = $(el),
+			$imageEl = $el.find('img'),
+			src = $imageEl.attr('data-src'),
+			width = $imageEl.attr('data-width'),
+			height = $imageEl.attr('data-height');
+
+			let imageEl = new ImageArticle({ 
+				$el: $el,
+				$imageEl: $imageEl,
+				src: src,
+				width: width,
+				height: height
+			});
+			this.subviews.push(imageEl);
 		});
 
-		this.scrollAnimation = new ScrollAnimation({
-	      sections: this.subviews
-	    });
+		// this.scrollAnimation = new ScrollAnimation({
+	 //      sections: this.subviews
+	 //    });
 	}
+
 	createTimeline() {
 		super.createTimeline();
 
@@ -87,27 +99,27 @@ export default class WorkDetail extends Page{
 			opacity: 1,
 			y: 0
 		});
-		// this.introTimeline.fromTo(this.next, .5, {
-		// 	opacity: 0,
-		// 	display: 'none',
-		// 	x: 20		
-		// },
-		// {
-		// 	opacity: 1,
-		// 	display: 'block',
-		// 	x: 0
-		// }, '-=.2');
+		this.introTimeline.fromTo(this.next, .5, {
+			opacity: 0,
+			display: 'none',
+			x: 20		
+		},
+		{
+			opacity: 1,
+			display: 'block',
+			x: 0
+		}, '-=.2');
 
 
-		// this.outroTimeline.fromTo(this.next, .2, {
-		// 	opacity: 1,
-		// 	display: 'block',
-		// 	x: 0
-		// }, {
-		// 	opacity: 0,
-		// 	display: 'none',
-		// 	x: 20
-		// });
+		this.outroTimeline.fromTo(this.next, .2, {
+			opacity: 1,
+			display: 'block',
+			x: 0
+		}, {
+			opacity: 0,
+			display: 'none',
+			x: 20
+		});
 
 		this.outroTimeline.fromTo(this.headline, .2, {
 			opacity: 1,
@@ -156,7 +168,6 @@ export default class WorkDetail extends Page{
 		//not at the end, hide next project btn
 		if(this.reachedEnd === false) return;
 		this.reachedEnd = false;
-		console.log('on left end');
 		this.next.removeClass('show');
 	}
 
@@ -164,7 +175,6 @@ export default class WorkDetail extends Page{
 		//reached end of page
 		if(this.reachedEnd === true) return;
 		this.reachedEnd = true;
-		console.log('on reached end');
 		this.next.addClass('show');
 	}
 

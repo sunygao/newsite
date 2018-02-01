@@ -24,7 +24,6 @@ router.get('/', function(req, res, next) {
 router.get('/:id', function(req, res, next) {
 	var pageData = data[req.params.id];
 	var nextData = data[pageData.next];
-	console.log(pageData);
  	var workDetailPage = pug.compileFile('views/workDetail.pug');
 	var layout = pug.compileFile('views/layout.pug', {
 		filters: {

@@ -25,44 +25,7 @@
 			"caseStudy" : "http://www.stinkstudios.com/"
 		},
 		"mainContent": [
-			{ 
-				"type": "image",
-				"images" : [
-					"weed-desktop-and-mobile.jpg"
-				]
-			},
 			
-			{ 
-				"type": "image",
-				"images" : [
-					"weed-hero.jpg"
-				]
-			},
-			
-			{ 
-				"type": "image",
-				"images" : [
-					"weed-form.jpg",
-					"weed-form-filled.jpg",
-					"weed-submission-preview.jpg"
-				],
-				"description" : "Visitors can tell their story, upload a photo, and share their declaration on Facebook and Twitter."
-			},
-			{ 
-				"type": "image",
-				"images" : [
-					"weed-featured-story.jpg"
-				],
-				"description" : "The site also featured stories from Viceland's TV campaign."
-			},
-
-			{ 
-				"type": "image",
-				"images" : [
-					"weed-gallery.jpg"
-				],
-				"description" : "Submissions gallery"
-			}
 		]
 	},
 	"i-smoke-weed" : {
@@ -94,30 +57,54 @@
 			{ 
 				"type": "image",
 				"images" : [
-					"weed-desktop-and-mobile.jpg"
+					{
+						"src" : "weed-desktop-and-mobile.jpg",
+						"width" : "1440",
+						"height" : "775"
+					}
 				]
 			},
 			
 			{ 
 				"type": "image",
-				"images" : [
-					"weed-hero.jpg"
+				"images" : [ 
+					{
+						"src" : "weed-hero.jpg",
+						"width" : "1440",
+						"height" : "775"
+					}
 				]
 			},
 			
 			{ 
 				"type": "image",
-				"images" : [
-					"weed-form.jpg",
-					"weed-form-filled.jpg",
-					"weed-submission-preview.jpg"
+				"images" : [ 
+					{
+						"src" : "weed-form.jpg",
+						"width" : "1440",
+						"height" : "775"
+					},
+					{
+						"src": "weed-form-filled.jpg",
+						"width" : "1440",
+						"height" : "775"
+					},
+					{
+						"src" : "weed-submission-preview.jpg",
+						"width" : "1440",
+						"height" : "775"
+					}
 				],
 				"description" : "Visitors can tell their story, upload a photo, and share their declaration on Facebook and Twitter."
 			},
 			{ 
 				"type": "image",
 				"images" : [
-					"weed-featured-story.jpg"
+					{
+						"src" : "weed-featured-story.jpg",
+						"width" : "1440",
+						"height" : "775"
+					}
 				],
 				"description" : "The site also featured stories from Viceland's TV campaign."
 			},
@@ -125,7 +112,11 @@
 			{ 
 				"type": "image",
 				"images" : [
-					"weed-gallery.jpg"
+					{
+						"src" : "weed-gallery.jpg",
+						"width" : "1440",
+						"height" : "775"
+					}
 				],
 				"description" : "Submissions gallery"
 			}
@@ -215,42 +206,91 @@
 			{ 
 				"type": "image",
 				"images" : [
-					"yim-desktop-1.jpg",
-					"yim-desktop-2.jpg",
-					"yim-desktop-3.jpg",
-					"yim-desktop-4.jpg"
+					{
+						"src" : "yim-desktop-1.jpg",
+						"width" : "1677",
+						"height" : "923"
+					},
+					{
+						"src" : "yim-desktop-2.jpg",
+						"width" : "1677",
+						"height" : "923"
+					},
+					{
+						"src" : "yim-desktop-3.jpg",
+						"width" : "1677",
+						"height" : "923"
+					},
+					{
+						"src" : "yim-desktop-4.jpg",
+						"width" : "1677",
+						"height" : "923"
+					}
+					
 				],
 				"description" : "Users can browse insights from around the globe, by country, or login for a completely personalized experience."
 			},
 			{ 
 				"type": "image",
 				"images" : [
-					"yim-desktop-5.jpg",
-					"yim-desktop-6.jpg"
+					{
+						"src" : "yim-desktop-5.jpg",
+						"width" : "1677",
+						"height" : "923"
+					},
+					{
+						"src" : "yim-desktop-6.jpg",
+						"width" : "1677",
+						"height" : "923"
+					}
 				],
 				"description" : "As users progressed through the site, colors of the background gradient changed to reflect the current season."
 			},
 			{ 
 				"type": "image",
 				"images" : [
-					"yim-desktop-7.jpg",
-					"yim-desktop-8.jpg",
-					"yim-desktop-9.jpg",
-					"yim-desktop-10.jpg",
-					"yim-desktop-11.jpg"
+					{
+						"src" : "yim-desktop-7.jpg",
+						"width" : "1677",
+						"height" : "923"
+					},
+					{
+						"src" : "yim-desktop-8.jpg",
+						"width" : "1677",
+						"height" : "923"
+					},
+					{
+						"src" : "yim-desktop-9.jpg",
+						"width" : "1677",
+						"height" : "923"
+					},
+					{
+						"src" : "yim-desktop-10.jpg",
+						"width" : "1677",
+						"height" : "923"
+					},
+					{
+						"src" : "yim-desktop-11.jpg",
+						"width" : "1677",
+						"height" : "923"
+					}
+					
 				],
 				"description" : "A selection of 2015's culturally impactful stories and events."
 			},
 			{ 
 				"type": "image",
 				"images" : [
-					"yim-mobile-screens.jpg"
+					{
+						"src" : "yim-mobile-screens.jpg",
+						"width" : "1677",
+						"height" : "923"
+					}
 				]
 			}
 			
 		]
 	},
-
 	"google-calendar" : {
 		"meta" : {
 			"title" : "Suny Gao - Google Calendar",
@@ -292,17 +332,40 @@
 			{ 
 				"type": "image",
 				"images" : [
-					"calendar-desktop-1.jpg",
-					"calendar-desktop-2.jpg",
-					"calendar-desktop-3.jpg",
-					"calendar-desktop-4.jpg",
-					"calendar-desktop-5.jpg",
-					"calendar-desktop-6.jpg"
+					{
+						"src" : "calendar-desktop-1.jpg",
+						"width" : "1440",
+						"height" : "775"
+					},
+					{
+						"src" : "calendar-desktop-2.jpg",
+						"width" : "1440",
+						"height" : "775"
+					},
+					{
+						"src" : "calendar-desktop-3.jpg",
+						"width" : "1440",
+						"height" : "775"
+					},
+					{
+						"src" : "calendar-desktop-4.jpg",
+						"width" : "1440",
+						"height" : "775"
+					},
+					{
+						"src" : "calendar-desktop-5.jpg",
+						"width" : "1440",
+						"height" : "775"
+					},
+					{
+						"src" : "calendar-desktop-6.jpg",
+						"width" : "1440",
+						"height" : "775"
+					}
 				]
 			}
 		]
 	},
-
 	"camp-google" : {
 		"meta" : {
 			"title" : "Suny Gao - Camp Google",
@@ -345,36 +408,88 @@
 		"mainContent": [
 			{ 
 				"type": "image",
-				"images" : [
-					"camp-google-mobile.jpg"
+				"images" : [ 
+					{
+						"src" : "camp-google-mobile.jpg",
+						"width" : "1000",
+						"height" : "1000"
+					}
 				]
 			},
 			{ 
 				"type": "image",
 				"images" : [
-					"camp-google-1.jpg",
-					"camp-google-2.jpg",
-					"camp-google-3.jpg",
-					"camp-google-4.jpg",
-					"camp-google-5.jpg"
+					{ 
+						"src" : "camp-google-1.jpg",
+						"width" : "1675",
+						"height" : "923"
+					},
+					{ 
+						"src" : "camp-google-2.jpg",
+						"width" : "1675",
+						"height" : "923"
+					},
+					{ 
+						"src" : "camp-google-3.jpg",
+						"width" : "1675",
+						"height" : "923"
+					},
+					{ 
+						"src" : "camp-google-4.jpg",
+						"width" : "1675",
+						"height" : "923"
+					},
+					{ 
+						"src" : "camp-google-5.jpg",
+						"width" : "1675",
+						"height" : "923"
+					}
 				],
 				"description" : "Each week had its own theme - Ocean Week, Space Week, Nature Week and Music Week"
 			},
 			{ 
 				"type": "image",
 				"images" : [
-					"camp-google-9.jpg"
+					{ 
+						"src" : "camp-google-9.jpg",
+						"width" : "1675",
+						"height" : "923"
+					}
 				]
 			},
 			{ 
 				"type": "image",
 				"images" : [
-					"camp-google-11.jpg",
-					"camp-google-12.jpg",
-					"camp-google-13.jpg",
-					"camp-google-14.jpg",
-					"camp-google-15.jpg",
-					"camp-google-16.jpg"
+					{ 
+						"src" : "camp-google-11.jpg",
+						"width" : "1675",
+						"height" : "923"
+					},
+					{ 
+						"src" : "camp-google-12.jpg",
+						"width" : "1675",
+						"height" : "923"
+					},
+					{ 
+						"src" : "camp-google-13.jpg",
+						"width" : "1675",
+						"height" : "923"
+					},
+					{ 
+						"src" : "camp-google-14.jpg",
+						"width" : "1675",
+						"height" : "923"
+					},
+					{ 
+						"src" : "camp-google-15.jpg",
+						"width" : "1673",
+						"height" : "895"
+					},
+					{ 
+						"src" : "camp-google-16.jpg",
+						"width" : "1673",
+						"height" : "895"
+					}
 				]
 			}
 		]
@@ -405,12 +520,32 @@
 		"mainContent": [
 			{ 
 				"type": "image",
-				"images" : [
-					"chime-desktop-2.jpg",
-					"chime-desktop-3.jpg",
-					"chime-desktop-4.jpg",
-					"chime-desktop-5.jpg",
-					"chime-desktop-6.jpg"
+				"images" : [ 
+					{
+						 "src" : "chime-desktop-2.jpg",
+						 "width" : "1425",
+						 "height" : "884"
+					},
+					{
+						 "src" : "chime-desktop-3.jpg",
+						 "width" : "1425",
+						 "height" : "884"
+					},
+					{
+					 	"src" : "chime-desktop-4.jpg",
+					 	"width" : "1425",
+					 	"height" : "884"
+					},
+					{
+					 	"src" : "chime-desktop-5.jpg",
+					 	"width" : "1425",
+					 	"height" : "884"
+					},
+					{
+					 	"src" : "chime-desktop-6.jpg",
+					 	"width" : "1425",
+					 	"height" : "884"
+					}
 				]
 			}
 		]

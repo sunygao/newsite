@@ -52,8 +52,8 @@ export default class ScrollAnimation {
     });
   }
 
-  onRAF() {
-    if(!CV.animate || this.sections == null || !CV.scrollTicker) {                
+  onScroll() {
+    if(!CV.animate || this.sections == null) {                
       return;
     }
 
@@ -83,7 +83,7 @@ export default class ScrollAnimation {
 
   onResize() {
     this.getOffsets();
-    this.onRAF();
+    this.onScroll();
   }
 
   activateSectionAhead(sectionIndex) {

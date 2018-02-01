@@ -20,7 +20,7 @@ export default class PageManager {
 		
 		this.onResize();
 
-	this.onScroll();
+	this.setScroll();
 
 	//this.loader = new Loader();
 	this.aboutPage = new About();
@@ -51,7 +51,7 @@ export default class PageManager {
 
 		window.addEventListener('scroll', (e) => { 
 			CV.scrollTicker = true;
-			this.onScroll();
+			this.setScroll();
 
 			if(this.scrollTimer) {
 				clearTimeout(this.scrollTimer);
@@ -81,7 +81,7 @@ export default class PageManager {
 		}, this));
 	}
 
-	onScroll() {
+	setScroll() {
 		CV.scroll.y = window.pageYOffset;
 	}
 
@@ -142,6 +142,17 @@ export default class PageManager {
 		if(this.currentPageView && this.currentPageView.onRAF) {
 			this.currentPageView.onRAF();
 		}
+
+		if(CV.scrollTicker) {
+			this.onScroll();
+		}
+	}
+
+	onScroll() {
+		if(this.currentPageView && this.currentPageView.onScroll) {
+			this.currentPageView.onScroll();
+		}
+
 	}
 
 	loadPage(options) {
