@@ -37,27 +37,27 @@
 					{
 						"src" : "product-landing-desktop.jpg",
 						"width" : "1440",
-						"height" : "780"
+						"height" : "775"
 					},
 					{
 						"src": "product-ingredients-desktop.jpg",
 						"width" : "1440",
-						"height" : "780"
+						"height" : "775"
 					},
 					{
 						"src": "header-article-component.jpg",
 						"width" : "1440",
-						"height" : "780"
+						"height" : "775"
 					},
 					{
 						"src" : "recipes-landing-desktop.jpg",
 						"width" : "1440",
-						"height" : "780"
+						"height" : "775"
 					},
 					{
 						"src" : "mobile-desktop-recipes.jpg",
 						"width" : "1440",
-						"height" : "780"
+						"height" : "775"
 					}
 				],
 				"description" : "The new site includes a section for recipes that users can filter by tag."
@@ -68,12 +68,12 @@
 					{
 						"src" : "recipe-header-desktop.jpg",
 						"width" : "1440",
-						"height" : "780"
+						"height" : "775"
 					},
 					{
 						"src" : "recipe-detail-desktop.jpg",
 						"width" : "1440",
-						"height" : "780"
+						"height" : "775"
 					}
 					
 				]
@@ -85,7 +85,7 @@
 					{
 						"src" : "careers-desktop.jpg",
 						"width" : "1440",
-						"height" : "780"
+						"height" : "775"
 					}
 					
 				],
@@ -99,12 +99,12 @@
 					{
 						"src" : "recipe-carousel-desktop.jpg",
 						"width" : "1440",
-						"height" : "780"
+						"height" : "775"
 					},
 					{
 						"src" : "video-carousel-desktop.jpg",
 						"width" : "1440",
-						"height" : "780"
+						"height" : "775"
 					}
 					
 				],
@@ -117,7 +117,7 @@
 					{
 						"src" : "header-component.jpg",
 						"width" : "1440",
-						"height" : "780"
+						"height" : "775"
 					}
 					
 				],
@@ -130,7 +130,7 @@
 					{
 						"src" : "impact-component.jpg",
 						"width" : "1440",
-						"height" : "780"
+						"height" : "775"
 					}
 					
 				],
@@ -143,7 +143,7 @@
 					{
 						"src" : "mobile-screens.jpg",
 						"width" : "1440",
-						"height" : "780"
+						"height" : "775"
 					}
 					
 				]
