@@ -8,7 +8,7 @@
 					span.next=nextData.client
 
 
-	section.work-detail
+	section(class=data.hasBorder ? "has-border work-detail" : "work-detail")
 		article.headline
 			h2=data.title
 			h3=data.client
@@ -19,7 +19,8 @@
 
 		.project-details
 			article.description
-					p=data.description
+				each content in data.description
+					p=content
 
 			article.credits
 				ul 

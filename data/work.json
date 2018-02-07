@@ -1,15 +1,21 @@
 {
-		"chobani" : {
+	"chobani" : {
 		"meta" : {
 			"title" : "Suny Gao - Chobani.com",
 			"description" : "Chobani Home Page"
 		},
-		"backgroundColor" : "#1a3c34",
+		"backgroundColor" : "#283a34",
 		"next" : "i-smoke-weed",
 		"title" : "Chobani.com",
 		"client" : "Chobani",
-		"heroImage" : "",
-		"description" : "Lorem Ipsum",
+		"hasBorder" : "true",
+		"heroImage" : "hero.jpg",
+		"description" : [
+			"Stink Studios and Chobani launched the new Chobani.com to coincide with the yogurt's rebrand at the beginning of 2018. Because the project was so large in scope, As part of the front end team working on such a large platform site, we worked closely with designers to define a style guide with a grid system, type sizes and components across 5 breakpoints.",
+			"Part of the client's requirement was to have flexibility with page layouts and to be able to easily make periodic updates to the site's content. The Stink team development a system of page templates and customizable modules that uses data pulled from a Contentful CMS. The developers worked closely with the UX and design teams to define more than 10 customizable modules that the client could add, delete, reorder and swap within each page's template constraints. Each module was built as its own React component, and each had its own customizations, like optional SVG frames or images, or positioning the text on the right or left.",
+			"On the backend, Stink's internal tool built the data from the Contentful API into static JSON and uploaded the files to S3. The front end can then consume this static data instead of overloading the API. The site also used a number of external APIs like JobVite and MailChimp and Destini.",
+			"Front end stack: React, Redux + Reselect, Immutable.js, Post CSS + CSS modules, compiled with Webpack and Babel."
+		],
 		"credits" : {
 			"agency" : [
 				{
@@ -25,7 +31,123 @@
 			"caseStudy" : "http://www.stinkstudios.com/"
 		},
 		"mainContent": [
-			
+			{ 
+				"type": "image",
+				"images" : [ 
+					{
+						"src" : "product-landing-desktop.jpg",
+						"width" : "1440",
+						"height" : "780"
+					},
+					{
+						"src": "product-ingredients-desktop.jpg",
+						"width" : "1440",
+						"height" : "780"
+					},
+					{
+						"src": "header-article-component.jpg",
+						"width" : "1440",
+						"height" : "780"
+					},
+					{
+						"src" : "recipes-landing-desktop.jpg",
+						"width" : "1440",
+						"height" : "780"
+					},
+					{
+						"src" : "mobile-desktop-recipes.jpg",
+						"width" : "1440",
+						"height" : "780"
+					}
+				],
+				"description" : "The new site includes a section for recipes that users can filter by tag."
+			},
+			{ 
+				"type": "image",
+				"images" : [ 
+					{
+						"src" : "recipe-header-desktop.jpg",
+						"width" : "1440",
+						"height" : "780"
+					},
+					{
+						"src" : "recipe-detail-desktop.jpg",
+						"width" : "1440",
+						"height" : "780"
+					}
+					
+				]
+			},
+			{ 
+				"type": "image",
+				"images" : [ 
+					
+					{
+						"src" : "careers-desktop.jpg",
+						"width" : "1440",
+						"height" : "780"
+					}
+					
+				],
+				"description" : "Careers page with data pulled in from the JobVite API."
+
+			},
+			{ 
+				"type": "image",
+				"images" : [ 
+					
+					{
+						"src" : "recipe-carousel-desktop.jpg",
+						"width" : "1440",
+						"height" : "780"
+					},
+					{
+						"src" : "video-carousel-desktop.jpg",
+						"width" : "1440",
+						"height" : "780"
+					}
+					
+				],
+				"description" : "Carousel component with optional SVG frame."
+			},
+			{ 
+				"type": "image",
+				"images" : [ 
+					
+					{
+						"src" : "header-component.jpg",
+						"width" : "1440",
+						"height" : "780"
+					}
+					
+				],
+				"description" : "Header component with optional SVG frame."
+			},
+			{ 
+				"type": "image",
+				"images" : [ 
+					
+					{
+						"src" : "impact-component.jpg",
+						"width" : "1440",
+						"height" : "780"
+					}
+					
+				],
+				"description" : "An article component with text placement and frame options."
+			},
+			{ 
+				"type": "image",
+				"images" : [ 
+					
+					{
+						"src" : "mobile-screens.jpg",
+						"width" : "1440",
+						"height" : "780"
+					}
+					
+				]
+			}
 		]
 	},
 	"i-smoke-weed" : {
@@ -38,7 +160,9 @@
 		"title" : "I Smoke Weed",
 		"client" : "Viceland",
 		"heroImage" : "weed-form-hero.jpg",
-		"description" : "Thought marijuana has been decriminalized in many states, weed usage is still stigmatized in the America, and admitting to smoking weed is likely to invoke cartoonish stoner stereotypes. In conjunction with Viceland's TV campaign, Stink Studios created a platform for users to publicly and proudly proclaim \"I smoke weed.\" ",
+		"description" : [
+			"Thought marijuana has been decriminalized in many states, weed usage is still stigmatized in the America, and admitting to smoking weed is likely to invoke cartoonish stoner stereotypes. In conjunction with Viceland's TV campaign, Stink Studios created a platform for users to publicly and proudly proclaim \"I smoke weed.\" " 
+		],
 		"credits" : {
 			"agency" : [
 				{
@@ -97,6 +221,7 @@
 				],
 				"description" : "Visitors can tell their story, upload a photo, and share their declaration on Facebook and Twitter."
 			},
+
 			{ 
 				"type": "image",
 				"images" : [
@@ -138,7 +263,9 @@
 		"title" : "Year in Music",
 		"client" : "Spotify",
 		"heroImage" : "yim-hero.jpg",
-		"description" : "In 2015, Stink Studio partnered with Spotify to create their annual Year in Music experience. The site turned Spotify's massive collection of user data into a personalized experience for each of its 100 million users worldwide. In addition to displaying unique data, the site also featured global listening insights, as well as stories and highlights from the year. The site was translated into 35 languages and had over 5 million unique visits. I worked with a team of in house developers to create the animation heavy, WebGL-centric site, using tools like pixi.js to create duotone effects and gradients, Backbone.js and Handlebars for shared front end and back end templates, HTML5 audio, and Webpack.",
+		"description" : [
+			"In 2015, Stink Studio partnered with Spotify to create their annual Year in Music experience. The site turned Spotify's massive collection of user data into a personalized experience for each of its 100 million users worldwide. In addition to displaying unique data, the site also featured global listening insights, as well as stories and highlights from the year. The site was translated into 35 languages and had over 5 million unique visits. I worked with a team of in house developers to create the animation heavy, WebGL-centric site, using tools like pixi.js to create duotone effects and gradients, Backbone.js and Handlebars for shared front end and back end templates, HTML5 audio, and Webpack."
+		],
 		"credits" : {
 			"agency" : [
 				{
@@ -301,7 +428,9 @@
 		"title" : "Google Calendar",
 		"client" : "Google",
 		"heroImage" : "calendar-hero.jpg",
-		"description" : "In 2014, Google approached B-Reel to help introduce their brand new, overhauled calendar app to the world. In addition to a product film, B-Reel created a website to showcase the app's new features. The site featured heavy use of HTML5 video and timeline animations, and was developed using Google's Closure library.",
+		"description" : [
+			"In 2014, Google approached B-Reel to help introduce their brand new, overhauled calendar app to the world. In addition to a product film, B-Reel created a website to showcase the app's new features. The site featured heavy use of HTML5 video and timeline animations, and was developed using Google's Closure library."
+		],
 		"credits" : {
 			"agency" : [
 				{
@@ -376,7 +505,9 @@
 		"title" : "Camp Google",
 		"client" : "Google",
 		"heroImage" : "camp-hero.jpg",
-		"description" : "Google partnered with National Geographic, Khan Academy and the National Park Service to create Camp Google, a 4 week online summer camp for kids. Each week revealed activities and trivia focused on a theme, like the ocean or music. Parents can help their kids and do the activities at home, earn and print badges, watch videos related to the week's theme",
+		"description" : [
+			"Google partnered with National Geographic, Khan Academy and the National Park Service to create Camp Google, a 4 week online summer camp for kids. Each week revealed activities and trivia focused on a theme, like the ocean or music. Parents can help their kids and do the activities at home, earn and print badges, watch videos related to the week's theme."
+		],
 		"credits" : {
 			"agency" : [
 				{
@@ -505,7 +636,9 @@
 		"title" : "Chime Homepage",
 		"client" : "Chime",
 		"heroImage" : "chime-desktop-1.jpg",
-		"description" : "Chime, an on-demand babysitting service, needed a new homepage to go along with their branding refresh. The new homepage showcased Chime's easy booking process, gave an overview on their screening process and featured testimonials from parents. The homepage had to convey professionalism and trustworthiness as well as a friendly and lively demeanor, so we made heavy use of SVG illustrations, timeline animations and scrolling interactions. To future-proof Chime's technology stack, I built the site with ES6, Webpack, Babel and Gulp.",
+		"description" : [
+			"Chime, an on-demand babysitting service, needed a new homepage to go along with their branding refresh. The new homepage showcased Chime's easy booking process, gave an overview on their screening process and featured testimonials from parents. The homepage had to convey professionalism and trustworthiness as well as a friendly and lively demeanor, so we made heavy use of SVG illustrations, timeline animations and scrolling interactions. To future-proof Chime's technology stack, I built the site with ES6, Webpack, Babel and Gulp."
+		],
 		"credits" : {
 			"agency" : [
 				{
