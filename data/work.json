@@ -13,7 +13,7 @@
 		"description" : [
 			"Stink Studios and Chobani launched the new Chobani.com to coincide with the yogurt's rebrand at the beginning of 2018. Because the project was so large in scope, As part of the front end team working on such a large platform site, we worked closely with designers to define a style guide with a grid system, type sizes and components across 5 breakpoints.",
 			"Part of the client's requirement was to have flexibility with page layouts and to be able to easily make periodic updates to the site's content. The Stink team development a system of page templates and customizable modules that uses data pulled from a Contentful CMS. The developers worked closely with the UX and design teams to define more than 10 customizable modules that the client could add, delete, reorder and swap within each page's template constraints. Each module was built as its own React component, and each had its own customizations, like optional SVG frames or images, or positioning the text on the right or left.",
-			"On the backend, Stink's internal tool built the data from the Contentful API into static JSON and uploaded the files to S3. The front end can then consume this static data instead of overloading the API. The site also used a number of external APIs like JobVite and MailChimp and Destini.",
+			"On the backend, Stink's internal tool built the data from the Contentful API into static JSON and uploaded the files to S3. The front end can then consume this static data instead of overloading the API. The site also used a number of external APIs like JobVite, MailChimp and Destini.",
 			"Front end stack: React, Redux + Reselect, Immutable.js, Post CSS + CSS modules, compiled with Webpack and Babel."
 		],
 		"credits" : {
