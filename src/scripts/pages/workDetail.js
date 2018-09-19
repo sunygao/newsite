@@ -105,11 +105,7 @@ export default class WorkDetail extends Page {
 	onAllLoaded() {
 		//when all containers are set to correct dimensions
 		//get the max scroll and each containers offset
-		_.each(this.images, (el, i) => {
-			el.getOffset();
-		});
-
-		_.each(this.videos, (el, i) => {
+		_.each(this.subviews, (el, i) => {
 			el.getOffset();
 		});
 
