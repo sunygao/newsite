@@ -4,10 +4,11 @@ import Page from 'abstract/page';
 import Template from 'workDetail.pug';
 
 //page components
-import ScrollAnimation from 'components/scrollAnimation';
+//import ScrollAnimation from 'components/scrollAnimation';
 
 //subviews
 import ImageArticle from './subviews/imageArticle';
+import VideoArticle from './subviews/videoArticle';
 
 export default class WorkDetail extends Page {
 
@@ -24,10 +25,12 @@ export default class WorkDetail extends Page {
 		this.hero = this.$el.find('.hero');
 		this.details = this.$el.find('.project-details');
 		this.images = this.$el.find('.project-images .image-wrapper');
+		this.videos = this.$el.find('.project-images .video-player');
 		this.next = this.$el.find('.next-project');
 		this.reachedEnd = false;
 
-		this.imagesLoaded = 0;
+		this.assetsLoaded = 0;
+		this.totalAssets = this.images.length + this.videos.length;
 		this.maxScroll = null;
 
 		this.createTimeline();
@@ -63,9 +66,25 @@ export default class WorkDetail extends Page {
 				src: src,
 				width: width,
 				height: height,
-				onLoaded : this.onImageLoaded
+				onLoaded : this.onAssetsLoaded
 			});
 			this.subviews.push(imageEl);
+		});
+
+		_.each(this.videos, (el, i) => {
+			let $el = $(el),
+			$videoEl = $el.find('video'),
+			width = $videoEl.attr('data-width'),
+			height = $videoEl.attr('data-height');
+
+			let videoEl = new VideoArticle({ 
+				$el: $el,
+				$videoEl: $videoEl,
+				width: width,
+				height: height,
+				onLoaded : this.onAssetsLoaded
+			});
+			this.subviews.push(videoEl);
 		});
 
 		// this.scrollAnimation = new ScrollAnimation({
@@ -73,24 +92,33 @@ export default class WorkDetail extends Page {
 	 //    });
 	}
 
-	onImageLoaded = () => {
+	onAssetsLoaded = () => {
 		//called when image container is set to correct dimensions
 		//not when actual image element is loaded
-		this.imagesLoaded++;
-		if(this.imagesLoaded === this.images.length) {
+		this.assetsLoaded++;
+		
+		if(this.assetsLoaded === this.totalAssets) {
 			this.onAllLoaded();
 		}
 	}
 
 	onAllLoaded() {
 		//when all containers are set to correct dimensions
-		//get the max scroll
+		//get the max scroll and each containers offset
+		_.each(this.images, (el, i) => {
+			el.getOffset();
+		});
+
+		_.each(this.videos, (el, i) => {
+			el.getOffset();
+		});
+
 		this.getMaxScroll();
 	}
 
 	getMaxScroll() {
 		let contentH = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight );
-		this.maxScroll = contentH - CV.viewport.height - 10;;
+		this.maxScroll = contentH - CV.viewport.height - 10;
 	}
 
 	createTimeline() {

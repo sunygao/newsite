@@ -12,14 +12,14 @@ export default class ImageArticle {
 	this.offsetLoad = null;
 
 	this.setSize();
-    this.getOffset();
+   // this.getOffset();
   }
 
   setSize() {
   	//set the container size based on image dimensions
   	let paddingBottom = 100 * (this.height/this.width);
-	this.$el.css('padding-bottom', paddingBottom + '%');
-	this.onLoaded();
+	   this.$el.css('padding-bottom', paddingBottom + '%');
+	   this.onLoaded();
   }
 
   getOffset() {

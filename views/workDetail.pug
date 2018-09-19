@@ -79,14 +79,13 @@
 			each content in data.mainContent
 				if(content.type == "video")
 					article.video
-						.video-player(style="background-color:" + data.backgroundColor)
-							img(class="preview-image", src="../images/projects/" + slug + "/" +content.previewImage.src)
-							video
-								each src in content.videoSrc
-									source(src=src.src, type="../images/projects/" + slug + "/" + src.type)
-						if(content.description)
-							.description
-								p= content.description
+						each video in content.videos
+							.video-player(style="background-color:" + data.backgroundColor)
+								video(muted, preload="none", poster="../images/projects/" + slug + "/" + video.previewImage, data-width=video.width, data-height=video.height)
+									source(src="../images/projects/" + slug + "/" + video.src, type="video/mp4")
+							if(content.description)
+								.description
+									p= content.description
 				else
 					//-2 column
 					if(content.type == "col-2")

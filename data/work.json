@@ -33,6 +33,18 @@
 		},
 		"mainContent": [
 			{ 
+				"type": "video",
+				"videos" : [ 
+					{
+						"src" : "test.mp4",
+						"previewImage" : "product-landing-desktop.jpg",
+						"width" : "1160",
+						"height" : "720"
+					}
+				]
+			},
+
+			{ 
 				"type": "image",
 				"images" : [ 
 					{
