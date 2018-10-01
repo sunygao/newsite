@@ -1,4 +1,43 @@
-{
+{	
+	"notable-women" : {
+		"meta" : {
+			"title" : "Suny Gao - Notable Women",
+			"description" : "Notable Women website"
+		},
+		"backgroundColor" : "#FAEBD2",
+		"next" : "chobani",
+		"title" : "Notable Women",
+		"client" : "Rosie Rios & Google",
+		"heroYT" : "1peWF8ThC8Y",
+		"description" : [
+			"<p>lorem ipsum</p>"
+		],
+		"credits" : {
+			"agency" : [
+				{
+					"text": "Google Creative Lab"
+				}
+			],
+			"role" : "Front End Developer",
+			"date" : "September 2018"
+		},	
+		"links" : {
+			"site" : "https://notablewomen.com"
+		},
+		"mainContent": [
+			{ 
+				"type": "image",
+				"images" : [ 
+					{
+						"src" : "desktop-1.jpg",
+						"width" : "1440",
+						"height" : "798"
+					}
+					
+				]
+			}
+		]
+	},
 	"chobani" : {
 		"meta" : {
 			"title" : "Suny Gao - Chobani.com",
@@ -32,18 +71,6 @@
 			"caseStudy" : "http://www.stinkstudios.com/work/chobani-a-new-home"
 		},
 		"mainContent": [
-			{ 
-				"type": "video",
-				"videos" : [ 
-					{
-						"src" : "test.mp4",
-						"previewImage" : "product-landing-desktop.jpg",
-						"width" : "1160",
-						"height" : "720"
-					}
-				]
-			},
-
 			{ 
 				"type": "image",
 				"images" : [ 
@@ -345,12 +372,28 @@
 		"mainContent": [
 			{ 
 				"type": "image",
-				"images" : [
+				"images" : [ 
 					{
 						"src" : "yim-desktop-1.jpg",
 						"width" : "1677",
 						"height" : "923"
-					},
+					}
+				]
+			},
+			{ 
+				"type": "video",
+				"videos" : [ 
+					{
+						"src" : "yim-demo.mp4",
+						"previewImage" : "yim-desktop-1.jpg",
+						"width" : "1160",
+						"height" : "720"
+					}
+				]
+			},
+			{ 
+				"type": "image",
+				"images" : [
 					{
 						"src" : "yim-desktop-2.jpg",
 						"width" : "1677",
@@ -645,7 +688,7 @@
 			"description" : "Hello Chime project"
 		},
 		"backgroundColor" : "#262231",
-		"next": "chobani",
+		"next": "notable-women",
 		"title" : "Chime Homepage",
 		"client" : "Chime",
 		"heroImage" : "chime-desktop-1.jpg",

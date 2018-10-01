@@ -5,6 +5,17 @@
 	},
 	"projects" : [
 		{
+			"title" : "Notable Women",
+			"client" : "rosie rios & google",
+			"slug" : "notable-women",
+			"previewImages" : [
+				"rosa-bill-full.jpg",
+				"mahalia-bill-full.jpg",
+				"eleanor-bill-full.jpg"
+			]
+		},
+
+		{
 			"title" : "Chobani.com",
 			"client" : "chobani",
 			"slug" : "chobani",

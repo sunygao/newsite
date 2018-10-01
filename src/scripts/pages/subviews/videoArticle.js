@@ -41,8 +41,6 @@ export default class VideoArticle {
   	this.offsetTop = Math.round(this.$el.offset().top  - windowHeight / 2);
 	  this.offsetBottom = Math.round(this.$el.offset().top + this.$el.outerHeight());
 	  this.offsetLoad = Math.round(this.offsetTop  - windowHeight);
-  
-    console.log(this.$el.offset().top,this.$el.outerHeight(), this.offsetLoad, this.offsetTop, this.offsetBottom)
   }
 
   onScroll() {
