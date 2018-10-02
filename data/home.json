@@ -6,7 +6,7 @@
 	"projects" : [
 		{
 			"title" : "Notable Women",
-			"client" : "rosie rios & google",
+			"client" : "rosie rios & google creative lab",
 			"slug" : "notable-women",
 			"previewImages" : [
 				"rosa-bill-full.jpg",
@@ -29,8 +29,8 @@
 			"client" : "viceland",
 			"slug" : "i-smoke-weed",
 			"previewImages" : [
-				"weed-hero.jpg",
-				"weed-featured-gallery.jpg"
+				"weed-featured-gallery.jpg",
+				"weed-hero.jpg"
 			]
 		},
 		{

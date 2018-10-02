@@ -7,7 +7,7 @@
 		"backgroundColor" : "#FAEBD2",
 		"next" : "chobani",
 		"title" : "Notable Women",
-		"client" : "Rosie Rios & Google",
+		"client" : "Rosie Rios & Google Creative Lab",
 		"heroYT" : "1peWF8ThC8Y",
 		"description" : [
 			"<p>lorem ipsum</p>"
@@ -26,10 +26,47 @@
 		},
 		"mainContent": [
 			{ 
+				"type": "video",
+				"videos" : [ 
+					{
+						"src" : "bill-stack-animation.mp4",
+						"previewImage" : "desktop-1.jpg",
+						"width" : "1440",
+						"height" : "798"
+					}
+				]
+			},
+			{ 
 				"type": "image",
 				"images" : [ 
+					
 					{
-						"src" : "desktop-1.jpg",
+						"src" : "desktop-2.jpg",
+						"width" : "1440",
+						"height" : "798"
+					},
+					{
+						"src" : "desktop-3.jpg",
+						"width" : "1440",
+						"height" : "798"
+					},
+					{
+						"src" : "desktop-4.jpg",
+						"width" : "1440",
+						"height" : "980"
+					},
+					{
+						"src" : "desktop-5.jpg",
+						"width" : "1440",
+						"height" : "1504"
+					},
+					{
+						"src" : "iphone-screens.jpg",
+						"width" : "1440",
+						"height" : "798"
+					},
+					{
+						"src" : "sharing-screens.jpg",
 						"width" : "1440",
 						"height" : "798"
 					}
@@ -380,17 +417,7 @@
 					}
 				]
 			},
-			{ 
-				"type": "video",
-				"videos" : [ 
-					{
-						"src" : "yim-demo.mp4",
-						"previewImage" : "yim-desktop-1.jpg",
-						"width" : "1160",
-						"height" : "720"
-					}
-				]
-			},
+			
 			{ 
 				"type": "image",
 				"images" : [
