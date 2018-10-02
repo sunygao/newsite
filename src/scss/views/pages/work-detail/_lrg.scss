@@ -11,7 +11,7 @@
 	.hero {
 		.video-container {
 			width: 100%;
-			padding-bottom: 56%;
+			padding-bottom: 56.2%;
 			height: 0;
 
 			iframe {
@@ -206,7 +206,7 @@
 			text-align: right;
 			margin-top: -60px;
     		margin-bottom: 80px;
-			@include span(20);
+			@include span(15);
 		}
 		
 		//two column
