@@ -44,7 +44,7 @@
     "gulp-wrap-amd": "^0.5.0",
     "imports-loader": "^0.7.0",
     "json-loader": "^0.5.4",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.13",
     "parallelshell": "^3.0.2",
     "pug-loader": "^2.3.0",
     "run-sequence": "^1.2.2",
