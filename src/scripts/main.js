@@ -1,7 +1,7 @@
-import $ from 'expose?$!jquery';
-import { TweenMax, TimelineMax } from 'TweenMax';
-import _ from 'expose?_!lodash-min';
-import Backbone from 'backbone-1.3.3';
+import $ from 'jquery';
+import { TweenMax, TimelineMax } from 'gsap';
+import _ from 'lodash';
+import Backbone from 'backbone';
 import Config from 'config/config';
 import CV from 'config/CV';
 import Router from 'router';
