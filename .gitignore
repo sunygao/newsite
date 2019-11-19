@@ -7,6 +7,5 @@ node_modules/
 npm-debug.log
 
 
-
-
-
+public/javascripts/*.hot-update.json
+public/javascripts/*.hot-update.js

@@ -28,13 +28,16 @@ export default class WorkDetail extends Page {
 		this.images = this.$el.find('.project-images .image-wrapper');
 		this.videos = this.$el.find('.project-images .video-player');
 		this.next = this.$el.find('.next-project');
+
+		this.introTimeline = this.createIntroTimeline();
+		this.outroTimeline = this.createOutroTimeline();
 		this.reachedEnd = false;
 
 		this.assetsLoaded = 0;
 		this.totalAssets = this.images.length + this.videos.length;
 		this.maxScroll = null;
 
-		this.createTimeline();
+		this.createTimelines();
 
 		this.bindEvents();
 
@@ -88,9 +91,6 @@ export default class WorkDetail extends Page {
 			this.subviews.push(videoEl);
 		});
 
-		// this.scrollAnimation = new ScrollAnimation({
-	 //      sections: this.subviews
-	 //    });
 	}
 
 	onAssetsLoaded = () => {
@@ -118,9 +118,8 @@ export default class WorkDetail extends Page {
 		this.maxScroll = contentH - CV.viewport.height - 10;
 	}
 
-	createTimeline() {
-		super.createTimeline();
-
+	createTimelines() {
+	
 		this.introTimeline.fromTo(this.headline, .5, {
 			opacity: 0,
 			y: 10,
@@ -153,32 +152,21 @@ export default class WorkDetail extends Page {
 
 		this.introTimeline.fromTo(this.next, .5, {
 			opacity: 0,
-			display: 'none',
 			x: 20		
 		},
 		{
 			opacity: 1,
-			display: 'block',
 			x: 0
 		}, '-=.2');
 
 
-		this.outroTimeline.fromTo(this.next, .2, {
-			opacity: 1,
-			display: 'block',
-			x: 0
-		}, {
+		this.outroTimeline.to(this.next, .2, {
 			opacity: 0,
 			display: 'none',
 			x: 20
 		});
 
-		this.outroTimeline.fromTo(this.headline, .2, {
-			opacity: 1,
-			y: 0,
-			skewX: '0deg',
-			skewY: '0deg'
-		},{
+		this.outroTimeline.to(this.headline, .2, {
 			opacity: 0,
 			y: 10,
 			skewX: '-2deg',
@@ -186,11 +174,7 @@ export default class WorkDetail extends Page {
 		});
 
 
-		this.outroTimeline.fromTo([this.hero, this.details], .5, {
-			opacity: 1,
-			y: 0
-		},
-		{
+		this.outroTimeline.to([this.hero, this.details], .5, {
 			opacity: 0,
 			y: 10
 		}, .2);

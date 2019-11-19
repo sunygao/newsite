@@ -121,7 +121,7 @@ export default class About extends Backbone.View.extend({
 
   close() {
     if(CV.animate) {
-      this.outroTimeline.play();
+      this.outroTimeline.progress(0).play();
     } else {
       this.outroTimeline.progress(1);
     }

@@ -14,33 +14,33 @@ export default class Home extends Page{
 
 		this.workContainer = this.$el.find('section.work-list');
 		this.imageContainer = this.$el.find('section.images');
-		//this.$workList = $(this.workContainer).find('ul');
 		this.workLinks = [];
-		//this.workLinksAnchor = []; //for scrolling skew affect, use the anchor instead of li to not interfere with tweenmax
 		this.images = [];
 		this.currentWorkIndex = -1;
+
+		this.introTimeline = this.createIntroTimeline();
+		this.outroTimeline = this.createOutroTimeline();
 		
 		let _this = this;
-
+		
 
 		_.each(this.workContainer.find('li'), function(el) {
 			_this.workLinks.push($(el));
-			//_this.workLinksAnchor.push($(el).find('a'));
 		});
 
 		_.each(this.imageContainer.find('ul'), function(el) {
 			_this.images.push($(el));
-		});		
+		});	
+			
 
-		this.createTimeline();
+		this.createTimelines();
 
 		this.bindEvents();
 		
 	}	
 
-	createTimeline() {
-		super.createTimeline();
-
+	createTimelines() {
+		
 		this.introTimeline.staggerFromTo(this.workLinks, .5, {
 			opacity: 0,
 			y: 10,
@@ -53,14 +53,9 @@ export default class Home extends Page{
 			skewX: '0deg',
 			skewY: '0deg'
 		}, .1);
+		
 
-		this.outroTimeline.staggerFromTo(this.workLinks, .5, {
-			opacity: 1,
-			y: 0,
-			skewX: '0deg',
-			skewY: '0deg'
-		},
-		{
+		this.outroTimeline.staggerTo(this.workLinks, .5, {
 			opacity: 0,
 			y: 10,
 			skewX: '-2deg',
@@ -136,28 +131,6 @@ export default class Home extends Page{
 		super.animateOut();
 	}
 
-// 	onScroll() {
-// 		super.onScroll();
-// 		console.log('scrolling', CV.scroll.delta);
-		
-// 		let skew = CV.scroll.delta / 5 + 'deg';
-// 		console.log(skew)
-
-
-// 		TweenMax.set(this.$workList, {
-// 			skewY: skew
-// 		});
-		
-// 	}
-
-// 	onScrollStop() {
-// 		super.onScrollStop();
-// //		console.log('scrollStopped');
-
-// 		TweenMax.to(this.$workList, .1, {
-// 			skewY: 0
-// 		});
-// 	}
 }
 
 

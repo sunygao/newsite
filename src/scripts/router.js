@@ -1,6 +1,5 @@
-import $ from 'jquery';
-
 import PageManager from 'controller/pageManager';
+import $ from 'jquery';
 
 //page views
 import Home from 'pages/home';

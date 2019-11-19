@@ -1,6 +1,4 @@
-import Config from 'config/config';
 import CV from 'config/CV';
-import Utils from 'components/utils';
 import $ from 'jquery';
 import { TimelineMax, Power4 } from 'gsap'
 
@@ -20,7 +18,7 @@ export default class Page extends Backbone.View.extend({
     this.footer = $('footer');
   }
 
-  createTimeline() {
+  createIntroTimeline() {
     let _this = this;
 
     this.introTimeline = new TimelineMax({
@@ -34,6 +32,13 @@ export default class Page extends Backbone.View.extend({
       }
     });
 
+    return this.introTimeline;
+  }
+
+  createOutroTimeline() {
+    let _this = this;
+
+    
     this.outroTimeline = new TimelineMax({
       paused: true,
       ease: Power4.easeOut,
@@ -42,8 +47,7 @@ export default class Page extends Backbone.View.extend({
       }
     });
 
-    return this.introTimeline;
-
+    return this.outroTimeline;
   }
 
   animateIn() {
@@ -54,7 +58,7 @@ export default class Page extends Backbone.View.extend({
     //play the intro timeline
     if(this.introTimeline) {
       if(CV.animate) {
-        this.introTimeline.play();
+        this.introTimeline.progress(0).play();
       } else {
         this.introTimeline.progress(1);
       }
@@ -68,7 +72,7 @@ export default class Page extends Backbone.View.extend({
 
     if(this.outroTimeline) {
       if(CV.animate) {
-        this.outroTimeline.play();
+        this.outroTimeline.progress(0).play();
       } else {
         this.outroTimeline.progress(1);
       }

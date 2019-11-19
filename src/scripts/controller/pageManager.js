@@ -80,22 +80,6 @@ export default class PageManager {
 			
 		}, false);
 
-		//TODO test mousewheel
-
-		// $(window).on('DOMMouseScroll wheel', (event) => {
-		// 	if(!event.deltaY) return;
-			
-		// 	let scrollDirection;
-
-		//  	if(event.deltaY > 0 ) {
-		//     	scrollDirection = 'down';
-		//   	} else {
-		//     	scrollDirection = 'up';
-		//   	}
-
-		//   	CV.scrollDirection = scrollDirection;
-		// });
-
 		$(document.body).on('touchstart', $.proxy(function(e) {
 		  this.onTouchStart(e);
 		}, this));
