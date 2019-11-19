@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 import PageManager from 'controller/pageManager';
 
 //page views

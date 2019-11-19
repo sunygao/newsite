@@ -1,5 +1,7 @@
 import CV from 'config/CV';
 import Config from 'config/config';
+import $ from 'jquery';
+
 
 import About from 'components/about';
 

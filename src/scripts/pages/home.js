@@ -1,6 +1,8 @@
 import CV from 'config/CV';
 import Page from 'abstract/page';
 import Template from 'index.pug';
+import $ from 'jquery';
+
 
 export default class Home extends Page{
 

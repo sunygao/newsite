@@ -60,6 +60,7 @@ if (ENV === "production") {
 
 
 module.exports = {
+  mode: ENV,
   resolve: {
     modules: [
       'node_modules',
@@ -68,7 +69,7 @@ module.exports = {
       path.resolve('data')
     ],
     alias: {
-      'jquery' : 'zepto',
+      'jquery' : 'jquery',
       'TweenMax' : 'TweenMax',
       'underscore' : 'lodash'
     }
@@ -139,15 +140,10 @@ module.exports = {
             : [
                 {
                   loader: "style-loader",
-                  options: {
-                    hmr: true,
-                    sourceMap: true
-                  }
                 },
                 {
                   loader: "css-loader",
                   options: {
-                    minimize: false,
                     sourceMap: true
                   }
                 },

@@ -1,3 +1,4 @@
+import $ from 'jquery';
 import CV from 'config/CV';
 
 import Page from 'abstract/page';

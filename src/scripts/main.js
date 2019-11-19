@@ -1,11 +1,6 @@
-import $ from 'jquery';
-import { TweenMax, TimelineMax } from 'gsap';
-import _ from 'lodash';
+import "scss/app.scss";
 import Backbone from 'backbone';
-import Config from 'config/config';
-import CV from 'config/CV';
 import Router from 'router';
-import Home from 'pages/home';
 
 class Main {
   onReady() {
@@ -16,8 +11,7 @@ class Main {
 }
 
 //init main when document is ready
-var main = module.exports = new Main();
-$(document).ready(
-	setTimeout(() => main.onReady(), 800) 
-);
-
+var main = new Main();
+document.addEventListener("DOMContentLoaded", () => { 
+  setTimeout(() => main.onReady(), 800) 
+}, false);

@@ -1,6 +1,8 @@
 import Config from 'config/config';
 import CV from 'config/CV';
 import Utils from 'components/utils';
+import $ from 'jquery';
+import { TimelineMax, Power4 } from 'gsap'
 
 export default class Page extends Backbone.View.extend({
 

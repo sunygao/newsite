@@ -1,3 +1,5 @@
+import { Expo } from 'gsap'
+
 var Config = {
   bkptLrg: 1440,
   bkptMed : 960,
