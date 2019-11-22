@@ -3,7 +3,7 @@ require('dotenv').config()
 const path = require('path');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const UglifyJSPlugin = require("uglifyjs-webpack-plugin");
+const TerserPlugin = require('terser-webpack-plugin');
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
@@ -173,21 +173,8 @@ module.exports = {
   optimization: {
     noEmitOnErrors: true,
     mangleWasmImports: true,
-    minimizer: [
-      new UglifyJSPlugin({
-        sourceMap: false,
-        uglifyOptions: {
-          warnings: false,
-          compress: {
-            drop_console: true
-          },
-          ie8: false,
-          mangle: true,
-          output: {
-            comments: false
-          }
-        }
-      }),
+    minimizer: [ 
+      new TerserPlugin({}),
       new OptimizeCSSAssetsPlugin({})
     ]
   },

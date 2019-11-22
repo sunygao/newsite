@@ -34,7 +34,6 @@ export default class Router extends Backbone.Router.extend({
     }
 
     home() {
-        console.log('load home');
         this.pageManager.loadPage({
             view: Home,
             data: homeData

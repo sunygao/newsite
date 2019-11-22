@@ -2,6 +2,7 @@ import CV from 'config/CV';
 import Page from 'abstract/page';
 import Template from 'index.pug';
 import $ from 'jquery';
+import * as allWork from '../../../data/projects';
 
 
 export default class Home extends Page{
@@ -10,6 +11,8 @@ export default class Home extends Page{
 		super.initialize(data, params);
 		this.template = Template;
 		this.render();
+
+		console.log(allWork);
 
 		this.workContainer = this.$el.find('section.work-list');
 		this.imageContainer = this.$el.find('section.images');

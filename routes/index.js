@@ -2,7 +2,10 @@ var express = require('express');
 var pug = require('pug');
 var router = express.Router();
 var data = require('../data/home.json');
-var manifest = require('../public/dist/manifest.json');
+
+if(process.env.NODE_ENV == 'production') {
+	var manifest = require('../public/dist/manifest.json');
+}
 
 // /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -18,7 +21,7 @@ router.get('/', function(req, res, next) {
 		title: data.meta.title,
 		description: data.meta.description,
 		env: process.env.NODE_ENV,
-		manifest: manifest
+		manifest: manifest ? manifest : ''
 	});
 	res.send(html);
 });

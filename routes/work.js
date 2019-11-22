@@ -3,7 +3,9 @@ var router = express.Router();
 var data = require('../data/work.json');
 var pug = require('pug');
 
-var manifest = require('../public/dist/manifest.json');
+if(process.env.NODE_ENV == 'production') {
+	var manifest = require('../public/dist/manifest.json');
+}
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -19,7 +21,7 @@ router.get('/', function(req, res, next) {
 		title: data.meta.title,
 		description: data.meta.description,
 		env: process.env.NODE_ENV,
-		manifest: manifest
+		manifest: manifest ? manifest : ''
 	});
 	res.send(html);
 });
@@ -44,7 +46,7 @@ router.get('/:id', function(req, res, next) {
 		title: pageData.meta.title,
 		description: pageData.meta.description,
 		env: process.env.NODE_ENV,
-		manifest: manifest
+		manifest: manifest ? manifest : ''
 	});
 	res.send(html);
 });
