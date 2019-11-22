@@ -1,16 +1,18 @@
+require('dotenv').config()
+
 const path = require('path');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const UglifyJSPlugin = require("uglifyjs-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 const WebpackAssetsManifest = require("webpack-assets-manifest");
-
 var ENV = process.env.NODE_ENV === "production" ? "production" : "development";
 
 let filename = ENV === "production" ? "main.[chunkhash].js" : "main.js";
 let cssFilename = ENV === "production" ? "app.[chunkhash].css" : "app.css";
-let outputPath = path.resolve('public/javascripts/');
+let outputPath = path.resolve('public/dist/');
 
 let devtool = ENV === "production" ? false : "inline-source-map";
 let cache = true;
@@ -46,10 +48,10 @@ if (ENV === "production") {
   devServer = {
     contentBase: "./public",
     hot: true,
-    port: 8081,
-    publicPath: ENV === "production" ? "/" : "http://localhost:8081/",
+    port: process.env.WEBPACK_PORT,
+    publicPath: ENV === "production" ? "/" : `http://localhost:${process.env.WEBPACK_PORT}/`,
     proxy: {
-      '**': 'http://localhost:3000'
+      '**': `http://localhost:${process.env.PORT}/`
     },
     headers: {
       "Access-Control-Allow-Origin": "*",
@@ -78,8 +80,8 @@ module.exports = {
   output: {
   	path: outputPath,
     publicPath: ENV === "production"
-        ? '/javascripts/'
-        : 'http://localhost:8081/',
+        ? '/dist/'
+        : `http://localhost:${process.env.WEBPACK_PORT}/`,
     filename: filename
   },
   devtool: devtool,
@@ -117,7 +119,6 @@ module.exports = {
                 {
                   loader: "css-loader",
                   options: {
-                    minimize: true,
                     sourceMap: false
                   }
                 },

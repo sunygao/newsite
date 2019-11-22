@@ -8,7 +8,6 @@ export default class Home extends Page{
 
 	initialize(data, params) {
 		super.initialize(data, params);
-		
 		this.template = Template;
 		this.render();
 

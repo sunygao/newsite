@@ -1,6 +1,7 @@
 git.count
 git.revision
 .DS_Store
+.env
 
 # Node Modules
 node_modules/

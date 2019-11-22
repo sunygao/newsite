@@ -52,7 +52,7 @@ export default class Page extends Backbone.View.extend({
 
   animateIn() {
     window.scrollTo(0, 0);
-
+    
     this.footer.addClass('hidden');
 
     //play the intro timeline

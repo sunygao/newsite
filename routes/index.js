@@ -1,7 +1,8 @@
 var express = require('express');
+var pug = require('pug');
 var router = express.Router();
 var data = require('../data/home.json');
-var pug = require('pug');
+var manifest = require('../public/dist/manifest.json');
 
 // /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -15,7 +16,9 @@ router.get('/', function(req, res, next) {
 	});
 	var html = layout({ 
 		title: data.meta.title,
-		description: data.meta.description
+		description: data.meta.description,
+		env: process.env.NODE_ENV,
+		manifest: manifest
 	});
 	res.send(html);
 });
