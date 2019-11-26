@@ -184,12 +184,8 @@ export default class PageManager {
 
 	loadPage(options) {
 		//this.footer.addClass('hide');
-
-		let View = options.view,
-		data = options.data,
-		params = options.params,
-		_this = this;
-
+		const View = options.view;
+		const _this = this;
 		if(this.aboutPage.isOpen) {
 			this.aboutPage.close();
 		}
@@ -201,7 +197,7 @@ export default class PageManager {
 		if(this.currentPageView == null) {//first time loading
 			//load the assets here, for now, just timeout
 			setTimeout(function() {
-				_this.loadView(View, data, params);		
+				_this.loadView(View, options);		
 			}, 100);
 
 		} else {//a previous page exists
@@ -210,7 +206,7 @@ export default class PageManager {
 
 			this.previousPageView.on('animatedOut', $.proxy(function() {
 				setTimeout(function() { 
-					_this.loadView(View, data, params);
+					_this.loadView(View, options);
 				}, 100);
 			}, this));
 
@@ -218,16 +214,11 @@ export default class PageManager {
 		}
 	}
 
-	loadView(View, data, params) {
-		this.currentPageView  = new View(data, params);
+	loadView(View, options) {
+		this.currentPageView  = new View(options);
 		this.currentPageView.animateIn();
-		document.title = data.meta.title;
-		// this.currentPageView.on('animatedIn', $.proxy(function() {
-		// 	if(this.footer.hasClass('hide')) {
-		// 		console.log('remove');
-		// 		this.footer.removeClass('hide');
-		// 	}
-		// }, this));
+		document.title = options.meta.title;
+
 	}
 
 }

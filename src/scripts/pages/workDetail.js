@@ -13,10 +13,10 @@ import VideoArticle from './subviews/videoArticle';
 
 export default class WorkDetail extends Page {
 
-	initialize(data, params) {
-		super.initialize(data, params);
-		this.slug = params.slug;
-		this.nextData = params.nextData;
+	initialize(options) {
+		super.initialize(options);
+		this.slug = options.data.slug;
+		this.nextData = options.nextData;
 
 		this.template = Template;
 		this.render();

@@ -5,11 +5,9 @@ import { TimelineMax, Power4 } from 'gsap'
 export default class Page extends Backbone.View.extend({
 
 }) {
-  initialize(data, params) {
+  initialize(options) {
     //shared components
-    this.data = data;
-    
-    this.params = params;
+    this.data = options.data;
 
     this.components = [];
 

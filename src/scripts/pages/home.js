@@ -2,17 +2,16 @@ import CV from 'config/CV';
 import Page from 'abstract/page';
 import Template from 'index.pug';
 import $ from 'jquery';
-import * as allWork from '../../../data/projects';
 
 
 export default class Home extends Page{
 
-	initialize(data, params) {
-		super.initialize(data, params);
+	initialize(options) {
+		super.initialize(options);
+		
 		this.template = Template;
 		this.render();
 
-		console.log(allWork);
 
 		this.workContainer = this.$el.find('section.work-list');
 		this.imageContainer = this.$el.find('section.images');

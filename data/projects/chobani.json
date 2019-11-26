@@ -1,4 +1,4 @@
-const Chobani = {
+{
     "chobani" : {
         "meta" : {
             "title" : "Suny Gao - Chobani.com",
@@ -157,4 +157,3 @@ const Chobani = {
     }
 }
 
-export default Chobani

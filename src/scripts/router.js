@@ -8,6 +8,7 @@ import WorkDetail from 'pages/workDetail';
 //page json
 import homeData from 'home.json';
 import workData from 'work.json';
+import { allWorkObj, allWorkArray } from 'projects';
 
 export default class Router extends Backbone.Router.extend({
     routes: {
@@ -35,19 +36,33 @@ export default class Router extends Backbone.Router.extend({
 
     home() {
         this.pageManager.loadPage({
+            meta: homeData,
             view: Home,
-            data: homeData
+            data: allWorkObj
         });
     }
 
+    getNext(route) {
+        let next = null;
+
+        allWorkArray.map((item, i) => {
+            if(item == route) {
+                next = i === allWorkArray.length - 1 ? next = 0 : i + 1
+            }
+        });
+
+        //return the key of the next item
+        return allWorkArray[next];
+    }
+
     workDetail(route) {
+       const next = this.getNext(route);
+
         this.pageManager.loadPage({
             view: WorkDetail,
-            data: workData[route],
-            params: {
-                slug: route,
-                nextData: workData[workData[route].next]
-            }
+            data: allWorkObj[route],
+            meta: allWorkObj[route].meta,
+            nextData: allWorkObj[next]
         });
     }
 };

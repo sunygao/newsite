@@ -1,0 +1,137 @@
+{
+    "camp-google" : {
+        "meta" : {
+            "title" : "Suny Gao - Camp Google",
+            "description" : "Introducing the new Google Calendar app"
+        },
+        "backgroundColor" : "#5f92ee",
+        "title" : "Camp Google",
+        "client" : "Google",
+        "slug" : "camp-google",
+        "previewImages" : [
+            "camp-desktop.png",
+            "camp-tablet.png"
+        ],
+        "heroImage" : "camp-hero.jpg",
+        "description" : [
+			"<p>Google partnered with National Geographic, Khan Academy and the National Park Service to create Camp Google, a 4 week online summer camp for kids. Each week revealed activities and trivia focused on a theme, like the ocean or music. Parents can help their kids and do the activities at home, earn and print badges, watch videos related to the week's theme.</p>"
+		],
+        "credits" : {
+			"agency" : [
+				{
+					"text": "Stink Studios",
+					"url" : "http://www.stinkstudios.com"
+				},
+				{
+					"text": "72 and Sunny",
+					"url" : "https://www.72andsunny.com/"
+				}
+			],
+			"role" : "Front End Developer",
+			"date" : "July 2015"
+		},	
+        "press" : [
+			{
+				"title" : "Engadget",
+				"url" : "https://www.engadget.com/2015/07/06/camp-google-2015/"
+			},
+
+			{
+				"title" : "Venture Beat",
+				"url" : "http://venturebeat.com/2015/07/13/google-partners-with-khan-academy-nasa-more-to-teach-kids-science-via-a-4-week-summer-camp/"
+			}
+		],
+        "links" : {
+			"caseStudy" : "https://www.72andsunny.com/work/google/camp-google"
+		},
+        "mainContent": [
+			{ 
+				"type": "image",
+				"images" : [ 
+					{
+						"src" : "camp-google-mobile.jpg",
+						"width" : "1000",
+						"height" : "1000"
+					}
+				]
+			},
+			{ 
+				"type": "image",
+				"images" : [
+					{ 
+						"src" : "camp-google-1.jpg",
+						"width" : "1675",
+						"height" : "923"
+					},
+					{ 
+						"src" : "camp-google-2.jpg",
+						"width" : "1675",
+						"height" : "923"
+					},
+					{ 
+						"src" : "camp-google-3.jpg",
+						"width" : "1675",
+						"height" : "923"
+					},
+					{ 
+						"src" : "camp-google-4.jpg",
+						"width" : "1675",
+						"height" : "923"
+					},
+					{ 
+						"src" : "camp-google-5.jpg",
+						"width" : "1675",
+						"height" : "923"
+					}
+				],
+				"description" : "Each week had its own theme - Ocean Week, Space Week, Nature Week and Music Week"
+			},
+			{ 
+				"type": "image",
+				"images" : [
+					{ 
+						"src" : "camp-google-9.jpg",
+						"width" : "1675",
+						"height" : "923"
+					}
+				]
+			},
+			{ 
+				"type": "image",
+				"images" : [
+					{ 
+						"src" : "camp-google-11.jpg",
+						"width" : "1675",
+						"height" : "923"
+					},
+					{ 
+						"src" : "camp-google-12.jpg",
+						"width" : "1675",
+						"height" : "923"
+					},
+					{ 
+						"src" : "camp-google-13.jpg",
+						"width" : "1675",
+						"height" : "923"
+					},
+					{ 
+						"src" : "camp-google-14.jpg",
+						"width" : "1675",
+						"height" : "923"
+					},
+					{ 
+						"src" : "camp-google-15.jpg",
+						"width" : "1673",
+						"height" : "895"
+					},
+					{ 
+						"src" : "camp-google-16.jpg",
+						"width" : "1673",
+						"height" : "895"
+					}
+				]
+			}
+		]
+    }
+}
+

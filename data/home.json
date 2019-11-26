@@ -1,75 +1,9 @@
 {
+	"title" : "Suny Gao - Home",
+	"description" : "Suny Gao - Interactive developer in Brooklyn, NY",
+
 	"meta" : {
 		"title" : "Suny Gao - Home",
 		"description" : "Suny Gao - Interactive developer in Brooklyn, NY"
-	},
-	"projects" : [
-		{
-			"title" : "Notable Women",
-			"client" : "rosie rios & google creative lab",
-			"slug" : "notable-women",
-			"previewImages" : [
-				"rosa-bill-full.jpg",
-				"mahalia-bill-full.jpg",
-				"eleanor-bill-full.jpg"
-			]
-		},
-
-		{
-			"title" : "Chobani.com",
-			"client" : "chobani",
-			"slug" : "chobani",
-			"previewImages" : [
-				"home-page-1.jpg",
-				"product-thumb.jpg"
-			]
-		},
-		{
-			"title" : "I Smoke Weed",
-			"client" : "viceland",
-			"slug" : "i-smoke-weed",
-			"previewImages" : [
-				"weed-featured-gallery.jpg",
-				"weed-hero.jpg"
-			]
-		},
-		{
-			"title" : "Year in Music",
-			"client" : "spotify",
-			"slug" : "year-in-music",
-			"previewImages" : [
-				"yim-iphone.png",
-				"yim-hero-square.jpg"
-			]
-		},
-		{
-			"title" : "Google Calendar",
-			"client" : "google",
-			"slug" : "google-calendar",
-			"previewImages" : [
-				"calendar-hero.jpg",
-				"calendar-phone.jpg"
-
-			]
-		},
-		{
-			"title" : "Camp Google",
-			"client" : "google",
-			"slug" : "camp-google",
-			"previewImages" : [
-				"camp-desktop.png",
-				"camp-tablet.png"
-			]
-		},
-		
-		{
-			"title" : "Hello Chime",
-			"client" : "chime",
-			"slug" : "hello-chime",
-			"previewImages": [
-				"chime-phone-1.png",
-				"chime-desktop-4.jpg"
-			]
-		}
-	]
+	}
 }

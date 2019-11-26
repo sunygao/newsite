@@ -1,6 +1,6 @@
 #home
 	section.images
-		each project in data.projects
+		each project in data
 			if project.previewImages
 				ul(class="image-wrapper", id=project.slug)
 					each previewImage in project.previewImages
@@ -9,7 +9,7 @@
 
 	section.work-list
 		ul
-			each project in data.projects
+			each project in data
 				li
 					a(href="/work/" + project.slug)
 						h2= project.title

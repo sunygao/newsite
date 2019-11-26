@@ -1,7 +1,7 @@
 #work-detail
 	if(nextData)
 		section.next-project
-			a(href="/work/" + data.next)
+			a(href="/work/" + nextData.slug)
 				h2=nextData.title
 				h3
 					span.clientName Next
@@ -85,7 +85,7 @@
 					article.video
 						each video in content.videos
 							.video-player(style="background-color:" + data.backgroundColor)
-								video(muted, loop, preload="none", poster="../images/projects/" + slug + "/" + video.previewImage, data-width=video.width, data-height=video.height)
+								video(muted, loop, preload="none", data-width=video.width, data-height=video.height)
 									source(src="../images/projects/" + slug + "/" + video.src, type="video/mp4")
 							if(content.description)
 								.description
