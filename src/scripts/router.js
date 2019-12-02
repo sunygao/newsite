@@ -13,8 +13,10 @@ import { allWorkObj, allWorkArray } from 'projects';
 export default class Router extends Backbone.Router.extend({
     routes: {
     	"(/)" : "home",
-    	"work(/)": "home",
-    	"work/:case(/)": "workDetail"
+    	// "work(/)": "home",
+        // "work/:case(/)": "workDetail",
+        "web(/)": "home",
+    	"web/:case(/)": "workDetail"
     }
 }) {
     initialize() {
