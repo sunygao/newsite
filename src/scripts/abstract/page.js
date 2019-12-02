@@ -187,16 +187,6 @@ export default class Page extends Backbone.View.extend({
     this.remove();
   }
  
-  openAbout() {       
-    $('#about').addClass('show');
-    $('#main-nav').addClass('about-open');
-    $('body').addClass('no-scroll');
-  }
 
-  closeAbout() {
-    $('#about').removeClass('show');
-    $('#main-nav').removeClass('about-open');
-    $('body').removeClass('no-scroll');
-  }
 
 }

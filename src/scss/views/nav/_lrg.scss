@@ -27,6 +27,16 @@
           width: 100%;
         }
       }
+
+      &#open-about {
+        span {
+          display: none;
+
+          &:first-child {
+            display: block;
+          }
+        }
+      }
     }
 
     h1 a {
@@ -39,20 +49,20 @@
       @include robotoItalic;
     }
 
-    #close-about {
-      display: none;
-    }
-
   &.about-open {
     .nav-link.active,
     h1 a {
       color: #fff;
     }
+
     #open-about {
-      display: none;
-    }
-    #close-about {
-      display: block;
+      span:first-child {
+        display: none;
+      }
+
+      span:nth-child(2) {
+        display: block;
+      }
     }
   }
 }

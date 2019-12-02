@@ -55,11 +55,13 @@ export default class About extends Backbone.View.extend({
 
     this.introTimeline.fromTo(this.rule, .5, {
       opacity: 0,
-      x: -10
+      x: -10,
+      y: 0
     },
     {
       opacity: 1,
-      x: 1
+      x: 0,
+      y: 0
     }, .2);
 
     this.introTimeline.staggerFromTo(this.links, .2, {
@@ -77,11 +79,13 @@ export default class About extends Backbone.View.extend({
 
     this.introTimeline.fromTo(this.text, .2, {
       opacity: 0,
-      x: -10
+      x: -10,
+      y: 0
     },
     {
       opacity: 1,
-      x: 1
+      x: 0,
+      y: 0
     }, .2);
 
     this.outroTimeline.to([this.headline, this.rule, this.links, this.text], .2, {
@@ -94,7 +98,8 @@ export default class About extends Backbone.View.extend({
   bindEvents() {
      $('#open-about').on('click', $.proxy(function(e) {
       e.preventDefault();
-      this.open();
+      this.toggleAbout();
+      //this.open();
     }, this));
 
     $('#close-about').on('click', $.proxy(function(e) {
@@ -106,7 +111,16 @@ export default class About extends Backbone.View.extend({
       this.close();
     }, this));
   }
+
+  toggleAbout() {
+    if(this.isOpen) {
+      this.close();
+    } else {
+      this.open();
+    }
   
+  }
+
   open() {      
     this.isOpen = true; 
     this.$el.addClass('show');

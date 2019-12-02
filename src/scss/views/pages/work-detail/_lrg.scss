@@ -127,13 +127,8 @@
 			}
 
 			.description {
-					p {
-					margin-bottom: 20px;
-
-					&:last-child {
-						margin-bottom: 0;
-					}
-
+				p {
+				
 					a {
 						@include robotoMed;
 						text-decoration: underline;
