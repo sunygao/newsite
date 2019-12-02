@@ -11,7 +11,6 @@
       margin-left: 4.1667%;
       display: inline-block;
       position: relative;
-      transition: color .2s ease-out;
       @include robotoItalic;
 
       &:after {
@@ -45,6 +44,7 @@
     }
 
   &.about-open {
+    .nav-link.active,
     h1 a {
       color: #fff;
     }

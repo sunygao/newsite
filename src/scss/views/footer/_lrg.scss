@@ -7,20 +7,22 @@ footer {
 	text-transform: lowercase;
 	position: relative;
 
-	.copyright {
-		position: absolute;
-		font-size: 1.2rem;
-		color: $grey-dark;
-		bottom: 0px;
+	// .contact {
+	// 	position: absolute;
+	// 	font-size: 1.2rem;
+	// 	color: $grey-dark;
+	// 	bottom: 0px;
 
-		span {
-			font-size: 1.2em;
-		}
-	}
+	// 	span {
+	// 		font-size: 1.2em;
+	// 	}
+	// }
 
 	ul {
-		float: right;
-		text-align: right;
+		// float: right;
+		// text-align: right;
+		display: flex;
+		justify-content: space-between;
 
 		li {
 			font-size: 1.2rem;
