@@ -1,12 +1,25 @@
 #about {
+	padding-left: 4.1667%;
+	padding-right: 4.1667%;
+
+	.inner-wrapper {
+		display: block;
+	}
+
+	.about-left {
+		position: static;
+		transform: translateY(0);
+	}
 
 	.links {
-		float: none;
-		width: 100%;
 		margin-bottom: 50px;
 
 		span {
 			display: none;
+		}
+
+		a { 
+			font-size: 2vw;
 		}
 	}
 
@@ -14,8 +27,5 @@
 		float: none;
 		width: 100%;
 	}
-	p {
-		font-size: 4vw;
-		
-	}
+
 }

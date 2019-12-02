@@ -11,11 +11,6 @@
 	transition: all .2s ease-out;
 	overflow: scroll;
 
-	// .inner-wrapper {
-	// 	transform: translateY(2%) skewY(-1deg);
-	// 	transition: all .2s ease-out;
-	// 	transition-delay: .1s;
-	// }
 	&.show {
 		opacity: 1;
 		visibility: visible;
@@ -26,19 +21,25 @@
 	}
 	.inner-wrapper {
 		margin-top: $padding-top;
+		display: flex;
+		justify-content: space-between;
 	}
 
-
-	h2,
+	.about-left {
+		position: sticky;
+		align-self: flex-start;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	
+	.about-header,
 	p,
 	li,
 	a {
 		color: #fff;
 	}
 
-
-
-	h2 {
+	.about-header {
 		margin-bottom: 50px;
 	}
 
@@ -60,10 +61,6 @@
 	}
 
 	.links {
-		float: left;
-		width: 30%;
-		padding-right: 30px;
-		text-align: left;
 
 		span {
 			margin-bottom: 24px;
@@ -73,11 +70,9 @@
 		    display: block;
 		}
 
-
-
 		a {
 			color: $grey-light;
-			font-size: 1.4rem;
+			font-size: 1vw;
 			display: block;
 			margin-bottom: 15px;
 			@include roboto;

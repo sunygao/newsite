@@ -12,7 +12,7 @@ export default class About extends Backbone.View.extend({
 
     this.bindEvents();
 
-    this.headline = this.$el.find('h2');
+    this.headline = this.$el.find('.about-header');
     this.links = this.$el.find('.links a');
     this.rule = this.$el.find('.links span');
     this.text = this.$el.find('.text-wrapper');
@@ -86,7 +86,7 @@ export default class About extends Backbone.View.extend({
       opacity: 1,
       x: 0,
       y: 0
-    }, .2);
+    }, '-=.3');
 
     this.outroTimeline.to([this.headline, this.rule, this.links, this.text], .2, {
       opacity: 0,
