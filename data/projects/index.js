@@ -1,9 +1,11 @@
-import NotableWomen from './notable-women.json'
-import Chobani from './chobani.json'
-import ISmokeWeed from './i-smoke-weed.json'
-import YearInMusic from './year-in-music.json'
-import GoogleCalendar from './google-calender.json'
-import CampGoogle from './camp-google.json'
+//shared between server and fe - use commonjs
+
+var NotableWomen = require('./notable-women.json')
+var Chobani = require('./chobani.json')
+var ISmokeWeed = require('./i-smoke-weed.json')
+var YearInMusic = require('./year-in-music.json')
+var GoogleCalendar = require('./google-calender.json')
+var CampGoogle = require('./camp-google.json')
 
 const allWorkObj = Object.assign({}, NotableWomen, Chobani, ISmokeWeed, YearInMusic, GoogleCalendar, CampGoogle); //as an object, for individual work routes
 
@@ -13,4 +15,4 @@ Object.entries(allWorkObj).forEach(key => {
     allWorkArray.push(key[0])
 });
 
-export { allWorkObj, allWorkArray }
+module.exports = { allWorkObj, allWorkArray }

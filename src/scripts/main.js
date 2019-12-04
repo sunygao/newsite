@@ -1,4 +1,4 @@
-import "scss/app.scss";
+import "../scss/app.scss";
 import Backbone from 'backbone';
 import Router from 'router';
 

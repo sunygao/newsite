@@ -7,7 +7,6 @@ import WorkDetail from 'pages/workDetail';
 
 //page json
 import homeData from 'home.json';
-import workData from 'work.json';
 import { allWorkObj, allWorkArray } from 'projects';
 
 export default class Router extends Backbone.Router.extend({

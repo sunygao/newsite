@@ -1,7 +1,8 @@
 var express = require('express');
 var pug = require('pug');
 var router = express.Router();
-var data = require('../data/home.json');
+var homeData = require('../data/home.json');
+var { allWorkObj } = require('../data/projects'); 
 
 if(process.env.NODE_ENV == 'production') {
 	var manifest = require('../public/dist/manifest.json');
@@ -13,13 +14,12 @@ router.get('/', function(req, res, next) {
 	var layout = pug.compileFile('views/layout.pug', {
 		filters: {
 			'content': function () {
-			    return indexPage({ data: data });
+			    return indexPage({ data: allWorkObj });
 			  }
 		}
 	});
 	var html = layout({ 
-		title: data.meta.title,
-		description: data.meta.description,
+		meta: homeData,
 		env: process.env.NODE_ENV,
 		manifest: manifest ? manifest : ''
 	});
