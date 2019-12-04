@@ -1,0 +1,49 @@
+{
+    "roving-woman" : {
+        "meta" : {
+            "title" : "Suny Gao - Roving Woman",
+            "description" : ""
+        },
+        "backgroundColor" : "#5f92ee",
+        "title" : "Roving Woman",
+        "client" : "Google",
+        "slug" : "roving-woman",
+        "previewImages" : [
+            "camp-desktop.png",
+            "camp-tablet.png"
+        ],
+        "heroImage" : "camp-hero.jpg",
+        "description" : [
+			"<p>Lorem Ipsum</p>"
+		],
+        "credits" : {
+			"agency" : [
+				{
+					"text": "Stink Studios",
+					"url" : "http://www.stinkstudios.com"
+				},
+				{
+					"text": "72 and Sunny",
+					"url" : "https://www.72andsunny.com/"
+				}
+			],
+			"role" : "Front End Developer",
+			"date" : "July 2015"
+		},	
+        "press" : [
+			{
+				"title" : "Engadget",
+				"url" : "https://www.engadget.com/2015/07/06/camp-google-2015/"
+			},
+
+			{
+				"title" : "Venture Beat",
+				"url" : "http://venturebeat.com/2015/07/13/google-partners-with-khan-academy-nasa-more-to-teach-kids-science-via-a-4-week-summer-camp/"
+			}
+		],
+        "links" : {
+			"caseStudy" : "https://www.72andsunny.com/work/google/camp-google"
+		}
+    }
+}
+
