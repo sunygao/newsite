@@ -1,5 +1,8 @@
-import PageManager from 'controller/pageManager';
 import $ from 'jquery';
+import _ from 'lodash';
+import PageManager from 'controller/pageManager';
+import Nav from 'components/nav';
+
 
 //page views
 import Home from 'pages/home';
@@ -12,7 +15,6 @@ import { allWebObj, allWebArray } from 'web-projects';
 //art pages json
 import artData from 'art.json';
 import { allArtObj, allArtArray } from 'art-projects';
-
 
 const webPathname = 'web';
 const artPathname = 'art';
@@ -31,6 +33,9 @@ export default class Router extends Backbone.Router.extend({
     initialize() {
         console.log('router initialized');
 
+        this.pageManager = new PageManager();
+        this.nav = new Nav();
+
         var _this = this;
 
         $(document).on("click", "a[href^='/']", function(e) {
@@ -38,11 +43,16 @@ export default class Router extends Backbone.Router.extend({
             e.preventDefault();
 
             var url = $(this).attr('href');
+            
+            _this.nav.closeAbout();
 
             _this.navigate(url, { trigger: true });
         });
 
-        this.pageManager = new PageManager();
+        //update nav classes
+        this.on('route', function() {
+            this.nav.onNavigate(this.getCurrentRoute())
+        });
     }
 
     home() {
@@ -102,4 +112,29 @@ export default class Router extends Backbone.Router.extend({
              pathname: artPathname
          });
      }
+
+     getCurrentRoute() {
+        var Router = this,
+            fragment = Backbone.history.fragment,
+            routes = _.toPairs(Router.routes),
+            route = null, params = null, matched;
+    
+        matched = _.find(routes, function(handler) {
+            route = _.isRegExp(handler[0]) ? handler[0] : Router._routeToRegExp(handler[0]);
+            return route.test(fragment);
+        });
+       
+        if(matched) {
+            // NEW: Extracts the params using the internal
+            // function _extractParameters 
+            params = Router._extractParameters(route, fragment);
+            route = matched[1];
+        }
+    
+        return {
+            route : route,
+            fragment : fragment,
+            params : params
+        };
+    }
 };

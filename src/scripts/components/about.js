@@ -1,6 +1,4 @@
-import Config from 'config/config';
 import CV from 'config/CV';
-import Utils from 'components/utils';
 import $ from 'jquery';
 import { TimelineMax, Power4 } from 'gsap';
 
@@ -9,8 +7,6 @@ export default class About extends Backbone.View.extend({
 }) {
   initialize() {
     this.isOpen = false;    
-
-    this.bindEvents();
 
     this.headline = this.$el.find('.about-header');
     this.links = this.$el.find('.links a');
@@ -95,22 +91,6 @@ export default class About extends Backbone.View.extend({
   }
 
 
-  bindEvents() {
-     $('#open-about').on('click', $.proxy(function(e) {
-      e.preventDefault();
-      this.toggleAbout();
-      //this.open();
-    }, this));
-
-    $('#close-about').on('click', $.proxy(function(e) {
-      e.preventDefault();
-      this.close();
-    }, this));
-
-    $('#main-nav h1 a').on('click', $.proxy(function(e) {
-      this.close();
-    }, this));
-  }
 
   toggleAbout() {
     if(this.isOpen) {
@@ -122,6 +102,8 @@ export default class About extends Backbone.View.extend({
   }
 
   open() {      
+    if(this.isOpen) return;
+
     this.isOpen = true; 
     this.$el.addClass('show');
     $('#main-nav').addClass('about-open');
@@ -134,6 +116,8 @@ export default class About extends Backbone.View.extend({
   }
 
   close() {
+    if(!this.isOpen) return;
+
     if(CV.animate) {
       this.outroTimeline.progress(0).play();
     } else {

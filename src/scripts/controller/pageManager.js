@@ -2,9 +2,6 @@ import CV from 'config/CV';
 import Config from 'config/config';
 import $ from 'jquery';
 
-
-import About from 'components/about';
-
 export default class PageManager {
 	constructor() {
 		//backbone view els
@@ -23,10 +20,10 @@ export default class PageManager {
 		
 		this.onResize();
 
-	this.setScroll();
+		this.setScroll();
 
-	//this.loader = new Loader();
-	this.aboutPage = new About();
+		//this.loader = new Loader();
+
 	}
 
 	init() {
@@ -186,9 +183,6 @@ export default class PageManager {
 		//this.footer.addClass('hide');
 		const View = options.view;
 		const _this = this;
-		if(this.aboutPage.isOpen) {
-			this.aboutPage.close();
-		}
 
 		if($('body').hasClass('error')) {
 			$('body').removeClass('error');
