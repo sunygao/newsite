@@ -5,9 +5,17 @@ import $ from 'jquery';
 import Home from 'pages/home';
 import WorkDetail from 'pages/workDetail';
 
-//page json
+//home and web pages json
 import homeData from 'home.json';
-import { allWorkObj, allWorkArray } from 'projects';
+import { allWebObj, allWebArray } from 'web-projects';
+
+//art pages json
+import artData from 'art.json';
+import { allArtObj, allArtArray } from 'art-projects';
+
+
+const webPathname = 'web';
+const artPathname = 'art';
 
 export default class Router extends Backbone.Router.extend({
     routes: {
@@ -15,7 +23,9 @@ export default class Router extends Backbone.Router.extend({
     	// "work(/)": "home",
         // "work/:case(/)": "workDetail",
         "web(/)": "home",
-    	"web/:case(/)": "workDetail"
+        "web/:case(/)": "webDetail",
+        "art(/)": "art",
+    	"art/:case(/)": "artDetail"
     }
 }) {
     initialize() {
@@ -39,31 +49,57 @@ export default class Router extends Backbone.Router.extend({
         this.pageManager.loadPage({
             meta: homeData,
             view: Home,
-            data: allWorkObj
+            data: allWebObj,
+            pathname: webPathname
         });
     }
 
-    getNext(route) {
+    art() {
+        this.pageManager.loadPage({
+            meta: artData,
+            view: Home,
+            data: allArtObj,
+            pathname: artPathname
+        });
+    }
+
+
+    getNext(route, workList) {
         let next = null;
 
-        allWorkArray.map((item, i) => {
+        if(workList.length < 2) return;
+
+        workList.map((item, i) => {
             if(item == route) {
-                next = i === allWorkArray.length - 1 ? next = 0 : i + 1
+                next = i === workList.length - 1 ? next = 0 : i + 1
             }
         });
 
         //return the key of the next item
-        return allWorkArray[next];
+        return workList[next];
     }
 
-    workDetail(route) {
-       const next = this.getNext(route);
+    webDetail(route) {
+       const next = this.getNext(route, allWebArray);
 
         this.pageManager.loadPage({
             view: WorkDetail,
-            data: allWorkObj[route],
-            meta: allWorkObj[route].meta,
-            nextData: allWorkObj[next]
+            data: allWebObj[route],
+            meta: allWebObj[route].meta,
+            nextData: allWebObj[next],
+            pathname: webPathname
         });
     }
+
+    artDetail(route) {
+        const next = this.getNext(route, allArtArray);
+ 
+         this.pageManager.loadPage({
+             view: WorkDetail,
+             data: allArtObj[route],
+             meta: allArtObj[route].meta,
+             nextData: allArtObj[next],
+             pathname: artPathname
+         });
+     }
 };

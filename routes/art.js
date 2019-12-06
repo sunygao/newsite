@@ -2,47 +2,58 @@ var express = require('express');
 var router = express.Router();
 var pug = require('pug');
 var artData = require('../data/art.json');
-var { allWorkObj } = require('../data/art-projects'); 
+var { allArtObj } = require('../data/art-projects');
 
-if(process.env.NODE_ENV == 'production') {
-	var manifest = require('../public/dist/manifest.json');
-}
+var pathname = 'art';//used for links for work detail page
 
 router.get('/', function(req, res, next) {
-	var indexPage = pug.compileFile('views/art.pug');
+	//passed down for every route
+	var manifest = req.app.get('manifest');
+	var env = req.app.get('env');
+
+	var indexPage = pug.compileFile('views/index.pug');
 	var layout = pug.compileFile('views/layout.pug', {
 		filters: {
 			'content': function () {
-			    return indexPage({ data: allWorkObj });
+			    return indexPage({ 
+					pathname: pathname, 
+					data: allArtObj 
+				});
 			  }
 		}
 	});
 	var html = layout({ 
 		meta: artData,
-		env: process.env.NODE_ENV,
-		manifest: manifest ? manifest : ''
+		env: env,
+		manifest: manifest
 	});
 	res.send(html);
 });
 
 
 router.get('/:id', function(req, res, next) {
+	var manifest = req.app.get('manifest');
+	var env = req.app.get('env');
+	
 	var workDetailPage = pug.compileFile('views/workDetail.pug');
 	var layout = pug.compileFile('views/layout.pug', {
 		filters: {
 			'content': function () {
 			    return workDetailPage({ 
 			    	slug: req.params.id, 
-			    	data: allWorkObj[req.params.id]
+					data: allArtObj[req.params.id],
+					pathname: pathname
 			    });
 			  }
 		}
 	});
+	
 	var html = layout({
-		meta: allWorkObj[req.params.id].meta,
-		env: process.env.NODE_ENV,
-		manifest: manifest ? manifest : ''
+		meta: allArtObj[req.params.id].meta,
+		env: env,
+		manifest: manifest
 	});
+
 	res.send(html);
 });
 

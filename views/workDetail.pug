@@ -1,7 +1,7 @@
 #work-detail
 	if(nextData)
 		section.next-project
-			a(href="/work/" + nextData.slug)
+			a(href="/" + pathname + "/" + nextData.slug)
 				h2=nextData.title
 				h3
 					span.clientName Next

@@ -8,6 +8,7 @@ export default class Page extends Backbone.View.extend({
   initialize(options) {
     //shared components
     this.data = options.data;
+    this.pathname = options.pathname;
 
     this.components = [];
 

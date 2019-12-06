@@ -194,7 +194,8 @@ export default class WorkDetail extends Page {
 		this.$el = $(this.template({
 			data: this.data,
 			slug: this.slug,
-			nextData: this.nextData
+			nextData: this.nextData,
+			pathname: this.pathname
 		}));
 
 		super.render();

@@ -43,7 +43,19 @@
 		],
         "links" : {
 			"caseStudy" : "https://www.72andsunny.com/work/google/camp-google"
-		}
+		},
+		"mainContent": [
+			{ 
+				"type": "image",
+				"images" : [ 
+					{
+						"src" : "camp-google-mobile.jpg",
+						"width" : "1000",
+						"height" : "1000"
+					}
+				]
+			}
+		]
     }
 }
 

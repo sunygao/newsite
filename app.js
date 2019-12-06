@@ -8,6 +8,9 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var pug = require('pug');
 
+var env = process.env.NODE_ENV;
+var manifest = env == 'production'? require('../public/dist/manifest.json') : '';
+
 var index = require('./routes/index');
 //var work = require('./routes/work');
 var web = require('./routes/web');
@@ -28,6 +31,13 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+//routes
+app.set('config', {
+	env: env,
+	manifest: manifest
+});
+
 app.use('/', index);
 //app.use('/work', work);
 app.use('/web', web);

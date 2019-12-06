@@ -11,6 +11,6 @@
 		ul
 			each project in data
 				li
-					a(href="/web/" + project.slug)
+					a(href="/" + pathname + "/" + project.slug)
 						h2= project.title
 						h3= project.client

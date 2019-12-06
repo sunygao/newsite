@@ -7,12 +7,12 @@ var YearInMusic = require('./year-in-music.json')
 var GoogleCalendar = require('./google-calender.json')
 var CampGoogle = require('./camp-google.json')
 
-const allWorkObj = Object.assign({}, NotableWomen, Chobani, ISmokeWeed, YearInMusic, GoogleCalendar, CampGoogle); //as an object, for individual work routes
+const allWebObj = Object.assign({}, NotableWomen, Chobani, ISmokeWeed, YearInMusic, GoogleCalendar, CampGoogle); //as an object, for individual work routes
 
-const allWorkArray = []; //list of keys, for next data
+const allWebArray = []; //list of keys, for next data
 
-Object.entries(allWorkObj).forEach(key => {
-    allWorkArray.push(key[0])
+Object.entries(allWebObj).forEach(key => {
+    allWebArray.push(key[0])
 });
 
-module.exports = { allWorkObj, allWorkArray }
+module.exports = { allWebObj, allWebArray }
