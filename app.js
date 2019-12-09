@@ -1,24 +1,25 @@
-require('dotenv').config()
+import dotenv from 'dotenv';
+dotenv.config()
 
-var express = require('express');
-var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
-var pug = require('pug');
+import express from 'express';
+import path from 'path';
+import favicon from 'serve-favicon';
+import logger from 'morgan';
+import cookieParser from 'cookie-parser';
+import bodyParser from 'body-parser';
+import pug from 'pug';
+
+import index from './routes/index';
+//import work from './routes/work';
+import web from './routes/web';
+import art from './routes/art';
+import store from './routes/store';
+import shop from './routes/shop';
 
 var env = process.env.NODE_ENV;
 var manifest = env == 'production'? require('../public/dist/manifest.json') : '';
-
-var index = require('./routes/index');
-//var work = require('./routes/work');
-var web = require('./routes/web');
-var art = require('./routes/art');
-var store = require('./routes/store');
-var shop = require('./routes/shop');
-
 var app = express();
+var __dirname = path.resolve();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -77,4 +78,4 @@ app.use(function(err, req, res, next) {
 
 });
 
-module.exports = app;
+export default app;

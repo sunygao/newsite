@@ -1,6 +1,5 @@
-var express = require('express');
+import express from 'express';
 var router = express.Router();
-var pug = require('pug');
 
 // /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -8,4 +7,4 @@ router.get('/', function(req, res, next) {
 });
 
 
-module.exports = router;
+export default router;

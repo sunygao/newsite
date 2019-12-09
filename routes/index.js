@@ -1,8 +1,9 @@
-var express = require('express');
-var pug = require('pug');
+import express from 'express';
+import pug from 'pug';
+import homeData from '../data/home.json';
+import { allWebObj } from '../data/web-projects'; 
+
 var router = express.Router();
-var homeData = require('../data/home.json');
-var { allWebObj } = require('../data/web-projects'); 
 
 // /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -28,4 +29,4 @@ router.get('/', function(req, res, next) {
 });
 
 
-module.exports = router;
+export default router;

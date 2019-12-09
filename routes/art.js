@@ -1,9 +1,9 @@
-var express = require('express');
-var router = express.Router();
-var pug = require('pug');
-var artData = require('../data/art.json');
-var { allArtObj } = require('../data/art-projects');
+import express from 'express';
+import pug from 'pug';
+import artData from '../data/art.json';
+import { allArtObj } from '../data/art-projects';
 
+var router = express.Router();
 var pathname = 'art';//used for links for work detail page
 
 router.get('/', function(req, res, next) {
@@ -57,4 +57,4 @@ router.get('/:id', function(req, res, next) {
 	res.send(html);
 });
 
-module.exports = router;
+export default router;

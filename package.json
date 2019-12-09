@@ -2,16 +2,17 @@
   "name": "sunygao.com",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "concurrently --kill-others \"npm run server\" \"npm run webpack:dev\" \"$(npm bin)/webpack-dev-server --mode development\" ",
     "livereload": "$(npm bin)/live-reload --port 9091 ./",
-    "server": "DEBUG=myapp:* node ./bin/www",
+    "server": "DEBUG=myapp:* node --experimental-modules --es-module-specifier-resolution=node ./bin/www",
     "build": "rm -rf ../static && npm run webpack:build",
     "webpack:dev": "webpack --config webpack.config.js",
     "webpack:build": "cross-env NODE_ENV=production webpack --config webpack.config.js"
   },
   "engines": {
-    "node": "^12.12.0"
+    "node": "12.10.0"
   },
   "dependencies": {
     "babel-preset-es2015": "^6.22.0",

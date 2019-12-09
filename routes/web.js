@@ -1,9 +1,9 @@
-var express = require('express');
-var router = express.Router();
-var pug = require('pug');
-var homeData = require('../data/home.json');
-var { allWebObj } = require('../data/web-projects'); 
+import express from 'express';
+import pug from 'pug';
+import homeData from '../data/home.json';
+import { allWebObj } from '../data/web-projects'; 
 
+var router = express.Router();
 var pathname = 'web'
 
 router.get('/', function(req, res, next) {
@@ -51,4 +51,4 @@ router.get('/:id', function(req, res, next) {
 	res.send(html);
 });
 
-module.exports = router;
+export default router;
