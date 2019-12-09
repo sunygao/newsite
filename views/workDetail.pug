@@ -26,23 +26,26 @@
 				each content in data.description
 					!= content
 
-			article.credits
-				ul 
-					if(data.credits.agency)
-						li
-							h4 Agency
-							each agency in data.credits.agency
-								if agency.url
-									p
-										a(href= agency.url, target="_blank", class="link")= agency.text
-								else
-									p= agency.text
-						li
-							h4 Role
-							p=data.credits.role
-						li
-							h4 Date
-							p=data.credits.date
+			if(data.credits) 
+				article.credits
+					ul 
+						if(data.credits.agency)
+							li
+								h4 Agency
+								each agency in data.credits.agency
+									if agency.url
+										p
+											a(href= agency.url, target="_blank", class="link")= agency.text
+									else
+										p= agency.text
+						if(data.credits.role) 
+							li
+								h4 Role
+								p=data.credits.role
+						if(data.credits.date)
+							li
+								h4 Date
+								p=data.credits.date
 			if data.links
 				article.links
 					ul
@@ -52,6 +55,13 @@
 						if(data.links.caseStudy)
 							li
 								a(class="button", href= data.links.caseStudy, target="_blank") Case Study
+			if data.artLinks
+				article.links
+					ul
+						each link in data.artLinks
+							li
+								a(class="button", href= link.href, target="_blank")= link.label
+						
 						
 			if data.press
 				article.press

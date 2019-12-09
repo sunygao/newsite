@@ -13,8 +13,10 @@
             "eleanor-bill-full.jpg"
         ],
         "backgroundColor" : "#37373f",
+        "heroImage" : "hero.jpg",
         "description" : [
-            "<p>lorem ipsum.</p>"
+            "<p>A website showcasing Sidewalk Labs' development plan for a smart city on Toronto's eastern waterfront.</p>",
+            "<p>We built the site on a Wordpress CMS, migrating existing content into a new build and creating a custom theme for the site. The front end uses a custom Javascript framework, Lottie SVG animations.</p>"
         ],
         "credits" : {
             "agency" : [
@@ -29,39 +31,6 @@
             "site" : "https://https://www.sidewalktoronto.ca/"
         },
         "mainContent": [
-            
-
-            { 
-                "type": "video",
-                "videos" : [ 
-                    {
-                        "src" : "bill-stack-animation.mp4",
-                        "width" : "1440",
-                        "height" : "798"
-                    }
-                ],
-                "description" : "On first load, the bills are sorted into random order, and users can flip through the bills infinitely in either direction."
-            },
-
-            
-
-            { 
-                "type": "image",
-                "images" : [ 
-                    
-                    {
-                        "src" : "desktop-2.jpg",
-                        "width" : "1440",
-                        "height" : "798"
-                    },
-                    {
-                        "src" : "desktop-3.jpg",
-                        "width" : "1440",
-                        "height" : "798"
-                    }
-                ]
-            },
-
             { 
                 "type": "video",
                 "videos" : [ 
@@ -72,38 +41,6 @@
                     }
                 ],
                 "description" : "On the view all page, the women can be filtered by category then viewed on the bill."
-            },
-            { 
-                "type": "image",
-                "images" : [ 
-                    {
-                        "src" : "sharing-screens.jpg",
-                        "width" : "1440",
-                        "height" : "798"
-                    }
-                ],
-                "description" : "Users can deeplink to each individual bill with custom share assets optmized for Twitter, Facebook and Google+."
-            },
-            { 
-                "type": "image",
-                "images" : [ 
-                    {
-                        "src" : "desktop-5.jpg",
-                        "width" : "1440",
-                        "height" : "1504"
-                    }
-                ],
-                "description" : "The teachers kit page includes lesson plans, a poster, a bulletin board and an app companion."
-            },
-            {
-                "type" : "image",
-                "images" : [
-                    {
-                        "src" : "iphone-screens.jpg",
-                        "width" : "1440",
-                        "height" : "798"
-                    }
-                ]
             }
         ]
     }

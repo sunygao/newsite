@@ -4,7 +4,7 @@
             "title" : "Suny Gao - Roving Woman",
             "description" : ""
         },
-        "backgroundColor" : "#5f92ee",
+        "backgroundColor" : "#a5a5a5",
         "title" : "Roving Woman",
         "client" : "TheRumpus.net",
         "slug" : "roving-woman",
@@ -12,46 +12,37 @@
             "camp-desktop.png",
             "camp-tablet.png"
         ],
-        "heroImage" : "camp-hero.jpg",
         "description" : [
-			"<p>Lorem Ipsum</p>"
+			"<p>A comic about folk singer Connie Converse, featured artist spotlight on TheRumpus.net</p>"
 		],
-        "credits" : {
-			"agency" : [
-				{
-					"text": "Stink Studios",
-					"url" : "http://www.stinkstudios.com"
-				},
-				{
-					"text": "72 and Sunny",
-					"url" : "https://www.72andsunny.com/"
-				}
-			],
-			"role" : "Front End Developer",
-			"date" : "July 2015"
-		},	
-        "press" : [
+		"credits" : {
+            "date" : "January 2019"
+        },	
+      
+		"artLinks" : [
 			{
-				"title" : "Engadget",
-				"url" : "https://www.engadget.com/2015/07/06/camp-google-2015/"
-			},
-
-			{
-				"title" : "Venture Beat",
-				"url" : "http://venturebeat.com/2015/07/13/google-partners-with-khan-academy-nasa-more-to-teach-kids-science-via-a-4-week-summer-camp/"
+				"label": "Read on The Rumpus",
+				"href": "https://therumpus.net/2019/01/spotlight-roving-woman/"
 			}
 		],
-        "links" : {
-			"caseStudy" : "https://www.72andsunny.com/work/google/camp-google"
-		},
 		"mainContent": [
 			{ 
 				"type": "image",
 				"images" : [ 
 					{
-						"src" : "camp-google-mobile.jpg",
+						"src" : "roving-woman-p1.jpg",
 						"width" : "1000",
-						"height" : "1000"
+						"height" : "1519"
+					}
+				]
+			},
+			{ 
+				"type": "image",
+				"images" : [ 
+					{
+						"src" : "roving-woman-p2.jpg",
+						"width" : "1000",
+						"height" : "1519"
 					}
 				]
 			}

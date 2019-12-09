@@ -108,6 +108,7 @@ export default class WorkDetail extends Page {
 		//get the max scroll and each containers offset
 		_.each(this.subviews, (el, i) => {
 			el.getOffset();
+			el.onScroll();
 		});
 
 		this.getMaxScroll();

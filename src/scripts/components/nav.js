@@ -1,5 +1,4 @@
 import $ from 'jquery';
-
 import About from 'components/about';
 
 export default class Nav extends Backbone.View.extend({
@@ -21,11 +20,10 @@ export default class Nav extends Backbone.View.extend({
         const pathname = currentRoute.fragment.split('/')[0];
 
         this.navLinks.map((el) => {
-            el.classList.remove('active');            
-
-            const href = el.getAttribute('href').split('/')[1];
+            el.classList.remove('active');  
+            let href = el.getAttribute('href');
             
-            if(pathname == href || pathname == 'web' && !href) {
+            if(pathname == href.split('/')[1] || pathname == 'web' && href == '/') {
                 el.classList.add('active')
             }
         })
