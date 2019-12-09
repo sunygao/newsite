@@ -1,0 +1,110 @@
+{
+    "sidewalk-toronto" : {
+        "meta" : {
+            "title" : "Suny Gao - Sidewalk Toronto",
+            "description" : "Sidewalk Toronto website"
+        },
+        "title" : "Sidewalk Toronto",
+        "client" : "Sidewalk Labs",
+        "slug" : "sidewalk-toronto",
+        "previewImages" : [
+            "rosa-bill-full.jpg",
+            "mahalia-bill-full.jpg",
+            "eleanor-bill-full.jpg"
+        ],
+        "backgroundColor" : "#37373f",
+        "description" : [
+            "<p>lorem ipsum.</p>"
+        ],
+        "credits" : {
+            "agency" : [
+                {
+                    "text": "Stink Studios"
+                }
+            ],
+            "role" : "Front End Developer",
+            "date" : "July 2019"
+        },	
+        "links" : {
+            "site" : "https://https://www.sidewalktoronto.ca/"
+        },
+        "mainContent": [
+            
+
+            { 
+                "type": "video",
+                "videos" : [ 
+                    {
+                        "src" : "bill-stack-animation.mp4",
+                        "width" : "1440",
+                        "height" : "798"
+                    }
+                ],
+                "description" : "On first load, the bills are sorted into random order, and users can flip through the bills infinitely in either direction."
+            },
+
+            
+
+            { 
+                "type": "image",
+                "images" : [ 
+                    
+                    {
+                        "src" : "desktop-2.jpg",
+                        "width" : "1440",
+                        "height" : "798"
+                    },
+                    {
+                        "src" : "desktop-3.jpg",
+                        "width" : "1440",
+                        "height" : "798"
+                    }
+                ]
+            },
+
+            { 
+                "type": "video",
+                "videos" : [ 
+                    {
+                        "src" : "grid-page-animation.mp4",
+                        "width" : "1440",
+                        "height" : "798"
+                    }
+                ],
+                "description" : "On the view all page, the women can be filtered by category then viewed on the bill."
+            },
+            { 
+                "type": "image",
+                "images" : [ 
+                    {
+                        "src" : "sharing-screens.jpg",
+                        "width" : "1440",
+                        "height" : "798"
+                    }
+                ],
+                "description" : "Users can deeplink to each individual bill with custom share assets optmized for Twitter, Facebook and Google+."
+            },
+            { 
+                "type": "image",
+                "images" : [ 
+                    {
+                        "src" : "desktop-5.jpg",
+                        "width" : "1440",
+                        "height" : "1504"
+                    }
+                ],
+                "description" : "The teachers kit page includes lesson plans, a poster, a bulletin board and an app companion."
+            },
+            {
+                "type" : "image",
+                "images" : [
+                    {
+                        "src" : "iphone-screens.jpg",
+                        "width" : "1440",
+                        "height" : "798"
+                    }
+                ]
+            }
+        ]
+    }
+}
