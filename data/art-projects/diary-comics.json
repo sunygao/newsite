@@ -1,0 +1,52 @@
+{
+    "diary-comics" : {
+        "meta" : {
+            "title" : "Suny Gao - Printed Matter",
+            "description" : ""
+        },
+        "backgroundColor" : "#a5a5a5",
+        "title" : "Diary Comics",
+        "slug" : "diary-comics",
+        "client" : "Short semi-autobiographical strips",
+        "previewImages" : [
+            "camp-desktop.png",
+            "camp-tablet.png"
+        ],
+        "description" : [
+			"<p>24-page self published Risograph</p>"
+		],
+		"credits" : {
+            "date" : "January 2018"
+        },	
+      
+		"artLinks" : [
+			{
+				"label": "Available for Purchase",
+				"href": "https://therumpus.net/2019/01/spotlight-roving-woman/"
+			}
+		],
+		"mainContent": [
+			{ 
+				"type": "image",
+				"images" : [ 
+					{
+						"src" : "roving-woman-p1.jpg",
+						"width" : "1000",
+						"height" : "1519"
+					}
+				]
+			},
+			{ 
+				"type": "image",
+				"images" : [ 
+					{
+						"src" : "roving-woman-p2.jpg",
+						"width" : "1000",
+						"height" : "1519"
+					}
+				]
+			}
+		]
+    }
+}
+
