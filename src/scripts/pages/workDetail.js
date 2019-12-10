@@ -73,6 +73,7 @@ export default class WorkDetail extends Page {
 				onLoaded : this.onAssetsLoaded
 			});
 			this.subviews.push(imageEl);
+			imageEl.setSize();
 		});
 
 		_.each(this.videos, (el, i) => {
@@ -89,6 +90,7 @@ export default class WorkDetail extends Page {
 				onLoaded : this.onAssetsLoaded
 			});
 			this.subviews.push(videoEl);
+			videoEl.setSize();
 		});
 
 	}

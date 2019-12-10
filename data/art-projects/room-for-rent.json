@@ -2,9 +2,9 @@
     "room-for-rent" : {
         "meta" : {
             "title" : "Suny Gao - Room for Rent",
-            "description" : ""
+            "description" : "A Risograph mini-comic"
         },
-        "backgroundColor" : "#a5a5a5",
+        "backgroundColor" : "#f1ded8",
         "title" : "Room for Rent",
         "slug" : "room-for-rent",
         "client" : "Risograph mini-comic",
@@ -13,16 +13,16 @@
             "camp-tablet.png"
         ],
         "description" : [
-			"<p>24-page self published Risograph</p>"
+			"<p>24-page self published Risograph comic</p>"
 		],
 		"credits" : {
-            "date" : "January 2018"
+            "date" : "April 2016"
         },	
       
 		"artLinks" : [
 			{
 				"label": "Available for Purchase",
-				"href": "https://therumpus.net/2019/01/spotlight-roving-woman/"
+				"href": "https://www.etsy.com/listing/279783930/room-for-rent-comic?ref=shop_home_active_2"
 			}
 		],
 		"mainContent": [
@@ -30,19 +30,24 @@
 				"type": "image",
 				"images" : [ 
 					{
-						"src" : "roving-woman-p1.jpg",
-						"width" : "1000",
-						"height" : "1519"
-					}
-				]
-			},
-			{ 
-				"type": "image",
-				"images" : [ 
+						"src" : "room-for-rent-1.jpg",
+						"width" : "1588",
+						"height" : "1059"
+					},
 					{
-						"src" : "roving-woman-p2.jpg",
-						"width" : "1000",
-						"height" : "1519"
+						"src" : "room-for-rent-2.jpg",
+						"width" : "1588",
+						"height" : "1059"
+					},
+					{
+						"src" : "room-for-rent-3.jpg",
+						"width" : "1588",
+						"height" : "1059"
+					},
+					{
+						"src" : "room-for-rent-4.jpg",
+						"width" : "1588",
+						"height" : "1059"
 					}
 				]
 			}

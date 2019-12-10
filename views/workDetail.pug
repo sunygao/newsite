@@ -22,9 +22,10 @@
 			
 
 		.project-details
-			article.description
-				each content in data.description
-					!= content
+			if(data.description)
+				article.description
+					each content in data.description
+						!= content
 
 			if(data.credits) 
 				article.credits

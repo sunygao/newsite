@@ -11,7 +11,6 @@ export default class ImageArticle {
 	this.offsetBottom = null;
 	this.offsetLoad = null;
 
-	this.setSize();
    // this.getOffset();
   }
 

@@ -15,8 +15,8 @@
         "backgroundColor" : "#37373f",
         "heroImage" : "hero.jpg",
         "description" : [
-            "<p>A website showcasing Sidewalk Labs' development plan for a smart city on Toronto's eastern waterfront.</p>",
-            "<p>We built the site on a Wordpress CMS, migrating existing content into a new build and creating a custom theme for the site. The front end uses a custom Javascript framework, Lottie SVG animations.</p>"
+            "<p>Sidewalk Labs' development plan for a smart city on Toronto's eastern waterfront.</p>",
+            "<p>The site was built with a Wordpress CMS, migrating existing content and creating a custom theme for the site. The front end uses a custom Javascript framework and Lottie SVG animations.</p>"
         ],
         "credits" : {
             "agency" : [
