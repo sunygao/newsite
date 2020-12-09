@@ -1,4 +1,4 @@
-{
+export default {
     "notable-women" : {
         "meta" : {
             "title" : "Suny Gao - Notable Women",

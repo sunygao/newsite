@@ -1,4 +1,4 @@
-{
+export default {
     "sidewalk-toronto" : {
         "meta" : {
             "title" : "Suny Gao - Sidewalk Toronto",

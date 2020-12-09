@@ -1,4 +1,4 @@
-{
+export default {
     "i-smoke-weed" : {
         "meta" : {
             "title" : "Suny Gao - I Smoke Weed",

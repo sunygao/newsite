@@ -1,4 +1,4 @@
-{
+export default {
     "year-in-music" : {
         "meta" : {
             "title" : "Suny Gao - Year in Music",

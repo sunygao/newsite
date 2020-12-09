@@ -1,6 +1,6 @@
 import express from 'express';
 import pug from 'pug';
-import homeData from '../data/home.json';
+import homeData from '../data/home.js';
 import { allWebObj } from '../data/web-projects/index.js'; 
 
 var router = express.Router();

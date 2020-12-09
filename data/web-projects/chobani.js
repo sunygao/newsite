@@ -1,4 +1,4 @@
-{
+export default {
     "chobani" : {
         "meta" : {
             "title" : "Suny Gao - Chobani.com",

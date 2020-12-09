@@ -9,8 +9,8 @@ import Home from 'pages/home';
 import WorkDetail from 'pages/workDetail';
 
 //home and web pages json
-import homeData from 'home.json';
-import { allWebObj, allWebArray } from 'web-projects';
+import homeData from 'home.js';
+import { allWebObj, allWebArray } from 'web-projects/index.js';
 
 //art pages json
 // import artData from 'art.json';

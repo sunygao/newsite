@@ -1,4 +1,4 @@
-{
+export default {
     "google-calendar" : {
         "meta" : {
             "title" : "Suny Gao - Google Calender",
