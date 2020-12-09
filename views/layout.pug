@@ -21,6 +21,7 @@ html
 
 		include partials/_about
 		
+		script(src='/dist/main.js')
 		if(env == 'production')
 			script(src='/dist/' + manifest["main.js"])
 		else 

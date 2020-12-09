@@ -4,10 +4,10 @@
  * Module dependencies.
  */
 
-  import app from '../app.js';
-  import debug from 'debug'
-  debug('app:server');
-  import http from 'http';
+import app from '../app.js';
+import debug from 'debug'
+debug('app:server');
+import http from 'http';
 
   // const app = require('../app');
   // const debug = require('debug');
