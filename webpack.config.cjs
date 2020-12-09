@@ -8,6 +8,19 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 const WebpackAssetsManifest = require("webpack-assets-manifest");
+
+// import dotenv from 'dotenv';
+// dotenv.config()
+// import path from 'path';
+// import webpack from 'webpack';
+// import MiniCssExtractPlugin from "mini-css-extract-plugin";
+// import TerserPlugin from 'terser-webpack-plugin';
+// import { CleanWebpackPlugin } from "clean-webpack-plugin";
+// import OptimizeCSSAssetsPlugin from "optimize-css-assets-webpack-plugin";
+// import LodashModuleReplacementPlugin from 'lodash-webpack-plugin';
+// import WebpackAssetsManifest from "webpack-assets-manifest";
+
+
 var ENV = process.env.NODE_ENV === "production" ? "production" : "development";
 
 let filename = ENV === "production" ? "main.[chunkhash].js" : "main.js";
@@ -25,7 +38,7 @@ const plugins = [
 ];
 
 let devServer = {};
-const entry = [__dirname + "/src/scripts/main.js"];
+const entry = [path.resolve(__dirname, 'src') + '/scripts/main.js'];
 
 if (ENV === "production") {
   console.log("\n----- webpack is building files before launching app. ----\n");

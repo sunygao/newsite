@@ -3,12 +3,7 @@ module.exports = function (api) {
 
   const presets = [["@babel/preset-env"]];
   const plugins = [
-        [
-          "module-resolver",
-          {
-            "root": ["./src/**"]
-          }
-        ],
+  
         "@babel/plugin-transform-runtime",
         "babel-plugin-lodash",
         "@babel/plugin-proposal-class-properties",

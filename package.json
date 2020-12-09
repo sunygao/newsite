@@ -8,8 +8,8 @@
     "livereload": "$(npm bin)/live-reload --port 9091 ./",
     "server": "DEBUG=myapp:* node --experimental-modules --es-module-specifier-resolution=node ./bin/www",
     "build": "rm -rf ../static && npm run webpack:build",
-    "webpack:dev": "webpack --config webpack.config.js",
-    "webpack:build": "cross-env NODE_ENV=production webpack --config webpack.config.js"
+    "webpack:dev": "webpack --config webpack.config.cjs",
+    "webpack:build": "cross-env NODE_ENV=production webpack --config webpack.config.cjs"
   },
   "engines": {
     "node": "12.x"
@@ -46,6 +46,7 @@
     "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
     "babel-plugin-transform-es2015-classes": "^6.22.0",
     "babel-polyfill": "^6.22.0",
+    "babel-register": "^6.26.0",
     "clean-webpack-plugin": "^3.0.0",
     "concurrently": "^5.0.0",
     "core-js": "^2.4.1",
