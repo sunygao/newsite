@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "concurrently --kill-others \"npm run server\" \"npm run webpack:dev\" \"$(npm bin)/webpack-dev-server --mode development\" ",
+    "dev": "concurrently --kill-others \"npm run server\" \"npm run webpack:dev\"  ",
     "livereload": "$(npm bin)/live-reload --port 9091 ./",
     "server": "DEBUG=myapp:* node --experimental-modules --es-module-specifier-resolution=node ./bin/www.js",
     "buildprod": "npm run webpack:build",
