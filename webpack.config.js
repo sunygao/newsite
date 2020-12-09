@@ -7,7 +7,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
-const WebpackAssetsManifest = require("webpack-assets-manifest");
+// const WebpackAssetsManifest = require("webpack-assets-manifest");
 
 // import dotenv from 'dotenv';
 // dotenv.config()
@@ -23,8 +23,10 @@ const WebpackAssetsManifest = require("webpack-assets-manifest");
 
 var ENV = process.env.NODE_ENV === "production" ? "production" : "development";
 
-let filename = ENV === "production" ? "main.[chunkhash].js" : "main.js";
-let cssFilename = ENV === "production" ? "app.[chunkhash].css" : "app.css";
+// let filename = ENV === "production" ? "main.[chunkhash].js" : "main.js";
+// let cssFilename = ENV === "production" ? "app.[chunkhash].css" : "app.css";
+let filename = "main.js";
+let cssFilename = "app.css";
 let outputPath = path.resolve('public/dist/');
 
 let devtool = ENV === "production" ? false : "inline-source-map";
@@ -46,12 +48,11 @@ if (ENV === "production") {
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // both options are optional
-      filename: cssFilename,
-      chunkFilename: "[id]-[chunkhash].css"
+      filename: cssFilename
     })
   );
   plugins.push(new LodashModuleReplacementPlugin());
-  plugins.push(new WebpackAssetsManifest());
+  //plugins.push(new WebpackAssetsManifest());
   // plugins.push(new BundleAnalyzerPlugin());
 } else {
   plugins.push(new webpack.HotModuleReplacementPlugin());

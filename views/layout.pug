@@ -8,8 +8,8 @@ html
 		meta(name='description', content= description)
 		meta(name='og:title', content='')
 		meta(property='og:image', content='')
-		if(env == 'production')
-			link(rel='stylesheet', href='/dist/' + manifest["main.css"])
+		
+		link(rel='stylesheet', href='/dist/' + manifest["main.css"])
 	
 	body(class= pageClass)
 		include partials/_main_nav
