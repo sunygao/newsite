@@ -4,6 +4,9 @@
     width: 100%;
     z-index: $z-nav;
     margin-top: 20px;
+    padding: 0 4.167vw;
+    display: flex;
+    justify-content: space-between;;
 
     .nav-link {
       color: $grey_light;
@@ -39,12 +42,15 @@
       }
     }
 
+    h1 {
+
+    }
+
     h1 a {
       font-size: 1.6vw;
       color: $black;
-      position: absolute;
-      right: 4.1667%;
-      top: 0px;
+      // position: absolute;
+      // right: 4.1667%;
       cursor: pointer;
       @include robotoItalic;
     }

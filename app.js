@@ -12,9 +12,9 @@ import pug from 'pug';
 import index from './routes/index';
 //import work from './routes/work';
 import web from './routes/web';
-import art from './routes/art';
-import store from './routes/store';
-import shop from './routes/shop';
+// import art from './routes/art';
+// import store from './routes/store';
+// import shop from './routes/shop';
 
 var env = process.env.NODE_ENV;
 var manifest = env == 'production'? require('../public/dist/manifest.json') : '';
@@ -42,9 +42,9 @@ app.set('config', {
 app.use('/', index);
 //app.use('/work', work);
 app.use('/web', web);
-app.use('/art', art);
-app.use('/store', store);
-app.use('/shop', shop);
+// app.use('/art', art);
+// app.use('/store', store);
+// app.use('/shop', shop);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

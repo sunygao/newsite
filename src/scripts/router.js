@@ -13,11 +13,11 @@ import homeData from 'home.json';
 import { allWebObj, allWebArray } from 'web-projects';
 
 //art pages json
-import artData from 'art.json';
-import { allArtObj, allArtArray } from 'art-projects';
+// import artData from 'art.json';
+// import { allArtObj, allArtArray } from 'art-projects';
 
 const webPathname = 'web';
-const artPathname = 'art';
+// const artPathname = 'art';
 
 export default class Router extends Backbone.Router.extend({
     routes: {
@@ -25,9 +25,9 @@ export default class Router extends Backbone.Router.extend({
     	// "work(/)": "home",
         // "work/:case(/)": "workDetail",
         "web(/)": "home",
-        "web/:case(/)": "webDetail",
-        "art(/)": "art",
-    	"art/:case(/)": "artDetail"
+        "web/:case(/)": "webDetail"
+        // "art(/)": "art",
+    	// "art/:case(/)": "artDetail"
     }
 }) {
     initialize() {
@@ -64,14 +64,14 @@ export default class Router extends Backbone.Router.extend({
         });
     }
 
-    art() {
-        this.pageManager.loadPage({
-            meta: artData,
-            view: Home,
-            data: allArtObj,
-            pathname: artPathname
-        });
-    }
+    // art() {
+    //     this.pageManager.loadPage({
+    //         meta: artData,
+    //         view: Home,
+    //         data: allArtObj,
+    //         pathname: artPathname
+    //     });
+    // }
 
 
     getNext(route, workList) {
@@ -101,17 +101,17 @@ export default class Router extends Backbone.Router.extend({
         });
     }
 
-    artDetail(route) {
-        const next = this.getNext(route, allArtArray);
+    // artDetail(route) {
+    //     const next = this.getNext(route, allArtArray);
  
-         this.pageManager.loadPage({
-             view: WorkDetail,
-             data: allArtObj[route],
-             meta: allArtObj[route].meta,
-             nextData: allArtObj[next],
-             pathname: artPathname
-         });
-     }
+    //      this.pageManager.loadPage({
+    //          view: WorkDetail,
+    //          data: allArtObj[route],
+    //          meta: allArtObj[route].meta,
+    //          nextData: allArtObj[next],
+    //          pathname: artPathname
+    //      });
+    //  }
 
      getCurrentRoute() {
         var Router = this,

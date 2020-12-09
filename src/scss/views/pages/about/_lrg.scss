@@ -9,7 +9,7 @@
 	top: 0;
 	padding: 0 8.333% $padding-top;
 	transition: all .2s ease-out;
-	overflow: scroll;
+	overflow-y: scroll;
 
 	&.show {
 		opacity: 1;

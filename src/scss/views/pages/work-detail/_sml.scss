@@ -20,4 +20,18 @@
 			}
 		}
 	}
+	.project-images {
+		.col-2 {	
+			.image {
+				width: 100%;
+
+				&:nth-child(odd) {
+					margin-right: 0px;
+				}
+			}
+
+		}
+
+	}
 }
+

@@ -213,14 +213,18 @@
 				flex-wrap: wrap;
 			}
 
-			.image-wrapper {
+			.image {
+				margin-bottom: 80px;
 				width: calc(50% - 8px);
-				background: white;
-
 
 				&:nth-child(odd) {
 					margin-right: 15px;
 				}
+			}
+
+			.image-wrapper {
+				margin-bottom: 0;
+				background: white;				
 			}
 		}
 

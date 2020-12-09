@@ -1,27 +1,13 @@
 footer {
 	@include span(22);
 	@include at-col(1);
-	padding: 60px 0 0px;
-	margin-bottom: 30px;
+	padding: 60px 0 30px;
 	overflow: hidden;
 	text-transform: lowercase;
 	position: relative;
 	flex-shrink: 0;
 
-	// .contact {
-	// 	position: absolute;
-	// 	font-size: 1.2rem;
-	// 	color: $grey-dark;
-	// 	bottom: 0px;
-
-	// 	span {
-	// 		font-size: 1.2em;
-	// 	}
-	// }
-
 	ul {
-		// float: right;
-		// text-align: right;
 		display: flex;
 		justify-content: space-between;
 

@@ -107,8 +107,9 @@
 						article.col-2
 							.image-container
 								each image in content.images
-									.image-wrapper(style="background-color:" + data.backgroundColor)
-										img(class="preview-image", data-src="../images/projects/" + slug + "/" +image.src, data-width=image.width, data-height=image.height)
+									div.image
+										.image-wrapper(style="background-color:" + data.backgroundColor)
+											img(class="preview-image", data-src="../images/projects/" + slug + "/" +image.src, data-width=image.width, data-height=image.height)
 							if(content.description)
 								.description
 									p= content.description
@@ -116,8 +117,9 @@
 					else
 						article
 							each image in content.images
-								.image-wrapper(style="background-color:" + data.backgroundColor)
-									img(class="preview-image", data-src="../images/projects/" + slug + "/" +image.src, data-width=image.width, data-height=image.height)
+								div
+									.image-wrapper(style="background-color:" + data.backgroundColor)
+										img(class="preview-image", data-src="../images/projects/" + slug + "/" +image.src, data-width=image.width, data-height=image.height)
 							if(content.description)
 								.description
 									p= content.description
