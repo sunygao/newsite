@@ -9,9 +9,9 @@ import cookieParser from 'cookie-parser';
 import bodyParser from 'body-parser';
 import pug from 'pug';
 
-import index from './routes/index';
+import index from './routes/index.js';
 //import work from './routes/work';
-import web from './routes/web';
+import web from './routes/web.js';
 // import art from './routes/art';
 // import store from './routes/store';
 // import shop from './routes/shop';
