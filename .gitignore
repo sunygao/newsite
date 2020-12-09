@@ -11,4 +11,3 @@ npm-debug.log
 public/dist/*.hot-update.json
 public/dist/*.hot-update.js
 
-public/dist/main.js

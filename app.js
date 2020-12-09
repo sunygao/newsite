@@ -18,13 +18,13 @@ import web from './routes/web.js';
 // import assetManifest from '../public/dist/manifest.json'
 
 var env = process.env.NODE_ENV;
-var manifest;
-if (env == 'production') {
-    import('./public/dist/manifest.json')
-    .then((manifest) => {
-       manifest = manifest;
-    });
-}
+// var manifest;
+// if (env == 'production') {
+//     import('./public/dist/manifest.json')
+//     .then((manifest) => {
+//        manifest = manifest;
+//     });
+// }
 // var manifest = env == 'production'? require('../public/dist/manifest.json') : '';
 var app = express();
 var __dirname = path.resolve();
@@ -41,10 +41,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-//routes
+// app.set('config', {
+// 	env: env,
+// 	manifest: manifest
+// });
 app.set('config', {
-	env: env,
-	manifest: manifest
+	env: env
 });
 
 app.use('/', index);
