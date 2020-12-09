@@ -15,9 +15,17 @@ import web from './routes/web';
 // import art from './routes/art';
 // import store from './routes/store';
 // import shop from './routes/shop';
+// import assetManifest from '../public/dist/manifest.json'
 
 var env = process.env.NODE_ENV;
-var manifest = env == 'production'? require('../public/dist/manifest.json') : '';
+var manifest;
+if (env == 'production') {
+    import('./public/dist/manifest.json')
+    .then((manifest) => {
+       manifest = manifest;
+    });
+}
+// var manifest = env == 'production'? require('../public/dist/manifest.json') : '';
 var app = express();
 var __dirname = path.resolve();
 
