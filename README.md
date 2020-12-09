@@ -1,7 +1,9 @@
 ## Development 
 ```npm run dev```
 
-Browser: localhost:8081
+Browser: localhost:3000
 
 ## Building
-```npm run build```
+```npm run buildprod```
+2020 update: run buildprod before deploying
+

@@ -7,12 +7,13 @@ export default {
         "title" : "Sidewalk Toronto",
         "client" : "Sidewalk Labs",
         "slug" : "sidewalk-toronto",
+        "hasBorder" : "true",
         "previewImages" : [
-            "rosa-bill-full.jpg",
-            "mahalia-bill-full.jpg",
-            "eleanor-bill-full.jpg"
+            "sidewalk-preview.png",
+            "sidewalk-preview-2.png",
+            "sidewalk-preview-3.png"
         ],
-        "backgroundColor" : "#37373f",
+        "backgroundColor" : "#ef5025",
         "heroImage" : "hero.jpg",
         "description" : [
             "<p>Sidewalk Labs' development plan for a smart city on Toronto's eastern waterfront.</p>",
@@ -28,20 +29,47 @@ export default {
             "date" : "July 2019"
         },	
         "links" : {
-            "site" : "https://https://www.sidewalktoronto.ca/"
+            "site" : "https://www.sidewalktoronto.ca/"
         },
         "mainContent": [
-            { 
-                "type": "video",
-                "videos" : [ 
-                    {
-                        "src" : "grid-page-animation.mp4",
-                        "width" : "1440",
-                        "height" : "798"
-                    }
-                ],
-                "description" : "On the view all page, the women can be filtered by category then viewed on the bill."
-            }
+            
+                { 
+                    "type": "image",
+                    "images" : [ 
+                        
+                        {
+                            "src" : "sidewalk-1.jpg",
+                            "width" : "1600",
+                            "height" : "1280"
+                        },
+                        {
+                            "src" : "sidewalk-2.jpg",
+                            "width" : "1600",
+                            "height" : "1547"
+                        },
+                        {
+                            "src" : "sidewalk-4.jpg",
+                            "width" : "1600",
+                            "height" : "1258"
+                        },
+                        {
+                            "src" : "sidewalk-5.jpg",
+                            "width" : "1600",
+                            "height" : "1300"
+                        },
+                        {
+                            "src" : "sidewalk-6.jpg",
+                            "width" : "1600",
+                            "height" : "1550"
+                        },
+                        {
+                            "src" : "sidewalk-7.jpg",
+                            "width" : "1600",
+                            "height" : "1552"
+                        }
+                    ]
+                }
+            
         ]
     }
 }
