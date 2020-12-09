@@ -23,7 +23,7 @@ export default {
                     "text": "Squarespace"
                 }
             ],
-            "role" : "Lead Developer",
+            "role" : "Creative Developer",
             "date" : "July 2020"
         },	
         "awards" : [

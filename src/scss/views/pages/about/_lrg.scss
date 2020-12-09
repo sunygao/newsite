@@ -39,6 +39,10 @@
 	a {
 		@include robotoMed;
 		//color: $gold;
+
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 
 	.text-wrapper {
