@@ -1,7 +1,7 @@
 import express from 'express';
 import pug from 'pug';
 import homeData from '../data/home.json';
-import { allWebObj } from '../data/web-projects'; 
+import { allWebObj } from '../data/web-projects/index.js'; 
 
 var router = express.Router();
 var pathname = 'web'
