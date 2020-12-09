@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "concurrently --kill-others \"npm run server\" \"npm run webpack:dev\" \"$(npm bin)/webpack-dev-server --mode development\" ",
     "livereload": "$(npm bin)/live-reload --port 9091 ./",
-    "server": "DEBUG=myapp:* node --experimental-modules --es-module-specifier-resolution=node ./bin/www",
+    "server": "DEBUG=myapp:* node --experimental-modules --es-module-specifier-resolution=node ./bin/www.js",
     "buildprod": "npm run webpack:build",
     "webpack:dev": "webpack --config webpack.config.js",
     "webpack:build": "cross-env NODE_ENV=production webpack --config webpack.config.js"
