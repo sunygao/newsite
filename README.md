@@ -1,9 +1,7 @@
 ## Development 
-```npm i```
+```npm run dev```
 
-```npm start```
-
-Browser: localhost:8080
+Browser: localhost:8081
 
 ## Building
 ```npm run build```
