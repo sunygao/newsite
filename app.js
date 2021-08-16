@@ -12,6 +12,7 @@ import pug from 'pug';
 import index from './routes/index.js';
 //import work from './routes/work';
 import web from './routes/web.js';
+import thirdEye from './routes/thirdEye.js';
 // import art from './routes/art';
 // import store from './routes/store';
 // import shop from './routes/shop';
@@ -52,6 +53,7 @@ app.set('config', {
 app.use('/', index);
 //app.use('/work', work);
 app.use('/web', web);
+app.use('/third-eye', thirdEye);
 // app.use('/art', art);
 // app.use('/store', store);
 // app.use('/shop', shop);
