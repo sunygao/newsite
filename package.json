@@ -9,7 +9,7 @@
     "server": "DEBUG=myapp:* node --experimental-modules --es-module-specifier-resolution=node ./bin/www.js",
     "buildprod": "npm run webpack:build",
     "webpack:dev": "webpack --config webpack.config.js",
-    "webpack:build": "cross-env NODE_ENV=production webpack --config webpack.config.js"
+    "webpack:build": "NODE_ENV=production webpack --config webpack.config.js"
   },
   "engines": {
     "node": "12.10.0"
