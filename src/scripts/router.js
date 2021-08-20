@@ -7,9 +7,12 @@ import Nav from 'components/nav';
 //page views
 import Home from 'pages/home';
 import WorkDetail from 'pages/workDetail';
+import ThirdEye from 'pages/thirdEye';
+
 
 //home and web pages json
 import homeData from 'home.js';
+import thirdEyeData from 'third-eye.js';
 import { allWebObj, allWebArray } from 'web-projects/index.js';
 
 //art pages json
@@ -25,13 +28,13 @@ export default class Router extends Backbone.Router.extend({
     	// "work(/)": "home",
         // "work/:case(/)": "workDetail",
         "web(/)": "home",
-        "web/:case(/)": "webDetail"
-        // "art(/)": "art",
+        "web/:case(/)": "webDetail",
+        "third-eye(/)": "thirdEye"
     	// "art/:case(/)": "artDetail"
     }
 }) {
     initialize() {
-        console.log('router initialized');
+        console.log('router initialized!!!');
 
         this.pageManager = new PageManager();
         this.nav = new Nav();
@@ -101,17 +104,12 @@ export default class Router extends Backbone.Router.extend({
         });
     }
 
-    // artDetail(route) {
-    //     const next = this.getNext(route, allArtArray);
- 
-    //      this.pageManager.loadPage({
-    //          view: WorkDetail,
-    //          data: allArtObj[route],
-    //          meta: allArtObj[route].meta,
-    //          nextData: allArtObj[next],
-    //          pathname: artPathname
-    //      });
-    //  }
+    thirdEye(route) {
+         this.pageManager.loadPage({
+             view: ThirdEye,
+             meta: thirdEyeData
+         });
+     }
 
      getCurrentRoute() {
         var Router = this,
