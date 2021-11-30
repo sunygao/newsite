@@ -73,6 +73,34 @@
 			opacity: 0;
 
 		}
+
+		#spotify-country {
+			li {
+				background-size: contain;
+
+				&:nth-child(1) {
+					z-index: 1;
+					width: 73%;
+					margin-left: 11%;
+					margin-top: 19%;
+					padding-bottom: 90%;
+				}
+
+				&:nth-child(2) {
+					z-index: 0;
+					width: 37%;
+					margin-left: 59%;
+					margin-top: -37%;
+					padding-bottom: 70%;
+				}
+			}
+
+			&.active {
+				li:nth-child(1) {
+					transform: translateY(-50%) skewY(0deg) rotate(-12deg);
+				}
+			}
+		}
 		#craig-reynolds {
 
 			li {
