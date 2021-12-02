@@ -101,6 +101,29 @@
 				}
 			}
 		}
+
+		#sonos-roam {
+			li {
+				background-size: contain;
+
+				&:nth-child(1) {
+					width: 65%;
+					margin-left: 44%;
+					margin-top: 19%;
+					padding-bottom: 66%;
+				}
+
+				&:nth-child(2) {
+					width: 33%;
+					margin-left: 28%;
+					margin-top: -27%;
+					padding-bottom: 70%;
+				}
+			}
+		}
+
+
+
 		#craig-reynolds {
 
 			li {

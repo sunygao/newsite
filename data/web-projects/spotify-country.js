@@ -7,7 +7,6 @@ export default {
         "title" : "90s Country",
         "client" : "Spotify",
         "slug" : "spotify-country",
-        "hasBorder" : "false",
         "previewImages" : [
             "shirt.png",
             "cd.png"
@@ -39,7 +38,8 @@ export default {
                             "width" : "1440",
                             "height" : "796"
                         }
-                    ]
+                    ],
+                    "description" : "Loader screen and intro"
                 },
 
                
@@ -85,7 +85,8 @@ export default {
                             "width" : "1440",
                             "height" : "796"
                         }
-                    ]
+                    ],
+                    "description": "The user's top 6 albums, based on their quiz answers"
                 },
             
                 { 
@@ -98,7 +99,8 @@ export default {
                             "height" : "1061"
                         }
                        
-                    ]
+                    ],
+                    "description": "Custom share asset, generated using the user's results"
                 }
             
         ]
