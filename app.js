@@ -30,6 +30,15 @@ var env = process.env.NODE_ENV;
 var app = express();
 var __dirname = path.resolve();
 
+if(env === 'production') {
+	app.use((req, res, next) => {
+	  if (req.header('x-forwarded-proto') !== 'https')
+		res.redirect(`https://${req.header('host')}${req.url}`)
+	  else
+		next()
+	})
+}
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');

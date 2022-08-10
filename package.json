@@ -25,6 +25,7 @@
     "express": "^4.17.1",
     "gsap": "^2.0.1",
     "jquery": "^3.4.1",
+    "lerp": "^1.0.3",
     "morgan": "^1.9.1",
     "pug": "^2.0.0-beta10",
     "serve-favicon": "^2.5.0",
